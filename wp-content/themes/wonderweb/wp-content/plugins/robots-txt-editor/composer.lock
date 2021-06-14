@@ -1,0 +1,51 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "69fe0510ab9ddf4bd5af6dd894d2f9ef",
+    "packages": [
+        {
+            "name": "premmerce/wordpress-sdk",
+            "version": "v2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Premmerce/wordpress-sdk.git",
+                "reference": "147f577c088e1dc2ff01e560b2a9b0a10fbef7d5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Premmerce/wordpress-sdk/zipball/147f577c088e1dc2ff01e560b2a9b0a10fbef7d5",
+                "reference": "147f577c088e1dc2ff01e560b2a9b0a10fbef7d5",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Premmerce\\SDK\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Premmerce",
+                    "email": "info@premme.com"
+                }
+            ],
+            "description": "Wordpress SDK for premmerce plugins",
+            "time": "2019-01-22T14:56:23+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}

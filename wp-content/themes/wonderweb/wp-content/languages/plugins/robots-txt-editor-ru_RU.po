@@ -1,0 +1,40 @@
+# Translation of Plugins - Robots.txt Editor - Development (trunk) in Russian
+# This file is distributed under the same license as the Plugins - Robots.txt Editor - Development (trunk) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2019-06-18 06:28:53+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
+"Language: ru\n"
+"Project-Id-Version: Plugins - Robots.txt Editor - Development (trunk)\n"
+
+#: views/admin/section/main-settings.php:20
+msgid "View"
+msgstr "Просмотр"
+
+#: src/Admin/Admin.php:124
+msgid "Settings"
+msgstr "Настройки"
+
+#: src/Admin/Admin.php:123 views/admin/section/main-settings.php:16
+msgid "Robots.txt"
+msgstr "Robots.txt"
+
+#. Author URI of the plugin
+msgid "https://processby.com"
+msgstr "https://processby.com"
+
+#. Author of the plugin
+msgid "Processby"
+msgstr "Processby"
+
+#. Description of the plugin
+msgid "Robots.txt for WordPress"
+msgstr "Создание и редактирование robots.txt для WordPress"
+
+#. Plugin Name of the plugin
+msgid "Robots.txt Editor"
+msgstr "Robots.txt Editor"
