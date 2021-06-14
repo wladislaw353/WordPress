@@ -5,9 +5,9 @@
 
 # <h4>Предустановленные плагины</h4>
 Установленные плагины протестированы и стабильно работают в связке на текущих версиях.
-Для использования инсты, необходимо активировать и настроить плагин <code>Smash Balloon Instagram Feed</code>.
-Кеширование по умолчанию отключено в <code>WP Super Cache</code>.
-Создано 3 языка <code>WP Multilang</code>. Английский по умолчанию отключен.
+<br>Для использования инсты, необходимо активировать и настроить плагин <code>Smash Balloon Instagram Feed</code>.
+<br>Кеширование по умолчанию отключено в <code>WP Super Cache</code>.
+<br>Создано 3 языка <code>WP Multilang</code>. Английский по умолчанию отключен.
 <br> - Advanced Custom Fields
 <br> - All In One SEO Pack
 <br> - Classic Editor
