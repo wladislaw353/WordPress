@@ -4,7 +4,7 @@
 # <h2>Админка</h2>
 
 # <h4>Предустановленные плагины</h4>
-- Advanced Custom Fields
+  - Advanced Custom Fields
 <br> - All In One SEO Pack
 <br> - Classic Editor
 <br> - Cyr to Lat enhanced
