@@ -8,16 +8,17 @@
 
 	<?=get_bloginfo('template_url');?>
 	<?=home_url();?>
-	<?=mlt('', '')?> 
+	<?=mlt('', '')?>
+	<span id="fb-shareq" data-href="<?='https://'.$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];?>">Share in fb</span>
 -->
 
-<section class="seo-text holder">
-
-	<?=wonderweb_breadcrumbs();?>
-
-	<h1><?php the_title(); ?></h1>
-	<?php the_content(); ?>
-	
+<section class="seo-text indent">
+	<div class="holder">
+		<?php the_post_thumbnail() ?>
+		<p><?=get_the_date(); ?></p>
+		<h1><?php the_title(); ?></h1>
+		<?php the_content(); ?>
+	</div>
 </section>
 
 
