@@ -22,9 +22,8 @@
     global $wp_query;
     $wp_query = new WP_Query(array(
         'category_name' => 'blog',
-        'posts_per_page' => '24
-        ',
-        'paged' => get_query_var('paged') ?: 1
+        'posts_per_page' => '24',
+        'paged' => get_query_var('paged') ? : 1
     ));
 
     while(have_posts()) : the_post();?>

@@ -13,23 +13,23 @@
 
 <!-- ПОРТФОЛИО -->
 <?php
-    $posts = get_posts( array(
+    $posts = get_posts([
         'numberposts' => 4,
         'category'    => 0,
         'orderby'     => 'date',
         'order'       => 'DESC',
-        'include'     => array(),
-        'exclude'     => array(),
+        'include'     => [],
+        'exclude'     => [],
         'meta_key'    => '',
-        'meta_value'  =>'',
+        'meta_value'  => '',
         'post_type'   => 'portfolio',
         'suppress_filters' => true,
-    ) );
+    ]);
     
     foreach( $posts as $post ) {
         setup_postdata($post);
         ?>
-            <?php echo get_the_post_thumbnail($post->ID); ?>
+            <?php the_post_thumbnail($post->ID); ?>
             <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
             <p><?php the_excerpt(); ?></p>
             <p><?php the_date(); ?></p>
@@ -37,26 +37,6 @@
     }
  
     wp_reset_postdata();
-?>
-
-<!-- БЛОГ -->
-<?php
-    global $wp_query;
-    $wp_query = new WP_Query([
-        'category_name' => 'blog',
-        'posts_per_page' => '4',
-        'paged' => get_query_var('paged') ?: 1
-    ]);
-
-    while(have_posts()) : the_post();?>
-
-        <?php the_post_thumbnail(); ?>
-        <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-        <p><?php the_excerpt(); ?></p>
-        <p><?php the_date(); ?></p>
-
-    <?php endwhile;
-    wp_reset_query();
 ?>
 
 <!-- БЛОГ -->
