@@ -29,9 +29,10 @@ add_action('wp_footer', function() {
 
 
 # === MULTILANG === #
-function mlt($ru, $ua) {
+function mlt($ru, $ua = false, $en = false) {
 	if (get_bloginfo('language')=='ru-ua') return $ru;
-	else return $ua;
+	if (get_bloginfo('language')=='uk-ua') return $ua;
+	else return $en;
 }
 
 
