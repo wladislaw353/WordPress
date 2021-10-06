@@ -49,17 +49,16 @@
     <?=get_field('youtube', 'option') ?>
 -->
 
-
 <?php if (get_bloginfo('language')=='ru-ua'): ?>
-	<a class="active">RU</a>
 	<a href="/<?=str_replace('/ru/', '', $_SERVER['REQUEST_URI']);?>">UA</a>
-	<a href="/en/<?=str_replace('/ru/', '', $_SERVER['REQUEST_URI']);?>">EN</a>
+	<!-- <a href="/en/<?=str_replace('/ru/', '', $_SERVER['REQUEST_URI']);?>">EN</a> -->
+	<a class="active">RU</a>
 <?php elseif (get_bloginfo('language')=='uk-ua'): ?>
 	<a class="active">UA</a>
-	<a href="/en<?=$_SERVER['REQUEST_URI'];?>">EN</a>
+	<!-- <a href="/en<?=$_SERVER['REQUEST_URI'];?>">EN</a> -->
 	<a href="/ru<?=$_SERVER['REQUEST_URI'];?>">RU</a>
 <?php else: ?>
-	<a class="active">EN</a>
 	<a href="/<?=str_replace('/en/', '', $_SERVER['REQUEST_URI']);?>">UA</a>
+	<a class="active">EN</a>
 	<a href="/ru/<?=str_replace('/en/', '', $_SERVER['REQUEST_URI']);?>">RU</a>
 <?php endif; ?>
