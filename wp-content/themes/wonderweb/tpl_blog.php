@@ -34,7 +34,7 @@
         <p><?php the_date(); ?></p>
 
     <?php endwhile;
-    // posts_nav_link();
+    posts_nav_link();
     wp_reset_query();
 ?>
 

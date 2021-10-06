@@ -2,11 +2,9 @@
 # === REMOVE AUTHOR PAGE === #
 add_action('template_redirect', function() {
     global $wp_query;
-    if (is_author()) {
-		$wp_query->set_404();
-		status_header(404);
-		header('Location: /');
-	}
+    if ( is_page() || is_single() || is_front_page()) return;
+	$wp_query->set_404();
+	status_header(404);
 });
 
 add_action('init', function() {

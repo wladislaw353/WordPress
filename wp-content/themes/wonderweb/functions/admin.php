@@ -18,6 +18,19 @@ add_action('admin_bar_menu', function($wp_admin_bar) {
     ]);
 }, 10);
 
+if( function_exists('acf_add_options_page') ) {
+	acf_add_options_page([
+		'menu_title' => 'Контакты',
+		'page_title' => 'Контакты',
+		'icon_url' => 'dashicons-email-alt',
+	]);
+	acf_add_options_page([
+		'menu_title' => 'Аналитика',
+		'page_title' => 'Идентификаторы аналитики',
+		'icon_url' => 'dashicons-code-standards',
+	]);
+}
+
 add_action('admin_bar_menu', function($wp_admin_bar) {
     $wp_admin_bar->remove_node('wp-logo');
 }, 999);
@@ -44,7 +57,7 @@ add_filter( 'plugin_action_links', function($actions, $plugin_file) {
 	);
 	if ( in_array($plugin_file, $important_plugins) ) {
 		unset( $actions['deactivate'] );
-		$actions[ 'info' ] = '<b class="musthave_js">Действия заблокированы в целях безопасности</b><style>#advanced-custom-fields-update,#advanced-custom-fields-pro-update,#all-in-one-seo-pack-update,#wp-multilang-update{display:none}</style>';
+		$actions[ 'info' ] = '<b class="musthave_js">Actions blocked for security reasons</b><style>#advanced-custom-fields-update,#advanced-custom-fields-pro-update,#all-in-one-seo-pack-update,#wp-multilang-update{display:none}</style>';
 	}
 	return $actions;
 }, 10, 2);
@@ -83,3 +96,46 @@ add_filter('post_type_labels_post', function($labels) {
     ];
 	return (object) array_merge( (array) $labels, $new );
 });
+
+if ( !function_exists('theme_setup') ) :
+	function theme_setup() {
+		load_theme_textdomain( 'wonderweb-custom-theme', get_template_directory() . '/languages' );
+		add_theme_support( 'menus' );
+		// add_theme_support( 'automatic-feed-links' );
+		add_theme_support( 'title-tag' );
+		add_theme_support( 'post-thumbnails' );
+		add_theme_support( 'post-formats');
+		add_theme_support(
+			'html5',
+			array(
+				'search-form',
+				// 'comment-form',
+				// 'comment-list',
+				'gallery',
+				'caption',
+				'style',
+				'script',
+			)
+		);
+		add_theme_support(
+			'custom-background',
+			apply_filters(
+				'theme_custom_background_args',
+				array(
+					'default-color' => 'ffffff',
+					'default-image' => '',
+				)
+			)
+		);
+		add_theme_support( 'customize-selective-refresh-widgets' );
+		add_theme_support(
+			'custom-logo',
+			array(
+				'height'      => 250,
+				'width'       => 250,
+				'flex-width'  => true,
+				'flex-height' => true,
+			)
+		);
+	}
+endif;	
