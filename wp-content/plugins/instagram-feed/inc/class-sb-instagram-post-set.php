@@ -62,13 +62,24 @@ class SB_Instagram_Post_Set {
 	 *
 	 * @since 2.0/4.0
 	 */
-	public function __construct( $post_data, $transient_name = false, $fill_in_timestamp = NULL, $image_sizes = array( 'personal' => array( 'full' => 640, 'low' => 320, 'thumb' => 150 ), 'business' => array( 'full' => 640, 'low' => 320, 'thumb' => 150 ) ), $upload_dir = NULL, $upload_url = NULL ) {
+	public function __construct( $post_data, $transient_name = false, $fill_in_timestamp = null, $image_sizes = array(
+		'personal' => array(
+			'full'  => 640,
+			'low'   => 320,
+			'thumb' => 150,
+		),
+		'business' => array(
+			'full'  => 640,
+			'low'   => 320,
+			'thumb' => 150,
+		),
+	), $upload_dir = null, $upload_url = null ) {
 		$this->post_data = $post_data;
 
 		$this->image_sizes = $image_sizes;
 
 		if ( ! isset( $upload_dir ) || ! isset( $upload_url ) ) {
-			$upload = wp_upload_dir();
+			$upload     = wp_upload_dir();
 			$upload_dir = $upload['basedir'];
 			$upload_dir = trailingslashit( $upload_dir ) . SBI_UPLOADS_NAME;
 
@@ -116,12 +127,12 @@ class SB_Instagram_Post_Set {
 	public function maybe_save_update_and_resize_images_for_posts() {
 		global $sb_instagram_posts_manager;
 
-		$posts_iterated_through = 0;
-		$number_resized = 0;
-		$number_updated = 0;
+		$posts_iterated_through     = 0;
+		$number_resized             = 0;
+		$number_updated             = 0;
 		$resized_image_data_for_set = array();
-		$resizing_disabled = $sb_instagram_posts_manager->image_resizing_disabled( $this->transient_name ) || $sb_instagram_posts_manager->max_resizing_per_time_period_reached();
-		$is_top_post_feed = (substr( $this->transient_name, 4, 1 ) === '+');
+		$resizing_disabled          = $sb_instagram_posts_manager->image_resizing_disabled( $this->transient_name ) || $sb_instagram_posts_manager->max_resizing_per_time_period_reached();
+		$is_top_post_feed           = ( substr( $this->transient_name, 4, 1 ) === '+' );
 
 		foreach ( $this->post_data as $single_instagram_post_data ) {
 
@@ -142,22 +153,22 @@ class SB_Instagram_Post_Set {
 				}
 
 				if ( ! $resizing_disabled ) {
-					if ( (! $single_post->exists_in_posts_table() || ! $single_post->images_done_resizing()) && $number_resized < 30 ) {
+					if ( ( ! $single_post->exists_in_posts_table() || ! $single_post->images_done_resizing() ) && $number_resized < 30 ) {
 
 						if ( $sb_instagram_posts_manager->max_total_records_reached() ) {
 							$sb_instagram_posts_manager->delete_least_used_image();
 						}
 
 						if ( ! $single_post->images_done_resizing() && $single_post->exists_in_posts_table() ) {
-							$single_post->resize_and_save_image( $this->image_sizes, $this->upload_dir, $this->upload_url );
+							$single_post->resize_and_save_image( $this->image_sizes, $this->upload_dir );
 						} else {
 							if ( $is_top_post_feed ) {
 								if ( $single_post->save_in_db( $this->transient_name, date( 'Y-m-d H:i:s', strtotime( $this->first_post_top_time_stamp ) - (120 * $posts_iterated_through) - 1 ) ) ) {
-									$single_post->resize_and_save_image( $this->image_sizes, $this->upload_dir, $this->upload_url );
+									$single_post->resize_and_save_image( $this->image_sizes, $this->upload_dir );
 								}
 							} else {
 								if ( $single_post->save_in_db( $this->transient_name, date( 'Y-m-d H:i:s', strtotime( $this->fill_in_timestamp ) - (120 * $posts_iterated_through) ) ) ) {
-									$single_post->resize_and_save_image( $this->image_sizes, $this->upload_dir, $this->upload_url );
+									$single_post->resize_and_save_image( $this->image_sizes, $this->upload_dir );
 								}
 							}
 						}
@@ -165,7 +176,7 @@ class SB_Instagram_Post_Set {
 						$number_resized++;
 					} else {
 						if ( $is_top_post_feed ) {
-							$single_post->update_db_data( true, $this->transient_name, $this->image_sizes, $this->upload_dir, $this->upload_url, date( 'Y-m-d H:i:s', strtotime( $this->first_post_top_time_stamp ) - (120 * $posts_iterated_through) ) );
+							$single_post->update_db_data( true, $this->transient_name, $this->image_sizes, $this->upload_dir, $this->upload_url, date( 'Y-m-d H:i:s', strtotime( $this->first_post_top_time_stamp ) - ( 120 * $posts_iterated_through ) ) );
 						} else {
 							$single_post->update_db_data( true, $this->transient_name, $this->image_sizes, $this->upload_dir, $this->upload_url );
 						}

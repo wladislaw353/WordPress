@@ -132,9 +132,7 @@ if(!sbi_js_exists) {
         function sbiAddVisibilityListener() {
             /* Detect when element becomes visible. Used for when the feed is initially hidden, in a tab for example. https://github.com/shaunbowe/jquery.visibilityChanged */
             !function (i) {
-                var n = {
-                    callback: function () {
-                    }, runOnLoad: !0, frequency: 100, sbiPreviousVisibility: null
+                var n = { runOnLoad: !0, frequency: 100, sbiPreviousVisibility: null
                 }, c = {};
                 c.sbiCheckVisibility = function (i, n) {
                     if (jQuery.contains(document, i[0])) {
@@ -298,11 +296,7 @@ if(!sbi_js_exists) {
                     feed.lazyLoadCheck($(this));
                 });
             },
-            initLayout: function() {
-
-            },
             afterInitialImagesLoaded: function() {
-                this.initLayout();
                 this.loadMoreButtonInit();
                 this.hideExtraImagesForWidth();
                 this.beforeNewImagesRevealed();
@@ -339,8 +333,7 @@ if(!sbi_js_exists) {
                 this.setImageSizeClass();
             },
             revealNewImages: function() {
-                var $self = $(this.el),
-                    feed = this;
+                var $self = $(this.el);
 
                 $self.find('.sbi-screenreader').each(function() {
                     $(this).find('img').remove();
@@ -435,11 +428,15 @@ if(!sbi_js_exists) {
                 }
             },
             sendNeedsResizingToServer: function() {
-                var feed = this;
+                var feed = this,
+                    $self = $(this.el);
                 if (feed.needsResizing.length > 0 && feed.settings.resizingEnabled) {
                     var itemOffset = $(this.el).find('.sbi_item').length,
                         cacheAll = typeof feed.settings.general.cache_all !== 'undefined' ? feed.settings.general.cache_all : false;
-
+                    var locatorNonce = '';
+                    if ( typeof $self.attr( 'data-locatornonce' ) !== 'undefined' ) {
+                        locatorNonce = $self.attr( 'data-locatornonce' );
+                    }
                     var submitData = {
                         action: 'sbi_resized_images_submit',
                         needs_resizing: feed.needsResizing,
@@ -448,7 +445,8 @@ if(!sbi_js_exists) {
                         atts: feed.settings.shortCodeAtts,
                         location: feed.locationGuess(),
                         post_id: feed.settings.postID,
-                        cache_all: cacheAll
+                        cache_all: cacheAll,
+                        locator_nonce: locatorNonce
                     };
                     var onSuccess = function(data) {
                         if (data.trim().indexOf('{') === 0) {
@@ -470,12 +468,17 @@ if(!sbi_js_exists) {
                     };
                     sbiAjax(submitData,onSuccess);
                 } else if (feed.settings.locator) {
+                    var locatorNonce = '';
+                    if ( typeof $self.attr( 'data-locatornonce' ) !== 'undefined' ) {
+                        locatorNonce = $self.attr( 'data-locatornonce' );
+                    }
                     var submitData = {
                         action: 'sbi_do_locator',
                         feed_id: feed.settings.feedID,
                         atts: feed.settings.shortCodeAtts,
                         location: feed.locationGuess(),
-                        post_id: feed.settings.postID
+                        post_id: feed.settings.postID,
+                        locator_nonce: locatorNonce
                     };
                     var onSuccess = function(data) {
 
@@ -498,6 +501,11 @@ if(!sbi_js_exists) {
                     feed = this;
                 feed.page ++;
 
+                var locatorNonce = '';
+                if ( typeof $self.attr( 'data-locatornonce' ) !== 'undefined' ) {
+                    locatorNonce = $self.attr( 'data-locatornonce' );
+                }
+
                 var itemOffset = $self.find('.sbi_item').length,
                     submitData = {
                         action: 'sbi_load_more_clicked',
@@ -507,7 +515,8 @@ if(!sbi_js_exists) {
                         atts: feed.settings.shortCodeAtts,
                         location: feed.locationGuess(),
                         post_id: feed.settings.postID,
-                        current_resolution: feed.imageResolution
+                        current_resolution: feed.imageResolution,
+                        locator_nonce: locatorNonce
                     };
                 var onSuccess = function (data) {
                     if (data.trim().indexOf('{') === 0) {
@@ -537,8 +546,7 @@ if(!sbi_js_exists) {
                 sbiAjax(submitData, onSuccess);
             },
             appendNewPosts: function (newPostsHtml) {
-                var $self = $(this.el),
-                    feed = this;
+                var $self = $(this.el);
                 if ($self.find('#sbi_images .sbi_item').length) {
                     $self.find('#sbi_images .sbi_item').last().after(newPostsHtml);
                 } else {
@@ -561,8 +569,8 @@ if(!sbi_js_exists) {
                 //Figure out what the width should be using the number of cols
                 //Figure out what the width should be using the number of cols
                 var imagesPadding = $self.find('#sbi_images').innerWidth() - $self.find('#sbi_images').width(),
-                    imagepadding = imagesPadding / 2;
-                sbi_photo_width_manual = ( $self.find('#sbi_images').width() / sbi_num_cols ) - imagesPadding;
+                    imagepadding = imagesPadding / 2,
+                    sbi_photo_width_manual = ( $self.find('#sbi_images').width() / sbi_num_cols ) - imagesPadding;
                 //If the width is less than it should be then set it manually
                 //if( sbi_photo_width <= (sbi_photo_width_manual) ) sbi_photo_width = sbi_photo_width_manual;
 
@@ -914,8 +922,7 @@ if(!sbi_js_exists) {
                 }
             },
             applyImageLiquid: function () {
-                var $self = $(this.el),
-                    feed = this;
+                var $self = $(this.el);
                 sbiAddImgLiquid();
                 if (typeof $self.find(".sbi_photo").sbi_imgLiquid == 'function') {
                     $self.find(".sbi_photo").sbi_imgLiquid({fill: true});
@@ -938,9 +945,8 @@ if(!sbi_js_exists) {
                 var $self = $(this.el),
                     cols = this.settings.cols,
                     colsmobile = this.settings.colsmobile,
-                    returnCols = cols;
-
-                sbiWindowWidth = window.innerWidth;
+                    returnCols = cols,
+                    sbiWindowWidth = window.innerWidth;
 
                 if ($self.hasClass('sbi_mob_col_auto')) {
                     if (sbiWindowWidth < 640 && (parseInt(cols) > 2 && parseInt(cols) < 7)) returnCols = 2;
@@ -959,7 +965,14 @@ if(!sbi_js_exists) {
                 if (typeof CLI_Cookie !== "undefined") { // GDPR Cookie Consent by WebToffee
                     if (CLI_Cookie.read(CLI_ACCEPT_COOKIE_NAME) !== null)  {
 
-                        this.settings.consentGiven = CLI_Cookie.read('cookielawinfo-checkbox-non-necessary') === 'yes';
+                        // WebToffee no longer uses this cookie but being left here to maintain backwards compatibility
+                        if (CLI_Cookie.read('cookielawinfo-checkbox-non-necessary') !== null) {
+                            this.settings.consentGiven = CLI_Cookie.read('cookielawinfo-checkbox-non-necessary') === 'yes';
+                        }
+
+                        if (CLI_Cookie.read('cookielawinfo-checkbox-necessary') !== null) {
+                            this.settings.consentGiven = CLI_Cookie.read('cookielawinfo-checkbox-necessary') === 'yes';
+                        }
                     }
 
                 } else if (typeof window.cnArgs !== "undefined") { // Cookie Notice by dFactory

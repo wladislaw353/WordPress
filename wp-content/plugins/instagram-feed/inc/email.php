@@ -18,22 +18,22 @@ if ( ! defined( 'ABSPATH' ) ) {
     <title><?php echo esc_html( $title ); ?></title>
 </head>
 <body>
-<table border="0" cellpadding="0" cellspacing="0" width="100%" height="100%" style="border-collapse:collapse;border-spacing:0px;vertical-align:top;min-width:100%;box-sizing:border-box;background-color:rgb(233,234,236);color:rgb(68,68,68);font-family:&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;font-weight:normal;padding:0px;margin:0px;text-align:left;font-size:14px;line-height:140%;height:100%;width:100%"><tbody><tr style="padding:0px;vertical-align:top;text-align:left">
-        <td align="center" valign="top" style="vertical-align:top;color:rgb(68,68,68);font-family:&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;font-weight:normal;padding:0px;margin:0px;font-size:14px;line-height:140%;text-align:center;border-collapse:collapse">
-            <table border="0" cellpadding="0" cellspacing="0" style="border-collapse:collapse;border-spacing:0px;padding:0px;vertical-align:top;width:600px;margin:0px auto;text-align:inherit">
+<table border="0" style="border-collapse:collapse;border-spacing:0px;vertical-align:top;min-width:100%;box-sizing:border-box;background-color:rgb(233,234,236);color:rgb(68,68,68);font-family:&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;font-weight:normal;padding:0px;margin:0px;text-align:left;font-size:14px;line-height:140%;height:100%;width:100%"><tbody><tr style="padding:0px;vertical-align:top;text-align:left">
+        <td style="vertical-align:top;color:rgb(68,68,68);font-family:&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;font-weight:normal;padding:0px;margin:0px;font-size:14px;line-height:140%;text-align:center;border-collapse:collapse">
+            <table border="0" style="border-collapse:collapse;border-spacing:0px;padding:0px;vertical-align:top;width:600px;margin:0px auto;text-align:inherit">
                 <tbody><tr style="padding:0px;vertical-align:top;text-align:left">
-                    <td align="center" valign="middle" style="vertical-align:top;color:rgb(68,68,68);font-family:&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;font-weight:normal;margin:0px;font-size:14px;line-height:140%;text-align:center;padding:30px 30px 22px;border-collapse:collapse">
+                    <td style="vertical-align:top;color:rgb(68,68,68);font-family:&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;font-weight:normal;margin:0px;font-size:14px;line-height:140%;text-align:center;padding:30px 30px 22px;border-collapse:collapse">
 						<?php if ( ! empty( $header_image ) ) : ?>
                             <img src="<?php echo esc_url( $header_image ); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>" />
 						<?php endif; ?>
                     </td>
                 </tr>
                 <tr style="padding:0px;vertical-align:top;text-align:left">
-                    <td align="left" valign="top" style="vertical-align:top;color:rgb(68,68,68);font-family:&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;font-weight:normal;margin:0px;text-align:left;font-size:14px;line-height:140%;background-color:rgb(255,255,255);padding:60px 75px 45px;border-width:3px 1px 1px;border-style:solid;border-color:rgb(227, 71, 22) rgb(221,221,221) rgb(221,221,221);border-collapse:collapse">
+                    <td style="vertical-align:top;color:rgb(68,68,68);font-family:&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;font-weight:normal;margin:0px;text-align:left;font-size:14px;line-height:140%;background-color:rgb(255,255,255);padding:60px 75px 45px;border-width:3px 1px 1px;border-style:solid;border-color:rgb(227, 71, 22) rgb(221,221,221) rgb(221,221,221);border-collapse:collapse">
 
                         <table style="border-collapse:collapse;border-spacing:0px;padding:0px;vertical-align:top;text-align:left;width:100%"><tbody><tr style="padding:0px;vertical-align:top;text-align:left">
                                 <td style="vertical-align:top;font-family:&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;font-weight:normal;padding:0px;margin:0px;text-align:left;font-size:14px;line-height:140%;color:rgb(119,119,119);border-collapse:collapse">
-									<?php echo $message_content; ?>
+									<?php echo wp_kses_post( $message_content ); ?>
 
                                     <table class="summary-info-table" style="border-collapse: collapse; border-spacing: 0; padding: 0; vertical-align: top; text-align: left; mso-table-lspace: 0pt; mso-table-rspace: 0pt; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 38px 0 0 0; Margin: 38px 0 0 0; font-size: 15px; border: 1px solid #dddddd; border-radius: 6px; display: block;">
                                         <tbody><tr style="padding: 0; vertical-align: top; text-align: left;">
@@ -76,7 +76,7 @@ if ( ! defined( 'ABSPATH' ) ) {
                     </td>
                 </tr>
                 <tr style="padding:0px;vertical-align:top;text-align:left">
-                    <td align="center" valign="top" style="vertical-align:top;font-family:&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;font-weight:normal;margin:0px;line-height:140%;padding:30px;color:rgb(114,119,124);font-size:12px;text-align:center;border-collapse:collapse">
+                    <td style="vertical-align:top;font-family:&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;font-weight:normal;margin:0px;line-height:140%;padding:30px;color:rgb(114,119,124);font-size:12px;text-align:center;border-collapse:collapse">
 						<?php
 						/* translators: %s - link to a site. */
 						esc_html_e( 'This is a courtesy email sent from the Smash Balloon Instagram Feed plugin on your website to alert you when there is an issue with one of your Instagram feeds.', 'instagram-feed' );
@@ -84,7 +84,7 @@ if ( ! defined( 'ABSPATH' ) ) {
                     </td>
                 </tr>
                 <tr style="padding:0px;vertical-align:top;text-align:left">
-                    <td align="center" valign="top" style="vertical-align:top;font-family:&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;font-weight:normal;margin:0px;line-height:140%;padding:30px;color:rgb(114,119,124);font-size:12px;text-align:center;border-collapse:collapse">
+                    <td style="vertical-align:top;font-family:&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;font-weight:normal;margin:0px;line-height:140%;padding:30px;color:rgb(114,119,124);font-size:12px;text-align:center;border-collapse:collapse">
 						<?php
 						printf( esc_html__( 'Sent from %s', 'instagram-feed' ), '<a href="' . esc_url( home_url() ) . '">' . esc_html( wp_specialchars_decode( get_bloginfo( 'name' ) ) ) . '</a>' );
 						?>

@@ -12,8 +12,60 @@ if ( ! defined( 'ABSPATH' ) ) {
 	die( '-1' );
 }
 
-class SB_Instagram_Display_Elements
-{
+class SB_Instagram_Display_Elements {
+
+	public static function print_style( $content ) {
+		if ( empty( $content ) ) {
+			return;
+		}
+		$strip_style_content = trim( str_replace( 'style=', '', trim( $content ) ), '"' );
+
+		echo ' style="' . esc_attr( $strip_style_content ) . '"';
+	}
+
+	public static function print_icon( $icon_slug ) {
+
+		if ( sbi_is_pro_version() ) {
+			$icon_html = SB_Instagram_Display_Elements_Pro::get_icon( $icon_slug, 'svg' );
+		} else {
+			$icon_html = SB_Instagram_Display_Elements::get_icon( $icon_slug, 'svg' );
+		}
+
+		$allowed = array(
+			'svg'   => array(
+				'id'                => array(),
+				'class'             => array(),
+				'aria-hidden'       => array(),
+				'data-fa-processed' => array(),
+				'aria-label'        => array(),
+				'data-prefix'       => array(),
+				'data-icon'         => array(),
+				'role'              => array(),
+				'viewBox'           => array(),
+				'style'             => array(),
+			),
+			'path'  => array(
+				'id'    => array(),
+				'class' => array(),
+				'fill'  => array(),
+				'd'     => array(),
+				'style' => array(),
+			),
+			'g'     => array(
+				'id'    => array(),
+				'class' => array(),
+				'g'     => array(),
+			),
+			'title' => array(
+				'id'    => array(),
+				'class' => array(),
+				'title' => array(),
+			),
+		);
+
+		echo wp_kses( $icon_html, $allowed );
+	}
+
 	/**
 	 * Images are hidden initially with the new/transition classes
 	 * except if the js image loading is disabled using the plugin
@@ -28,7 +80,7 @@ class SB_Instagram_Display_Elements
 	 */
 	public static function get_item_classes( $settings, $post = false ) {
 		$classes = '';
-		if ( !$settings['disable_js_image_loading'] ) {
+		if ( ! $settings['disable_js_image_loading'] ) {
 			$classes .= ' sbi_new sbi_transition';
 		} else {
 			$classes .= ' sbi_new sbi_no_js sbi_no_resraise sbi_js_load_disabled';
@@ -71,24 +123,21 @@ class SB_Instagram_Display_Elements
 	 * @since 2.0/5.0
 	 */
 	public static function get_optimum_media_url( $post, $settings, $resized_images = array() ) {
-		$media_url = '';
-		$optimum_res = $settings['imageres'];
+		$media_url    = '';
+		$optimum_res  = $settings['imageres'];
 		$account_type = isset( $post['images'] ) ? 'personal' : 'business';
 
 		// only use the placeholder if it will be replaced using JS
-		if ( !$settings['disable_js_image_loading'] ) {
+		if ( ! $settings['disable_js_image_loading'] ) {
 			return trailingslashit( SBI_PLUGIN_URL ) . 'img/placeholder.png';
 		} elseif ( $settings['imageres'] === 'auto' ) {
-			$optimum_res = 'full';
+			$optimum_res          = 'full';
 			$settings['imageres'] = 'full';
 		} else {
 			if ( ! empty( $resized_images ) ) {
 				$resolution = $settings['imageres'];
-				$post_id = SB_Instagram_Parse::get_post_id( $post );
-				if ( isset( $resized_images[ $post_id ] )
-				     && $resized_images[ $post_id ]['id'] !== 'error'
-				     && $resized_images[ $post_id ]['id'] !== 'pending'
-				     && $resized_images[ $post_id ]['id'] !== 'video' ) {
+				$post_id    = SB_Instagram_Parse::get_post_id( $post );
+				if ( isset( $resized_images[ $post_id ] ) && $resized_images[ $post_id ]['id'] !== 'error' && $resized_images[ $post_id ]['id'] !== 'pending' && $resized_images[ $post_id ]['id'] !== 'video' ) {
 					if ( $resolution === 'thumb' ) {
 						if ( isset( $resized_images[ $post_id ]['sizes']['low'] ) ) {
 							$suffix = 'low';
@@ -122,13 +171,13 @@ class SB_Instagram_Display_Elements
 
 		if ( $account_type === 'personal' ) {
 			switch ( $optimum_res ) {
-				case 'thumb' :
+				case 'thumb':
 					$media_url = $post['images']['thumbnail']['url'];
 					break;
-				case 'medium' :
+				case 'medium':
 					$media_url = $post['images']['low_resolution']['url'];
 					break;
-				default :
+				default:
 					$media_url = $post['images']['standard_resolution']['url'];
 			}
 		} else {
@@ -136,9 +185,9 @@ class SB_Instagram_Display_Elements
 
 			// use resized images if exists
 			if ( $optimum_res === 'full' && isset( $resized_images[ $post_id ]['id'] )
-			     && $resized_images[ $post_id ]['id'] !== 'pending'
-			     && $resized_images[ $post_id ]['id'] !== 'video'
-			     && $resized_images[ $post_id ]['id'] !== 'error' ) {
+				 && $resized_images[ $post_id ]['id'] !== 'pending'
+				 && $resized_images[ $post_id ]['id'] !== 'video'
+				 && $resized_images[ $post_id ]['id'] !== 'error' ) {
 				$media_url = sbi_get_resized_uploads_url() . $resized_images[ $post_id ]['id'] . 'full.jpg';
 			} else {
 				if ( SB_Instagram_GDPR_Integrations::doing_gdpr( $settings ) ) {
@@ -146,14 +195,14 @@ class SB_Instagram_Display_Elements
 				}
 				$media_type = $post['media_type'];
 				if ( $media_type === 'CAROUSEL_ALBUM'
-				     || $media_type === 'VIDEO'
-				     || $media_type === 'OEMBED' ) {
+					 || $media_type === 'VIDEO'
+					 || $media_type === 'OEMBED' ) {
 					if ( isset( $post['thumbnail_url'] ) ) {
 						return $post['thumbnail_url'];
 					} elseif ( $media_type === 'CAROUSEL_ALBUM' && isset( $post['media_url'] ) ) {
 						return $post['media_url'];
 					} elseif ( isset( $post['children'] ) ) {
-						$i = 0;
+						$i         = 0;
 						$full_size = '';
 						foreach ( $post['children']['data'] as $carousel_item ) {
 							if ( $carousel_item['media_type'] === 'IMAGE' && empty( $full_size ) ) {
@@ -175,7 +224,7 @@ class SB_Instagram_Display_Elements
 						}
 						//attempt to get
 						$permalink = SB_Instagram_Parse::fix_permalink( SB_Instagram_Parse::get_permalink( $post ) );
-						$single = new SB_Instagram_Single( $permalink );
+						$single    = new SB_Instagram_Single( $permalink );
 						$single->init();
 						$post = $single->get_post();
 
@@ -195,7 +244,6 @@ class SB_Instagram_Display_Elements
 					return trailingslashit( SBI_PLUGIN_URL ) . 'img/thumb-placeholder.png';
 				}
 			}
-
 		}
 
 		return $media_url;
@@ -216,10 +264,10 @@ class SB_Instagram_Display_Elements
 	 * @since 2.1.1/5.2.1 added support for resized images
 	 */
 	public static function get_sbi_photo_style_element( $post, $settings, $resized_images = array() ) {
-		if ( !$settings['disable_js_image_loading'] ) {
+		if ( ! $settings['disable_js_image_loading'] ) {
 			return '';
 		} else {
-			$full_res_image = SB_Instagram_Display_Elements::get_optimum_media_url( $post, $settings, $resized_images );
+			$full_res_image = self::get_optimum_media_url( $post, $settings, $resized_images );
 			/*
 			 * By setting the height to "0" the bottom padding can be used
 			 * as a percent to square the images. Since it needs to be a percent
@@ -227,10 +275,10 @@ class SB_Instagram_Display_Elements
 			 */
 			$padding_bottom = '100%';
 			if ( $settings['imagepaddingunit'] === '%' ) {
-				$padding_bottom = 100 - ($settings['imagepadding'] * 2) . '%';
+				$padding_bottom = 100 - ( $settings['imagepadding'] * 2 ) . '%';
 			} else {
-				$padding_percent = $settings['imagepadding'] > 0 ? 100 - ($settings['cols'] / 2 * $settings['imagepadding'] / 5) : 100;
-				$padding_bottom = $padding_percent . '%';
+				$padding_percent = $settings['imagepadding'] > 0 ? 100 - ( $settings['cols'] / 2 * $settings['imagepadding'] / 5 ) : 100;
+				$padding_bottom  = $padding_percent . '%';
 			}
 			return ' style="background-image: url(&quot;' . esc_url( $full_res_image ) . '&quot;); background-size: cover; background-position: center center; background-repeat: no-repeat; opacity: 1;height: 0;padding-bottom: ' . esc_attr( $padding_bottom ) . ';"';
 		}
@@ -248,21 +296,21 @@ class SB_Instagram_Display_Elements
 
 		$styles = '';
 		if ( ! empty( $settings['imagepadding'] )
-		     || ! empty( $settings['background'] )
-		     || ! empty( $settings['width'] )
-		     || ! empty( $settings['height'] ) ) {
+			 || ! empty( $settings['background'] )
+			 || ! empty( $settings['width'] )
+			 || ! empty( $settings['height'] ) ) {
 			$styles = ' style="';
 			if ( ! empty( $settings['imagepadding'] ) ) {
-				$styles .= 'padding-bottom: ' . ((int)$settings['imagepadding'] * 2) . esc_attr( $settings['imagepaddingunit'] ) . ';';
+				$styles .= 'padding-bottom: ' . ( (int) $settings['imagepadding'] * 2 ) . esc_attr( $settings['imagepaddingunit'] ) . ';';
 			}
 			if ( ! empty( $settings['background'] ) ) {
-				$styles .= 'background-color: rgb(' . esc_attr( sbi_hextorgb( $settings['background'] ) ). ');';
+				$styles .= 'background-color: rgb(' . esc_attr( sbi_hextorgb( $settings['background'] ) ) . ');';
 			}
 			if ( ! empty( $settings['width'] ) ) {
-				$styles .= 'width: ' . (int)$settings['width'] . esc_attr( $settings['widthunit'] ) . ';';
+				$styles .= 'width: ' . (int) $settings['width'] . esc_attr( $settings['widthunit'] ) . ';';
 			}
 			if ( ! empty( $settings['height'] ) ) {
-				$styles .= 'height: ' . (int)$settings['height'] . esc_attr( $settings['heightunit'] ) . ';';
+				$styles .= 'height: ' . (int) $settings['height'] . esc_attr( $settings['heightunit'] ) . ';';
 			}
 			$styles .= '"';
 		}
@@ -277,8 +325,8 @@ class SB_Instagram_Display_Elements
 	 * @return string
 	 */
 	public static function get_sbi_images_style( $settings ) {
-		if ( ! empty ( $settings['imagepadding'] ) ) {
-			return 'style="padding: '.(int)$settings['imagepadding'] . esc_attr( $settings['imagepaddingunit'] ) . ';"';
+		if ( ! empty( $settings['imagepadding'] ) ) {
+			return 'style="padding: ' . (int) $settings['imagepadding'] . esc_attr( $settings['imagepaddingunit'] ) . ';"';
 		}
 		return '';
 	}
@@ -293,7 +341,7 @@ class SB_Instagram_Display_Elements
 	 */
 	public static function get_header_text_color_styles( $settings ) {
 		if ( ! empty( $settings['headercolor'] ) ) {
-			return 'style="color: rgb(' . esc_attr( sbi_hextorgb( $settings['headercolor'] ) ). ');"';
+			return 'style="color: rgb(' . esc_attr( sbi_hextorgb( $settings['headercolor'] ) ) . ');"';
 		}
 		return '';
 	}
@@ -308,7 +356,7 @@ class SB_Instagram_Display_Elements
 	 * @since 2.0.1/5.0
 	 */
 	public static function get_header_size_class( $settings ) {
-		$header_size_class = in_array( strtolower( $settings['headersize'] ), array( 'medium', 'large' ) ) ? ' sbi_'.strtolower( $settings['headersize'] ) : '';
+		$header_size_class = in_array( strtolower( $settings['headersize'] ), array( 'medium', 'large' ), true ) ? ' sbi_' . strtolower( $settings['headersize'] ) : '';
 		return $header_size_class;
 	}
 
@@ -328,7 +376,7 @@ class SB_Instagram_Display_Elements
 				$styles .= 'background: rgb(' . esc_attr( sbi_hextorgb( $settings['followcolor'] ) ) . ');';
 			}
 			if ( ! empty( $settings['followtextcolor'] ) ) {
-				$styles .= 'color: rgb(' . esc_attr( sbi_hextorgb( $settings['followtextcolor'] ) ). ');';
+				$styles .= 'color: rgb(' . esc_attr( sbi_hextorgb( $settings['followtextcolor'] ) ) . ');';
 			}
 			$styles .= '"';
 		}
@@ -350,7 +398,7 @@ class SB_Instagram_Display_Elements
 				$styles .= 'background: rgb(' . esc_attr( sbi_hextorgb( $settings['buttoncolor'] ) ) . ');';
 			}
 			if ( ! empty( $settings['buttontextcolor'] ) ) {
-				$styles .= 'color: rgb(' . esc_attr( sbi_hextorgb( $settings['buttontextcolor'] ) ). ');';
+				$styles .= 'color: rgb(' . esc_attr( sbi_hextorgb( $settings['buttontextcolor'] ) ) . ');';
 			}
 			$styles .= '"';
 		}
@@ -376,7 +424,6 @@ class SB_Instagram_Display_Elements
 			} else {
 				return '<i class="fa fa-clone sbi_carousel_icon" aria-hidden="true"></i>';
 			}
-
 		} elseif ( $type === 'video' ) {
 			if ( $icon_type === 'svg' ) {
 				return '<svg style="color: rgba(255,255,255,1)" class="svg-inline--fa fa-play fa-w-14 sbi_playbtn" aria-label="Play" aria-hidden="true" data-fa-processed="" data-prefix="fa" data-icon="play" role="presentation" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M424.4 214.7L72.4 6.6C43.8-10.3 0 6.1 0 47.9V464c0 37.5 40.7 60.1 72.4 41.3l352-208c31.4-18.5 31.5-64.1 0-82.6z"></path></svg>';

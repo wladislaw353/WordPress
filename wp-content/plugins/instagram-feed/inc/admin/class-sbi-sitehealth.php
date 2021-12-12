@@ -45,7 +45,7 @@ class SB_Instagram_SiteHealth {
 	public function add_tests( $tests ) {
 		$tests['direct']['sbi_test_check_errors'] = array(
 			'label' => __( 'Instagram Feed Errors', 'instagram-feed' ),
-			'test'  => array( $this, 'test_check_errors' )
+			'test'  => array( $this, 'test_check_errors' ),
 		);
 
 		return $tests;
@@ -68,14 +68,12 @@ class SB_Instagram_SiteHealth {
 
 		global $sb_instagram_posts_manager;
 
-
 		if ( $sb_instagram_posts_manager->are_critical_errors() ) {
-			$link = admin_url( '?page=sb-instagram-feed');
-			$result['status'] = 'critical';
-			$result['label'] = __( 'Your Instagram Feed is experiencing an error.', 'instagram-feed' );
-			$result['description'] = sprintf( __( 'A critical issue has been detected with your Instagram Feed. Visit the %sInstagram Feed settings page%s to fix the issue.', 'instagram-feed' ), '<a href="' . esc_url( $link ) . '">', '</a>' );
+			$link                  = admin_url( '?page=sb-instagram-feed' );
+			$result['status']      = 'critical';
+			$result['label']       = __( 'Your Instagram Feed is experiencing an error.', 'instagram-feed' );
+			$result['description'] = sprintf( __( 'A critical issue has been detected with your Instagram Feed. Visit the %1$sInstagram Feed settings page%2$s to fix the issue.', 'instagram-feed' ), '<a href="' . esc_url( $link ) . '">', '</a>' );
 		}
-
 
 		return $result;
 	}

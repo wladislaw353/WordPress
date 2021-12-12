@@ -40,11 +40,21 @@ class SBI_Account_Connector {
 	 * @since 5.10
 	 */
 	public static function maybe_launch_modals( $sb_instagram_user_id ) {
+		if ( ! isset( $_GET['sbi_con'] ) || ! wp_verify_nonce( $_GET['sbi_con'], 'sbi-connect' ) ) {
+			if ( isset( $_GET['sbi_con'] ) && ! wp_verify_nonce( $_GET['sbi_con'], 'sbi-connect' ) ) :
+				?>
+				<div class="sbi_deprecated">
+					<span><?php esc_html_e( 'Oops! The link to connect your account expired. Please try connecting your account again.', 'instagram-feed' ); ?></span>
+				</div>
+				<?php
+			endif;
+			return;
+		}
 		if ( ! empty( $_POST ) ) {
 			return;
 		}
-		$connected_accounts = SBI_Account_Connector::stored_connected_accounts();
-		if( isset( $_GET['sbi_access_token'] ) && isset( $_GET['sbi_graph_api'] ) ) {
+		$connected_accounts = self::stored_connected_accounts();
+		if ( isset( $_GET['sbi_access_token'] ) && isset( $_GET['sbi_graph_api'] ) ) {
 			sbi_get_business_account_connection_modal( $sb_instagram_user_id );
 		} elseif ( isset( $_GET['sbi_access_token'] ) && isset( $_GET['sbi_account_type'] ) ) {
 			sbi_get_personal_connection_modal( $connected_accounts );
@@ -90,7 +100,7 @@ class SBI_Account_Connector {
 		$connection = new SB_Instagram_API_Connect( $data, 'header', array() );
 		$connection->connect();
 
-		if ( !$connection->is_wp_error() && ! $connection->is_instagram_error() ) {
+		if ( ! $connection->is_wp_error() && ! $connection->is_instagram_error() ) {
 			$new_data = $connection->get_data();
 
 			if ( $data['type'] === 'basic' ) {
@@ -98,32 +108,32 @@ class SBI_Account_Connector {
 				$basic_account_access_token_connect->connect();
 				$token_data = $basic_account_access_token_connect->get_data();
 
-				if ( !$basic_account_access_token_connect->is_wp_error() && ! $basic_account_access_token_connect->is_instagram_error() ) {
-					$expires_in = $token_data['expires_in'];
+				if ( ! $basic_account_access_token_connect->is_wp_error() && ! $basic_account_access_token_connect->is_instagram_error() ) {
+					$expires_in        = $token_data['expires_in'];
 					$expires_timestamp = time() + $expires_in;
 				} else {
 					$expires_timestamp = time() + 60 * DAY_IN_SECONDS;
 				}
 
 				$new_connected_account = array(
-					'access_token' => $data['access_token'],
-					'account_type' => 'personal',
-					'user_id' => $new_data['id'],
-					'username' => $new_data['username'],
+					'access_token'      => $data['access_token'],
+					'account_type'      => 'personal',
+					'user_id'           => $new_data['id'],
+					'username'          => $new_data['username'],
 					'expires_timestamp' => $expires_timestamp,
-					'type' => 'basic',
-					'profile_picture' => ''
+					'type'              => 'basic',
+					'profile_picture'   => '',
 				);
 
 			} else {
 				$new_connected_account = array(
-					'access_token' => $data['access_token'],
-					'id' => $new_data['id'],
-					'username' => $new_data['username'],
-					'type' => 'business',
-					'is_valid' => true,
-					'last_checked' => time(),
-					'profile_picture' => $new_data['profile_picture_url']
+					'access_token'    => $data['access_token'],
+					'id'              => $new_data['id'],
+					'username'        => $new_data['username'],
+					'type'            => 'business',
+					'is_valid'        => true,
+					'last_checked'    => time(),
+					'profile_picture' => $new_data['profile_picture_url'],
 				);
 			}
 
@@ -138,7 +148,6 @@ class SBI_Account_Connector {
 			}
 			return array( 'error' => sbi_formatted_error( $error ) );
 		}
-
 
 	}
 
@@ -161,40 +170,42 @@ class SBI_Account_Connector {
 			return false;
 		}
 
-		$access_token = isset( $data['access_token'] ) ? $data['access_token'] : '';
-		$page_access_token = isset( $data['page_access_token'] ) ? $data['page_access_token'] : '';
-		$username = isset( $data['username'] ) ? $data['username'] : '';
-		$name = isset( $data['name'] ) ? $data['name'] : '';
-		$profile_picture = isset( $data['profile_picture_url'] ) ? $data['profile_picture_url'] : '';
+		$access_token      = ! empty( $data['access_token'] ) ? $data['access_token'] : '';
+		$page_access_token = ! empty( $data['page_access_token'] ) ? $data['page_access_token'] : '';
+		$username          = ! empty( $data['username'] ) ? $data['username'] : '';
+		$name              = ! empty( $data['name'] ) ? $data['name'] : '';
+		$profile_picture   = ! empty( $data['profile_picture_url'] ) ? $data['profile_picture_url'] : '';
 		if ( empty( $profile_picture ) ) {
-			$profile_picture = isset( $data['profile_picture'] ) ? $data['profile_picture'] : '';
+			$profile_picture = ! empty( $data['profile_picture'] ) ? $data['profile_picture'] : '';
 		}
-		$user_id = isset( $data['id'] ) ? $data['id'] : '';
-		$type = isset( $data['type'] ) ? $data['type'] : 'basic';
-		$account_type = isset( $data['account_type'] ) ? $data['account_type'] : 'business';
-		$this->id = $user_id;
+		$user_id            = ! empty( $data['id'] ) ? $data['id'] : '';
+		$type               = ! empty( $data['type'] ) ? $data['type'] : 'basic';
+		$account_type       = ! empty( $data['account_type'] ) ? $data['account_type'] : 'business';
+		$this->id           = $user_id;
 		$this->account_data = array(
-			'access_token' => $access_token,
-			'user_id' => $user_id,
-			'username' => $username,
-			'is_valid' => true,
-			'last_checked' => time(),
-			'type' => $type,
-			'account_type' => $account_type,
-			'profile_picture' => ''
+			'access_token'    => $access_token,
+			'user_id'         => $user_id,
+			'username'        => $username,
+			'is_valid'        => true,
+			'last_checked'    => time(),
+			'type'            => $type,
+			'account_type'    => $account_type,
+			'profile_picture' => '',
 		);
 
 		if ( $type === 'business' ) {
-			$this->account_data['use_tagged'] = '1';
-			$this->account_data['name'] = sbi_sanitize_emoji( $name );
-			$this->account_data['profile_picture'] = $profile_picture;
-			$this->account_data['local_avatar'] = SB_Instagram_Connected_Account::create_local_avatar( $username, $profile_picture );
+			$this->account_data['use_tagged']        = '1';
+			$this->account_data['name']              = sbi_sanitize_emoji( $name );
+			$this->account_data['profile_picture']   = $profile_picture;
+			$this->account_data['local_avatar']      = SB_Instagram_Connected_Account::create_local_avatar( $username, $profile_picture );
 			$this->account_data['page_access_token'] = $page_access_token;
 		}
 
-		if ( isset( $data[ 'expires_timestamp']) ) {
-			$this->account_data['expires_timestamp'] = $data[ 'expires_timestamp'];
+		if ( isset( $data['expires_timestamp'] ) ) {
+			$this->account_data['expires_timestamp'] = $data['expires_timestamp'];
 		}
+
+		$this->account_data = SB_Instagram_Connected_Account::encrypt_connected_account_tokens( $this->account_data );
 
 		return true;
 	}
@@ -207,8 +218,8 @@ class SBI_Account_Connector {
 	 * @since 5.10
 	 */
 	public function update_stored_account() {
-		$options = sbi_get_database_settings();
-		$connected_accounts =  isset( $options['connected_accounts'] ) ? $options['connected_accounts'] : array();
+		$options                       = sbi_get_database_settings();
+		$connected_accounts            = isset( $options['connected_accounts'] ) ? $options['connected_accounts'] : array();
 		$options['connected_accounts'] = $connected_accounts;
 
 		if ( ! empty( $this->account_data ) ) {
@@ -239,8 +250,8 @@ class SBI_Account_Connector {
 	 * @since 5.10
 	 */
 	public static function stored_connected_accounts() {
-		$options = sbi_get_database_settings();
-		$connected_accounts =  isset( $options['connected_accounts'] ) ? $options['connected_accounts'] : array();
+		$options            = sbi_get_database_settings();
+		$connected_accounts = isset( $options['connected_accounts'] ) ? $options['connected_accounts'] : array();
 		return $connected_accounts;
 	}
 }

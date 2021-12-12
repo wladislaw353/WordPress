@@ -141,8 +141,14 @@ function bodhi_svgs_inline() {
 		wp_register_script( 'bodhi_svg_inline', BODHI_SVGS_PLUGIN_URL . $bodhi_svgs_js_path, array( 'jquery' ), '1.0.0', $bodhi_svgs_js_footer );
 		wp_enqueue_script( 'bodhi_svg_inline' );
 
-		wp_localize_script( 'bodhi_svg_inline', 'cssTarget', $css_target_array );
-		wp_localize_script( 'bodhi_svg_inline', 'ForceInlineSVGActive', $force_inline_svg_active );
+		wp_add_inline_script(
+			'bodhi_svg_inline',
+			sprintf(
+			  'cssTarget=%s;ForceInlineSVGActive=%s;',
+			  json_encode($css_target_array),
+			  json_encode($force_inline_svg_active)
+			)
+		  );
 
 	}
 

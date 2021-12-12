@@ -74,12 +74,11 @@ class SB_Instagram_About {
 			'fields'       => esc_html__( 'Layouts', 'instagram-feed' ),
 			'templates'    => esc_html__( 'Post Information', 'instagram-feed' ),
 			'conditionals' => esc_html__( 'Image and Video Display', 'instagram-feed' ),
-			'addons' => esc_html__( 'Filtering', 'instagram-feed' ),
-			//'marketing'    => esc_html__( 'Filtering', 'instagram-feed' ),
-			'marketing'     => esc_html__( 'Instagram Stories', 'instagram-feed' ),
-			'payments'      => esc_html__( 'Feed Moderation', 'instagram-feed' ),
-			'surveys'     => esc_html__( 'Header Display', 'instagram-feed' ),
-			'advanced'       => esc_html__( 'Post Linking', 'instagram-feed' ),
+			'addons'       => esc_html__( 'Filtering', 'instagram-feed' ),
+			'marketing'    => esc_html__( 'Instagram Stories', 'instagram-feed' ),
+			'payments'     => esc_html__( 'Feed Moderation', 'instagram-feed' ),
+			'surveys'      => esc_html__( 'Header Display', 'instagram-feed' ),
+			'advanced'     => esc_html__( 'Post Linking', 'instagram-feed' ),
 			'support'      => esc_html__( 'Customer Support', 'instagram-feed' ),
 		);
 
@@ -95,7 +94,8 @@ class SB_Instagram_About {
 	public function init() {
 
 		// Check what page we are on.
-		$page = isset( $_GET['page'] ) ? $_GET['page'] : '';
+		// phpcs:ignore WordPress.Security.NonceVerification.Recommended
+		$page = ! empty( $_GET['page'] ) ? sanitize_text_field( wp_unslash( $_GET['page'] ) ) : '';
 
 		// Only load if we are actually on the settings page.
 		if ( self::SLUG !== $page ) {
@@ -110,20 +110,14 @@ class SB_Instagram_About {
 		$this->views = apply_filters(
 			'sbi_admin_about_views',
 			array(
-				esc_html__( 'About Us', 'instagram-feed' )        => array( 'about' ),
+				esc_html__( 'About Us', 'instagram-feed' ) => array( 'about' ),
 				esc_html__( 'Getting Started', 'instagram-feed' ) => array( 'getting-started' ),
 			)
 		);
 
 		$license = $this->get_license_type();
 
-		if (
-			(
-				$license === 'pro' ||
-				! in_array( $license, self::$licenses_top, true )
-			)
-			//sbi_debug()
-		) {
+		if ( 'pro' === $license || ! in_array( $license, self::$licenses_top, true ) ) {
 			$vs_tab_name = sprintf( /* translators: %1$s - current license type, %2$s - suggested license type. */
 				esc_html__( '%1$s vs %2$s', 'instagram-feed' ),
 				ucfirst( $license ),
@@ -134,11 +128,12 @@ class SB_Instagram_About {
 		}
 
 		// Determine the current active settings tab.
-		$this->view = ! empty( $_GET['view'] ) ? esc_html( $_GET['view'] ) : self::DEFAULT_TAB;
+		// phpcs:ignore WordPress.Security.NonceVerification.Recommended
+		$this->view = ! empty( $_GET['view'] ) ? esc_html( wp_unslash( $_GET['view'] ) ) : self::DEFAULT_TAB;
 
 		// If the user tries to load an invalid view - fallback to About Us.
 		if (
-			! in_array( $this->view, call_user_func_array( 'array_merge', $this->views ), true ) &&
+			! in_array( $this->view, call_user_func_array( 'array_merge', array_values( $this->views ) ), true ) &&
 			! has_action( 'sbi_admin_about_display_tab_' . sanitize_key( $this->view ) )
 		) {
 			$this->view = self::DEFAULT_TAB;
@@ -289,7 +284,7 @@ class SB_Instagram_About {
 
 			<div class="sbi-admin-about-image sbi-admin-column-last">
 				<figure>
-					<img src="<?php echo SBI_PLUGIN_URL; ?>img/about/team.jpg" alt="<?php esc_attr_e( 'The Sbi Team photo', 'instagram-feed' ); ?>">
+					<img src="<?php echo esc_url( SBI_PLUGIN_URL . 'img/about/team.jpg' ); ?>" alt="<?php esc_attr_e( 'The Sbi Team photo', 'instagram-feed' ); ?>">
 					<figcaption>
 						<?php esc_html_e( 'The Smash Balloon Team', 'instagram-feed' ); ?><br>
 					</figcaption>
@@ -307,9 +302,9 @@ class SB_Instagram_About {
 	 */
 	protected function output_about_addons() {
 
-		if ( ! current_user_can( 'manage_instagram_feed_options' ) || 	version_compare( PHP_VERSION,  '5.3.0' ) <= 0
-		    || version_compare( PHP_VERSION,  '5.3.0' ) <= 0
-		    || version_compare( get_bloginfo('version'), '4.6' , '<' ) ){
+		if ( ! current_user_can( 'manage_instagram_feed_options' ) || version_compare( PHP_VERSION, '5.3.0' ) <= 0
+			|| version_compare( PHP_VERSION, '5.3.0' ) <= 0
+			|| version_compare( get_bloginfo( 'version' ), '4.6', '<' ) ) {
 			return;
 		}
 
@@ -319,21 +314,21 @@ class SB_Instagram_About {
 		?>
 		<div id="sbi-admin-addons">
 			<div class="addons-container">
-                <h3><?php echo __( 'Our Other Plugins', 'instagram-feed' ); ?></h3>
+				<h3><?php esc_html_e( 'Our Other Plugins', 'instagram-feed' ); ?></h3>
 				<?php
 				foreach ( $am_plugins as $plugin => $details ) :
 
 					$plugin_data = $this->get_plugin_data( $plugin, $details, $all_plugins );
 
 					if ( $plugin === 'wpforms-lite/wpforms.php' ) {
-					    echo '<h3>' .__( 'Plugins We Recommend', 'instagram-feed' ). '</h3>';
-	                }
+						echo '<h3>' . esc_html__( 'Plugins We Recommend', 'instagram-feed' ) . '</h3>';
+					}
 
 					?>
 					<div class="addon-container">
 						<div class="addon-item">
 							<div class="details sbi-clear">
-								<img src="<?php echo esc_url( $plugin_data['details']['icon'] ); ?>">
+								<img src="<?php echo esc_url( $plugin_data['details']['icon'] ); ?>" alt="<?php esc_attr_e( 'Plugin thumbnail', 'instagram-feed' ); ?>">
 								<h5 class="addon-name">
 									<?php echo esc_html( $plugin_data['details']['name'] ); ?>
 								</h5>
@@ -467,9 +462,9 @@ class SB_Instagram_About {
 					<?php esc_html_e( 'Click on the large blue button to connect your Instagram account. Select "Personal" if your Instagram account is a personal account, "Business" if it is a business or creator account.', 'instagram-feed' ); ?>
 				</p>
 
-                <p>
+				<p>
 					<?php esc_html_e( 'Once you connect an Instagram account, you can display your feed on any post, page or widget using the shortcode [instagram-feed]. You can also use the Instagram Feed Gutenberg block if your site has the WordPress block editor enabled.', 'instagram-feed' ); ?>
-                </p>
+				</p>
 
 				<ul class="list-plain">
 					<li>
@@ -492,7 +487,7 @@ class SB_Instagram_About {
 			</div>
 
 			<div class="sbi-admin-about-section-first-form-video">
-				<iframe src="https://www.youtube-nocookie.com/embed/q6ZXVU4g970?rel=0" width="540" height="304" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+				<iframe src="https://www.youtube-nocookie.com/embed/q6ZXVU4g970?rel=0" width="540" height="304" allow="autoplay; encrypted-media" title="<?php esc_attr_e( 'Watch a video', 'instagram-feed' ); ?>" allowfullscreen></iframe>
 			</div>
 
 		</div>
@@ -593,13 +588,10 @@ class SB_Instagram_About {
 
 					<h3 class="call-to-action">
 						<?php
-						if ( 'lite' === $license ) {
-							echo '<a href="https://smashballoon.com/instagram-feed/pricing?utm_campaign=instagram-free&utm_source=gettingstarted&utm_medium=profeaturescompare" target="_blank" rel="noopener noreferrer">';
-						} else {
-							echo '<a href="https://smashballoon.com/instagram-feed/pricing?utm_campaign=instagram-pro&utm_source=gettingstarted&utm_medium=profeaturescompare" target="_blank" rel="noopener noreferrer">';
-						}
-						esc_html_e( 'Get Instagram Feed Pro Today and Unlock all the Powerful Features', 'instagram-feed' );
+						$type = 'lite' === $license ? 'free' : 'pro';
 						?>
+						<a href="https://smashballoon.com/instagram-feed/pricing?utm_campaign=instagram-<?php echo esc_attr( $type ); ?>&utm_source=gettingstarted&utm_medium=profeaturescompare" target="_blank" rel="noopener noreferrer">
+						<?php esc_html_e( 'Get Instagram Feed Pro Today and Unlock all the Powerful Features', 'instagram-feed' ); ?>
 						</a>
 					</h3>
 
@@ -623,28 +615,28 @@ class SB_Instagram_About {
 		<?php } ?>
 
 
-        <div class="sbi-admin-about-section sbi-admin-about-section-squashed sbi-admin-about-section-post sbi-admin-columns">
-            <div class="sbi-admin-column-20">
-                <img src="<?php echo SBI_PLUGIN_URL; ?>img/about/steps.png" alt="">
-            </div>
-            <div class="sbi-admin-column-80">
-                <h2>
+		<div class="sbi-admin-about-section sbi-admin-about-section-squashed sbi-admin-about-section-post sbi-admin-columns">
+			<div class="sbi-admin-column-20">
+				<img src="<?php echo esc_url( SBI_PLUGIN_URL . 'img/about/steps.png' ); ?>" alt="">
+			</div>
+			<div class="sbi-admin-column-80">
+				<h2>
 					<?php esc_html_e( 'Detailed Step-By-Step Guide', 'instagram-feed' ); ?>
-                </h2>
+				</h2>
 
-                <p>
+				<p>
 					<?php esc_html_e( 'View detailed steps with related images on our website. We have a comprehensive guide to getting up and running with Instagram Feed.', 'instagram-feed' ); ?>
-                </p>
+				</p>
 
-                <a href="https://smashballoon.com/instagram-feed/free/?utm_campaign=instagram-free&utm_source=gettingstarted&utm_medium=readsetup" target="_blank" rel="noopener noreferrer" class="sbi-admin-about-section-post-link">
+				<a href="https://smashballoon.com/instagram-feed/free/?utm_campaign=instagram-free&utm_source=gettingstarted&utm_medium=readsetup" target="_blank" rel="noopener noreferrer" class="sbi-admin-about-section-post-link">
 					<?php esc_html_e( 'Read Documentation', 'instagram-feed' ); ?><i class="fa fa-external-link" aria-hidden="true"></i>
-                </a>
-            </div>
-        </div>
+				</a>
+			</div>
+		</div>
 
 		<div class="sbi-admin-about-section sbi-admin-about-section-squashed sbi-admin-about-section-post sbi-admin-columns">
 			<div class="sbi-admin-column-20">
-				<img src="<?php echo SBI_PLUGIN_URL; ?>img/about/api-error.png" alt="">
+				<img src="<?php echo esc_url( SBI_PLUGIN_URL . 'img/about/api-error.png' ); ?>" alt="">
 			</div>
 			<div class="sbi-admin-column-80">
 				<h2>
@@ -692,9 +684,6 @@ class SB_Instagram_About {
 	 * @since 2.4/5.5
 	 */
 	protected function output_versus() {
-
-		//$license      = $this->get_license_type();
-		//$next_license = $this->get_next_license( $license );
 		$license      = 'lite';
 		$next_license = 'pro';
 		?>
@@ -704,7 +693,7 @@ class SB_Instagram_About {
 				<strong><?php echo esc_html( ucfirst( $license ) ); ?></strong> vs <strong><?php echo esc_html( ucfirst( $next_license ) ); ?></strong>
 			</h1>
 
-			<p class="centered">
+			<p class="centered" id="sbi_tabledesc">
 				<?php esc_html_e( 'Get the most out of your Instagram Feeds by upgrading to Pro and unlocking all of the powerful features.', 'instagram-feed' ); ?>
 			</p>
 		</div>
@@ -730,7 +719,7 @@ class SB_Instagram_About {
 			</div>
 			<div class="sbi-admin-about-section-hero-extra no-padding sbi-admin-columns">
 
-				<table>
+				<table aria-describedby="sbi_tabledesc">
 					<?php
 					foreach ( self::$licenses_features as $slug => $name ) {
 						$current = $this->get_license_data( $slug, $license );
@@ -741,9 +730,9 @@ class SB_Instagram_About {
 						}
 						?>
 						<tr class="sbi-admin-columns">
-							<td class="sbi-admin-column-33">
+							<th scope="row" class="sbi-admin-column-33">
 								<p><?php echo esc_html( $name ); ?></p>
-							</td>
+							</th>
 							<td class="sbi-admin-column-33">
 								<?php if ( is_array( $current ) ) : ?>
 									<p class="features-<?php echo esc_attr( $current['status'] ); ?>">
@@ -772,11 +761,10 @@ class SB_Instagram_About {
 			<div class="sbi-admin-about-section-hero-main no-border">
 				<h3 class="call-to-action centered">
 					<?php
-					if ( 'lite' === $license ) {
-						echo '<a href="https://smashballoon.com/instagram-feed/pricing?utm_campaign=instagram-free&utm_source=gettingstarted&utm_medium=profeaturescompare" target="_blank" rel="noopener noreferrer">';
-					} else {
-						echo '<a href="https://smashballoon.com/instagram-feed/pricing?utm_campaign=instagram-pro&utm_source=gettingstarted&utm_medium=profeaturescompare" target="_blank" rel="noopener noreferrer">';
-					}
+					$type = 'lite' === $license ? 'free' : 'pro';
+					?>
+					<a href="https://smashballoon.com/instagram-feed/pricing?utm_campaign=instagram-<?php echo esc_attr( $type ); ?>&utm_source=gettingstarted&utm_medium=profeaturescompare" target="_blank" rel="noopener noreferrer">
+					<?php
 					printf( /* translators: %s - next license level. */
 						esc_html__( 'Get Instagram Feed Pro Today and Unlock all the Powerful Features', 'instagram-feed' ),
 						esc_html( $next_license )
@@ -786,7 +774,7 @@ class SB_Instagram_About {
 				</h3>
 
 				<?php if ( 'lite' === $license ) { ?>
-                    <p class="centered">
+					<p class="centered">
 						<?php
 						echo wp_kses(
 							__( 'Bonus: Instagram Feed Lite users get <span class="price-20-off">50% off regular price</span>, automatically applied at checkout.', 'instagram-feed' ),
@@ -797,7 +785,7 @@ class SB_Instagram_About {
 							)
 						);
 						?>
-                    </p>
+					</p>
 				<?php } ?>
 			</div>
 		</div>
@@ -847,7 +835,7 @@ class SB_Instagram_About {
 				),
 			),
 
-			'youtube-feed/youtube-feed.php' => array(
+			'feeds-for-youtube/youtube-feed.php'           => array(
 				'icon' => $images_url . 'plugin-yt.png',
 				'name' => esc_html__( 'Feeds for YouTube', 'instagram-feed' ),
 				'desc' => esc_html__( 'Feeds for YouTube is a simple yet powerful way to display videos from YouTube on your website. Increase engagement with your channel while keeping visitors on your website.', 'instagram-feed' ),
@@ -862,20 +850,20 @@ class SB_Instagram_About {
 				),
 			),
 
-            'wpforms-lite/wpforms.php' => array(
-                'icon' => $images_url . 'plugin-wpforms.png',
-                'name' => esc_html__( 'WPForms', 'instagram-feed' ),
-                'desc' => esc_html__( 'The most beginner friendly drag & drop WordPress forms plugin allowing you to create beautiful contact forms, subscription forms, payment forms, and more in minutes, not hours!', 'instagram-feed' ),
-                'url'  => 'https://downloads.wordpress.org/plugin/wpforms-lite.zip',
-                'pro'  => array(
-	                'plug' => 'wpforms/wpforms.php',
-                    'icon' => $images_url . 'plugin-wpforms.png',
-                    'name' => esc_html__( 'WPForms', 'instagram-feed' ),
-                    'desc' => esc_html__( 'The most beginner friendly drag & drop WordPress forms plugin allowing you to create beautiful contact forms, subscription forms, payment forms, and more in minutes, not hours!', 'instagram-feed' ),
-                    'url'  => 'https://wpforms.com/lite-upgrade/?utm_source=WordPress&utm_campaign=liteplugin&utm_medium=about-page',
-                    'act'  => 'go-to-url',
-                ),
-            ),
+			'wpforms-lite/wpforms.php'                     => array(
+				'icon' => $images_url . 'plugin-wpforms.png',
+				'name' => esc_html__( 'WPForms', 'instagram-feed' ),
+				'desc' => esc_html__( 'The most beginner friendly drag & drop WordPress forms plugin allowing you to create beautiful contact forms, subscription forms, payment forms, and more in minutes, not hours!', 'instagram-feed' ),
+				'url'  => 'https://downloads.wordpress.org/plugin/wpforms-lite.zip',
+				'pro'  => array(
+					'plug' => 'wpforms/wpforms.php',
+					'icon' => $images_url . 'plugin-wpforms.png',
+					'name' => esc_html__( 'WPForms', 'instagram-feed' ),
+					'desc' => esc_html__( 'The most beginner friendly drag & drop WordPress forms plugin allowing you to create beautiful contact forms, subscription forms, payment forms, and more in minutes, not hours!', 'instagram-feed' ),
+					'url'  => 'https://wpforms.com/lite-upgrade/?utm_source=WordPress&utm_campaign=liteplugin&utm_medium=sbi-about-page',
+					'act'  => 'go-to-url',
+				),
+			),
 
 			'google-analytics-for-wordpress/googleanalytics.php' => array(
 				'icon' => $images_url . 'plugin-mi.png',
@@ -892,14 +880,14 @@ class SB_Instagram_About {
 				),
 			),
 
-			'optinmonster/optin-monster-wp-api.php' => array(
+			'optinmonster/optin-monster-wp-api.php'        => array(
 				'icon' => $images_url . 'plugin-om.png',
 				'name' => esc_html__( 'OptinMonster', 'instagram-feed' ),
 				'desc' => esc_html__( 'Our high-converting optin forms like Exit-Intent® popups, Fullscreen Welcome Mats, and Scroll boxes help you dramatically boost conversions and get more email subscribers.', 'instagram-feed' ),
 				'url'  => 'https://downloads.wordpress.org/plugin/optinmonster.zip',
 			),
 
-			'wp-mail-smtp/wp_mail_smtp.php'         => array(
+			'wp-mail-smtp/wp_mail_smtp.php'                => array(
 				'icon' => $images_url . 'plugin-smtp.png',
 				'name' => esc_html__( 'WP Mail SMTP', 'instagram-feed' ),
 				'desc' => esc_html__( 'Make sure your website\'s emails reach the inbox. Our goal is to make email deliverability easy and reliable. Trusted by over 1 million websites.', 'instagram-feed' ),
@@ -914,7 +902,7 @@ class SB_Instagram_About {
 				),
 			),
 
-			'rafflepress/rafflepress.php'           => array(
+			'rafflepress/rafflepress.php'                  => array(
 				'icon' => $images_url . 'plugin-rp.png',
 				'name' => esc_html__( 'RafflePress', 'instagram-feed' ),
 				'desc' => esc_html__( 'Turn your visitors into brand ambassadors! Easily grow your email list, website traffic, and social media followers with powerful viral giveaways & contests.', 'instagram-feed' ),
@@ -929,7 +917,7 @@ class SB_Instagram_About {
 				),
 			),
 
-			'all-in-one-seo-pack/all_in_one_seo_pack.php'           => array(
+			'all-in-one-seo-pack/all_in_one_seo_pack.php'  => array(
 				'icon' => $images_url . 'plugin-seo.png',
 				'name' => esc_html__( 'All In One SEO Pack', 'instagram-feed' ),
 				'desc' => esc_html__( 'Out-of-the-box SEO for WordPress. Features like XML Sitemaps, SEO for custom post types, SEO for blogs or business sites, SEO for ecommerce sites, and much more. More than 50 million downloads since 2007.', 'instagram-feed' ),
@@ -1305,14 +1293,7 @@ class SB_Instagram_About {
 	 * @return string
 	 */
 	protected function get_license_type() {
-
-		//$type = sbi_setting( 'type', '', 'sbi_license' );
-
-		//if ( empty( $type ) || ! sbi()->pro ) {
-			$type = 'lite';
-		//}
-
-		return strtolower( $type );
+		return 'lite';
 	}
 }
 

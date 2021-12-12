@@ -9,12 +9,16 @@ jQuery(document).ready(function ($) {
 			// Find all SVG inside img and add class if it hasn't got it
 			jQuery('img').each(function() {
 
-				// Pick only those with the extension we want
-				if ( jQuery(this).attr('src').match(/\.(svg)/) ) {
+				// Check if the SRC attribute is present at all
+				if ( typeof jQuery(this).attr('src') !== typeof undefined && jQuery(this).attr('src') !== false) {
 
-					// Add our class name
-					if ( !jQuery(this).hasClass(cssTarget.ForceInlineSVG) ) {
-						jQuery(this).addClass(cssTarget.ForceInlineSVG);
+					// Pick only those with the extension we want
+					if ( jQuery(this).attr('src').match(/\.(svg)/) ) {
+
+						// Add our class name
+						if ( !jQuery(this).hasClass(cssTarget.ForceInlineSVG) ) {
+							jQuery(this).addClass(cssTarget.ForceInlineSVG);
+						}
 					}
 				}
 			});

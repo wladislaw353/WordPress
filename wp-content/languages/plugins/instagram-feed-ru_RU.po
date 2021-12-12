@@ -1,0 +1,3081 @@
+# Translation of Plugins - Smash Balloon Social Photo Feed - Stable (latest release) in Russian
+# This file is distributed under the same license as the Plugins - Smash Balloon Social Photo Feed - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2021-11-26 12:01:57+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n % 10 == 1 && n % 100 != 11) ? 0 : ((n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14)) ? 1 : 2);\n"
+"X-Generator: GlotPress/3.0.0-alpha.2\n"
+"Language: ru\n"
+"Project-Id-Version: Plugins - Smash Balloon Social Photo Feed - Stable (latest release)\n"
+
+#: inc/admin/class-sbi-account-connector.php:47
+msgid "Oops! The link to connect your account expired. Please try connecting your account again."
+msgstr "Срок действия ссылки для подключения вашей учетной записи истек. Попробуйте снова подключить свою учетную запись."
+
+#: inc/admin/main.php:546
+msgid "Sorry your settings were not saved! Please refresh the page and try again."
+msgstr "Ваши настройки не были сохранены! Обновите страницу и попробуйте еще раз."
+
+#: inc/admin/actions.php:438
+msgid "Instagram Feed recommends Open SSL for encrypting Instagram platform data in your database. Contact your host or follow %1$sthese%2$s directions."
+msgstr "Instagram Feed рекомендует Open SSL для шифрования данных платформы Instagram в вашей базе данных. Свяжитесь с вашим хостером или следуйте %1$sэтим%2$s инструкциям."
+
+#: inc/admin/actions.php:963
+msgid "Visit our %s page for help"
+msgstr "Посетите нашу страницу %s для получения помощи"
+
+#: inc/admin/main.php:4039
+msgid "Check out our other free plugins: <a href=\"https://wordpress.org/plugins/custom-facebook-feed/\" target=\"_blank\" rel=\"noopener noreferrer\">Facebook</a>, <a href=\"https://wordpress.org/plugins/custom-twitter-feeds/\" target=\"_blank\" rel=\"noopener noreferrer\">Twitter</a>, and <a href=\"https://wordpress.org/plugins/feeds-for-youtube/\" target=\"_blank\" rel=\"noopener noreferrer\">YouTube</a>."
+msgstr "Ознакомьтесь с нашими другими бесплатными плагинами: <a href=\"https://wordpress.org/plugins/custom-facebook-feed/\" target=\"_blank\" rel=\"noopener noreferrer\">Facebook</a>, <a href=\"https://wordpress.org/plugins/custom-twitter-feeds/\" target=\"_blank\" rel=\"noopener noreferrer\">Twitter</a>, and <a href=\"https://wordpress.org/plugins/feeds-for-youtube/\" target=\"_blank\" rel=\"noopener noreferrer\">YouTube</a>."
+
+#: inc/admin/class-sbi-about.php:490
+msgid "Watch a video"
+msgstr "Смотреть видео"
+
+#: inc/admin/class-sbi-about.php:331
+msgid "Plugin thumbnail"
+msgstr "Миниатюра плагина"
+
+#: inc/admin/main.php:243
+msgid "Oembed example"
+msgstr "Пример вставки объектов (oEmbed)"
+
+#: inc/admin/addon-functions.php:52
+msgid "Cant deactivate."
+msgstr "Невозможно деактивировать."
+
+#: inc/admin/main.php:2930
+msgid "Delete all Platform Data"
+msgstr "Удалить все данные платформы"
+
+#: inc/admin/main.php:2928
+msgid "Manage Data"
+msgstr "Управление данными"
+
+#: inc/class-sb-instagram-post.php:268
+msgid "Using backup editor method."
+msgstr "Используя метод редактора резервных копий."
+
+#: inc/admin/main.php:2932
+msgid "Warning: Clicking this button will permanently delete all Instagram data, including all connected accounts, cached posts, and stored images."
+msgstr "Предупреждение: При нажатии на эту кнопку все данные Instagram, включая все подключенные аккаунты, кэшированные записи и сохраненные изображения, будут удалены навсегда."
+
+#: inc/admin/actions.php:438
+msgid "Dismiss"
+msgstr "Отклонить"
+
+#: inc/admin/actions.php:990
+msgid "Instagram Feed related data for the account(s) %s was removed due to permission for the Smash Balloon App on Facebook or Instagram being revoked."
+msgstr "Данные, связанные с Instagram Feed для аккаунта (ов) %s, были удалены из-за отзыва разрешения на использование приложения Smash Balloon App на Facebook или Instagram."
+
+#: inc/admin/actions.php:80 inc/admin/main.php:110 inc/admin/main.php:111
+msgid "Try the Pro Demo"
+msgstr "Попробуйте Pro Demo"
+
+#: inc/admin/actions.php:771
+msgid "Connect Accounts"
+msgstr "Подключить учётные записи"
+
+#: inc/class-sb-instagram-feed-locator.php:463
+msgid "Content"
+msgstr "Содержимое"
+
+#: inc/admin/templates/locator-summary.php:33
+msgid "Shortcode"
+msgstr "Шорткод"
+
+#: inc/admin/templates/locator-summary.php:84
+msgid "Show"
+msgstr "Показать"
+
+#: inc/class-sb-instagram-feed-locator.php:472
+msgid "Sidebar"
+msgstr "Область виджетов"
+
+#: inc/admin/main.php:1116
+msgid "Feed Finder"
+msgstr "Поиск ленты"
+
+#: inc/admin/templates/locator-summary.php:16
+msgid "Feed Finder Summary"
+msgstr "Сводка поиска ленты"
+
+#: inc/class-sb-instagram-feed-locator.php:477
+msgid "Footer"
+msgstr "Подвал (footer)"
+
+#: inc/admin/templates/locator-summary.php:31
+msgid "Type"
+msgstr "Тип"
+
+#: inc/admin/templates/locator-summary.php:104
+msgid "Locations of your feeds are currently being detected. You'll see more information posted here soon!"
+msgstr "В настоящее время обнаруживаются местоположения ваших лент. Скоро вы увидите здесь дополнительную информацию!"
+
+#: inc/admin/main.php:1111
+msgid "Select a Feed Type"
+msgstr "Выбрать тип ленты"
+
+#: inc/admin/templates/locator-summary.php:32
+msgid "Sources"
+msgstr "Источники"
+
+#: inc/class-sb-instagram-feed-locator.php:396
+msgid "There was an error when trying to create the database tables used to locate feeds."
+msgstr "При попытке создать таблицы базы данных, используемые для размещения лент, возникла ошибка."
+
+#: inc/admin/templates/locator-summary.php:17
+msgid "The table below shows a record of all feeds found on your site. A feed may not show up here immediately after being created."
+msgstr "В таблице ниже представлена информация обо всех лентах, найденных на вашем сайте. Лента может не отображаться здесь сразу после создания."
+
+#: inc/class-sb-instagram-settings.php:440
+msgid "A connected account related to the user is required to display user feeds. Please connect an account for this user on the %s."
+msgstr "Для отображения пользовательских лент требуется подключенная учетная запись, связанная с пользователем. Подключите учетную запись для этого пользователя на %s."
+
+#: inc/class-sb-instagram-posts-manager.php:380
+msgid "An unknown error has occurred."
+msgstr "Произошла неизвестная ошибка."
+
+#: inc/class-sb-instagram-settings.php:499
+msgid "Error: No users set."
+msgstr "Ошибка: пользователи не заданы."
+
+#: inc/admin/main.php:1029
+msgid "Feeds using this account might not be updating due to an error. Try viewing these feeds after reconnecting the account and saving your settings below."
+msgstr "Ленты, использующие эту учетную запись, могут не обновляться из-за ошибки. Попробуйте просмотреть эти ленты после повторного подключения к учетной записи и сохранения настроек, указанных ниже."
+
+#: inc/class-sb-instagram-posts-manager.php:335
+msgid "HTTP Error. Unable to connect to the Instagram API."
+msgstr "Ошибка HTTP. Невозможно подключиться к API Instagram."
+
+#: inc/admin/class-sbi-account-connector.php:97
+msgid "Invalid access token"
+msgstr "Неверный токен доступа"
+
+#: inc/admin/class-sbi-account-connector.php:94
+msgid "Invalid account ID"
+msgstr "Неверный ID учетной записи"
+
+#: inc/class-sb-instagram-posts-manager.php:364
+msgid "If you need to display more than 30 hashtag feeds on your site, consider connecting an additional business account from a separate Instagram Identity and Facebook page. Connecting an additional Instagram business account from the same Facebook page will not raise the limit."
+msgstr "Если вам необходимо отобразить на сайте более 30 лент хэштегов, рассмотрите возможность подключения дополнительного бизнес-аккаунта с отдельного Instagram Identity и страницы Facebook. Подключение дополнительного бизнес-аккаунта Instagram с той же страницы Facebook не приведет к увеличению лимита."
+
+#: inc/class-sb-instagram-settings.php:500
+msgid "Please visit the plugin's settings page to select a user account or add one to the shortcode - user=\"username\"."
+msgstr "Посетите страницу настроек плагина для выбора учетной записи пользователя или добавьте ее в шорткод - user=\"username\"."
+
+#: inc/class-sb-instagram-posts-manager.php:375
+msgid "There has been a problem with your Instagram Feed."
+msgstr "Возникла проблема с вашей лентой Instagram."
+
+#: inc/class-sb-instagram-gdpr-integrations.php:197
+msgid "Retest"
+msgstr "Повторное тестирование"
+
+#: inc/class-sb-instagram-gdpr-integrations.php:188
+msgid "Tables used for storing information about resized images were not successfully created."
+msgstr "Таблицы, используемые для хранения информации об изображениях с измененным размером, не были созданы."
+
+#: inc/class-sb-instagram-gdpr-integrations.php:185
+msgid "A folder for storing resized images was not successfully created."
+msgstr "Не удалось создать папку для хранения изображений с измененным размером."
+
+#: inc/class-sb-instagram-gdpr-integrations.php:191
+msgid "An image editor is not available on your server. Instagram Feed is unable to create local resized images. See %1$sthis FAQ%2$s for more information"
+msgstr "Редактор изображений недоступен на вашем сервере. Instagram Feed не может создавать локальные изображения с измененным размером. Для получения дополнительной информации см. %1$sэтот FAQ%2$s"
+
+#: inc/admin/main.php:2598
+msgid "The plugin will function as normal and load images directly from Instagram."
+msgstr "Плагин будет работать в обычном режиме и загружать изображения прямо из Instagram."
+
+#: inc/admin/main.php:2591
+msgid "No requests will be made to third-party websites. To accommodate this, some features of the plugin will be limited:"
+msgstr "Запросы к сторонним веб-сайтам производиться не будут. Чтобы учесть это, некоторые функции плагина будут ограничены:"
+
+#: inc/admin/main.php:2573
+msgid "Some Instagram Feed features will be limited for visitors to ensure GDPR compliance until they give consent."
+msgstr "Некоторые функции Instagram Feed будут ограничены для посетителей, чтобы обеспечить соблюдение GDPR, пока они не дадут согласие."
+
+#: inc/admin/main.php:2571
+msgid "%s detected"
+msgstr "%s обнаружен"
+
+#: inc/admin/main.php:2554
+msgid "Due to a configuration issue on your web server, the GDPR setting is unable to be enabled."
+msgstr "Из-за проблемы конфигурации на вашем веб-сервере параметр GDPR не может быть включен."
+
+#: inc/admin/main.php:2554
+msgid "Error:"
+msgstr "Ошибка:"
+
+#: inc/admin/main.php:2542
+msgid "Click here"
+msgstr "Нажмите здесь"
+
+#: inc/admin/main.php:2542
+msgid "%s to learn more about GDPR compliance in the Instagram Feed plugin."
+msgstr "%s чтобы узнать больше о соответствии GDPR в плагине Instagram Feed."
+
+#: inc/admin/main.php:2540
+msgid "GDPR cookie plugins"
+msgstr "Плагины для файлов cookie GDPR"
+
+#: inc/admin/main.php:2537
+msgid "The plugin will still make some requests to load and display images and videos directly from Instagram."
+msgstr "Плагин по-прежнему будет делать некоторые запросы на загрузку и отображение изображений и видео прямо из Instagram."
+
+#: inc/admin/main.php:2532 inc/admin/main.php:2574
+msgid "What will be limited?"
+msgstr "Что будет ограничено?"
+
+#: inc/admin/main.php:2532
+msgid "Enabling this setting prevents all images and videos from being loaded directly from Instagram's servers (CDN) to prevent any requests to external websites in your browser. To accommodate this, some features of the plugin will be disabled or limited."
+msgstr "Включение этого параметра предотвращает загрузку всех изображений и видео напрямую с серверов Instagram (CDN), чтобы предотвратить любые запросы к внешним веб-сайтам в вашем браузере. Чтобы учесть это, некоторые функции плагина будут отключены или ограничены."
+
+#: inc/admin/main.php:2583
+msgid "No GDPR consent plugin detected. Install a compatible %1$sGDPR consent plugin%2$s, or manually enable the setting above to display a GDPR compliant version of the feed to all visitors."
+msgstr "Плагин согласия с GDPR не обнаружен. Установите совместимый плагин %1$sПлагин согласия GDPR%2$s или вручную включите вышеуказанную настройку, чтобы отображать версию ленты для всех посетителей, соответствующую GDPR."
+
+#: inc/admin/main.php:2540
+msgid "The plugin will only load images and videos directly from Instagram if consent has been given by one of these integrated %s"
+msgstr "Плагин будет загружать изображения и видео непосредственно из Instagram только в том случае, если согласие было дано одним из этих интегрированных %s"
+
+#: inc/admin/main.php:2516
+msgid "Only local images (not from Instagram's CDN) will be displayed in the feed."
+msgstr "В ленте будут отображаться только локальные изображения (не из CDN Instagram)."
+
+#: inc/admin/main.php:2501 inc/admin/main.php:2540
+msgid "Automatic"
+msgstr "Автоматически"
+
+#: inc/admin/main.php:2494
+msgid "Enable GDPR settings"
+msgstr "Включить настройки GDPR"
+
+#: inc/admin/main.php:1493 inc/admin/main.php:2489
+msgid "GDPR"
+msgstr "GDPR"
+
+#: inc/admin/main.php:2517
+msgid "Placeholder blank images will be displayed until images are available."
+msgstr "Пустые изображения-заполнители будут отображаться до тех пор, пока изображения не станут доступны."
+
+#: inc/admin/class-sbi-notifications.php:518
+msgid "Next message"
+msgstr "Следующее сообщение"
+
+#: inc/admin/class-sbi-notifications.php:517
+msgid "Previous message"
+msgstr "Предыдущее сообщение"
+
+#: inc/admin/class-sbi-notifications.php:514
+msgid "Dismiss this message"
+msgstr "Отклонить это сообщение"
+
+#: inc/admin/main.php:3877
+msgid "Price:"
+msgstr "Цена:"
+
+#: inc/admin/main.php:3879
+msgid "Free"
+msgstr "Бесплатно"
+
+#: inc/admin/main.php:3905
+msgid "If you want to support us in our mission to make bringing social media content to your website both easy and reliable, then consider upgrading to one of our Pro plugins."
+msgstr "Если вы хотите поддержать нас в нашей миссии по обеспечению простого и надежного размещения контента социальных сетей на вашем веб-сайте, рассмотрите возможность перехода на один из наших плагинов Pro."
+
+#: inc/admin/main.php:3904
+msgid "Thank you so much for using our plugins. We appreciate you trusting us to power your social media feeds."
+msgstr "Большое спасибо за использование наших плагинов. Мы ценим то, что вы доверили нам управление своими лентами в социальных сетях."
+
+#: inc/admin/main.php:3902
+msgid "You already have all of our free plugins. Awesome!"
+msgstr "У вас уже есть все наши бесплатные плагины. Потрясающе!"
+
+#: inc/admin/main.php:3765
+msgid "As you're already using one of our free plugins we thought we'd suggest some others you might like to. Check out our other free plugins below:"
+msgstr "Поскольку вы уже используете один из наших бесплатных плагинов, мы подумали, что можем предложить другие, которые могут вам понравиться. Ознакомьтесь с другими нашими бесплатными плагинами ниже:"
+
+#: inc/admin/main.php:3764
+msgid "Here's some more <span>free</span> plugins you might like!"
+msgstr "Вот еще несколько <span> бесплатных </span> плагинов, которые могут вам понравиться!"
+
+#: inc/admin/main.php:3933
+msgid "Upgrade to Pro"
+msgstr "Перейдите на версию Pro"
+
+#: inc/admin/main.php:3777 inc/admin/main.php:3783
+msgid "Instagram Feed is a clean and beautiful way to add your Instagram posts to your website. Grab your visitors attention and keep them engaged with your site longer."
+msgstr "Лента Instagram - это чистый и красивый способ добавить записи Instagram на свой сайт. Привлекайте внимание посетителей и удерживайте их на вашем сайте дольше."
+
+#: inc/admin/main.php:941
+msgid "More Social Feeds"
+msgstr "Больше социальных лент"
+
+#: inc/admin/main.php:324
+msgid "Completely customizable"
+msgstr "Полностью настраиваемый"
+
+#: inc/admin/main.php:323
+msgid "Optimized for speed"
+msgstr "Оптимизирован для скорости"
+
+#: inc/admin/main.php:322
+msgid "Super simple to set up"
+msgstr "Очень просто настроить"
+
+#: inc/admin/main.php:318
+msgid "Increase social engagement"
+msgstr "Повышение социальной активности"
+
+#: inc/admin/main.php:317
+msgid "Save time"
+msgstr "Экономьте время"
+
+#: inc/admin/main.php:315
+msgid "Did you know, you can also use this Instagram Feed plugin to easily add Instagram content on your website?"
+msgstr "Знаете ли вы, что также можете использовать этот плагин Instagram Feed, чтобы легко добавлять содержимое Instagram на свой сайт?"
+
+#: inc/admin/main.php:304
+msgid "Instagram requires that users have a role on a Facebook page in order to create access tokens that don't expire. Visit %1$1sthis link%2$2s for instructions on extending your access token to never expire."
+msgstr "Instagram требует, чтобы у пользователей была профиль на странице Facebook, чтобы предоставить доступ с неограниченным сроком действия. Посетите %1s ссылку %2s для получения инструкций по продлению срока действия вашего доступа."
+
+#: inc/admin/main.php:293
+msgid "%1$1sImportant:%2$2s Your access token for powering oEmbeds will expire in %3$3s days."
+msgstr "%1s Важно: %2s Срок действия вашего доступа для входа в oEmbeds истекает через % 3s дней."
+
+#: inc/admin/main.php:283
+msgid "The Instagram Feed plugin is now powering your Instagram oEmbeds."
+msgstr "Плагин Instagram Feed теперь поддерживает ваши oEmbeds в Instagram."
+
+#: inc/admin/main.php:272
+msgid "Try Again"
+msgstr "Попробуйте снова"
+
+#: inc/admin/main.php:271
+msgid "How to Create a Facebook Page"
+msgstr "Как создать страницу в Facebook"
+
+#: inc/admin/main.php:327
+msgid "Add an Instagram feed now"
+msgstr "Добавить ленту Instagram прямо сейчас"
+
+#: inc/admin/main.php:307
+msgid "Connect to Facebook and Recheck Access Token"
+msgstr "Подключитесь к Facebook и перепроверьте токен доступа"
+
+#: inc/admin/main.php:319
+msgid "Keep Your Site Looking Fresh."
+msgstr "Держите ваш сайт свежим."
+
+#: inc/admin/main.php:325
+msgid "SEO friendly"
+msgstr "SEO-дружественный"
+
+#: inc/admin/main.php:296
+msgid "Your access token for powering oEmbeds has expired."
+msgstr "Срок действия вашего маркера доступа для включения oEmbeds истек."
+
+#: inc/admin/main.php:268
+msgid "Your access token will expire in 60 days. Facebook requires that users have a role on a Facebook page in order to create access tokens that don't expire. Click the button below for instructions on creating a Facebook page and extending your access token to never expire."
+msgstr "Срок действия вашего токена доступа истекает через 60 дней. Facebook требует, чтобы у пользователей была роль на странице Facebook, чтобы создавать токены доступа с неограниченным сроком действия. Нажмите кнопку ниже, чтобы получить инструкции по созданию страницы Facebook и продлению срока действия вашего токена доступа до бесконечности."
+
+#: inc/admin/main.php:261 inc/admin/main.php:283
+msgid "Disable"
+msgstr "Отключить"
+
+#: inc/admin/main.php:261
+msgid "You're all set! Instagram Feed will replace your old oEmbeds automatically and generate all new content for all new links."
+msgstr "Все готово! Instagram Feed автоматически заменит ваши старые oEmbeds и создаст весь новый контент для всех новых ссылок."
+
+#: inc/admin/main.php:265
+msgid "Heads up!"
+msgstr "Внимание!"
+
+#: inc/admin/main.php:240
+msgid "Anytime you share a link to an Instagram post in WordPress, it is automatically converted into an embedded version of that Instagram post (an \"oEmbed\").</p><p>However, WordPress is discontinuing support for Instagram oEmbeds due to them now requiring an Access Token to work. Don't worry though, we have your back. Just use the button above to connect to Facebook and we'll make sure your Instagram oEmbeds keep working."
+msgstr "Каждый раз, когда вы делитесь ссылкой на запись Instagram в WordPress, она автоматически преобразуется во встроенную версию этой записи Instagram («oEmbed»). </p> <p> Однако, WordPress прекращает поддержку oEmbeds Instagram из-за них, теперь для работы требуется доступ. Не волнуйтесь, мы вас поддержим. Просто используйте кнопку выше, чтобы подключиться к Facebook, и мы позаботимся о том, чтобы ваши встроенные файлы Instagram продолжали работать."
+
+#: inc/admin/main.php:239
+msgid "What are oEmbeds?"
+msgstr "Что такое oEmbeds?"
+
+#: inc/admin/main.php:231
+msgid "Connect to Facebook"
+msgstr "Подключиться к Facebook"
+
+#: inc/admin/main.php:225
+msgid "Enable Instagram oEmbeds"
+msgstr "Включить Instagram oEmbeds"
+
+#: inc/admin/main.php:147
+msgid "Just click the button below and we'll do the rest."
+msgstr "Просто нажмите кнопку ниже, и мы сделаем все остальное."
+
+#: inc/admin/main.php:144
+msgid "You can use the Instagram Feed plugin to power your Instagram oEmbeds, both old and new."
+msgstr "Вы можете использовать плагин Instagram Feed для поддержки ваших oEmbeds Instagram, как старых, так и новых."
+
+#: inc/admin/main.php:139
+msgid "Instagram oEmbeds"
+msgstr "Instagram oEmbeds"
+
+#: inc/admin/actions.php:1138
+msgid "An error occurred when trying to delete your oEmbed token."
+msgstr "Произошла ошибка при попытке удалить ваш токен oEmbed."
+
+#: inc/admin/main.php:228
+msgid "As Instagram is part of Facebook, in order to display Instagram oEmbeds, you must connect to Facebook. Click on the button below to connect"
+msgstr "Поскольку Instagram является частью Facebook, для отображения Instagram oEmbeds необходимо подключиться к Facebook. Нажмите на кнопку ниже, чтобы подключиться"
+
+#: inc/admin/actions.php:1136
+msgid "Instagram oEmbeds will no longer be handled by Instagram Feed."
+msgstr "Instagram oEmbeds больше не будут обрабатываться Instagram Feed."
+
+#: inc/admin/main.php:101 inc/admin/main.php:102
+msgid "Social Wall"
+msgstr "Стена соцсетей"
+
+#: inc/admin/main.php:172
+msgid "There was a problem with the access token that was retrieved."
+msgstr "Возникла проблема с полученным токеном доступа."
+
+#: inc/admin/main.php:56 inc/admin/main.php:57
+msgid "oEmbeds"
+msgstr "oEmbeds"
+
+#: inc/admin/main.php:67 inc/admin/main.php:68
+msgid "Facebook Feed"
+msgstr "Facebook Feed"
+
+#: inc/admin/main.php:79 inc/admin/main.php:80
+msgid "Twitter Feed"
+msgstr "Twitter Feed"
+
+#: inc/admin/main.php:91 inc/admin/main.php:92
+msgid "YouTube Feed"
+msgstr "YouTube Feed"
+
+#: inc/if-functions.php:1562
+msgid "As your Instagram account is set to be \"Private\", Instagram requires that you reauthenticate your account every 60 days. This a courtesy email to let you know that you need to take action to allow the Instagram feed on your website to continue updating. If you don't refresh your account, then a backup cache will be displayed instead."
+msgstr "Поскольку ваша учетная запись Instagram настроена как «Личная», Instagram требует, чтобы вы повторно аутентифицировали свою учетную запись каждые 60 дней. Это любезное электронное письмо, чтобы вы знали, что вам нужно принять меры, чтобы лента Instagram на вашем веб-сайте продолжала обновляться. Если вы не обновите свою учетную запись, вместо этого будет отображаться резервный кеш."
+
+#: inc/if-functions.php:1563
+msgid "To prevent your account expiring every 60 days %1$sswitch your account to be public%2$s. For more information and to refresh your account, click here to visit the %3$sInstagram Feed settings page%4$s on your website."
+msgstr "Чтобы предотвратить истечение срока действия вашего аккаунта каждые 60 дней %1$sпереключите свой аккаунт на публичный%2$s. Для получения дополнительной информации и обновления аккаунта нажмите здесь, чтобы перейти на страницу настроек %3$sInstagram Feed%4$s на вашем сайте."
+
+#: inc/if-functions.php:1560
+msgid "Your Private Instagram Feed Account Needs to be Reauthenticated"
+msgstr "Ваша личная учетная запись Instagram Feed требует повторной аутентификации"
+
+#: inc/admin/main.php:1064
+msgid "Refresh now"
+msgstr "Обновить сейчас"
+
+#: inc/class-sb-instagram-posts-manager.php:993
+#: inc/class-sb-instagram-settings.php:513
+msgid "Error: Private Instagram Account."
+msgstr "Ошибка: личный аккаунт в Instagram."
+
+#: inc/admin/main.php:1057
+msgid "Access Token Expired"
+msgstr "Токен доступа истек"
+
+#: inc/if-functions.php:1561
+msgid "Access Token Refresh Needed"
+msgstr "Требуется обновление токена доступа"
+
+#: inc/admin/main.php:1057
+msgid "Expires in %s days"
+msgstr "Срок действия истекает через %s дней"
+
+#: inc/admin/main.php:1066
+msgid "This account is a \"private\" account on Instagram. It needs to be manually reconnected every 60 days. %1$sChange this account to be \"public\"%2$s to have access tokens that are automatically refreshed."
+msgstr "Этот аккаунт является \"личным\" аккаунтом на Instagram. Его необходимо вручную переподключать каждые 60 дней. %1$sИзмените этот аккаунт на \"публичный\"%2$s, чтобы иметь токены доступа, которые обновляются автоматически."
+
+#: inc/class-sb-instagram-posts-manager.php:994
+#: inc/class-sb-instagram-settings.php:514
+msgid "It looks like your Instagram account is private. Instagram requires private accounts to be reauthenticated every 60 days. Refresh your account to allow it to continue updating, or %1$smake your Instagram account public%2$s."
+msgstr "Похоже, что ваш аккаунт в Instagram является личным. Instagram требует, чтобы личные аккаунты проходили повторную аутентификацию каждые 60 дней. Обновите свой аккаунт, чтобы он продолжал обновляться, или %1$sсделайте свой аккаунт Instagram публичным%2$s."
+
+#: inc/admin/main.php:1104
+msgid "It looks like JavaScript is not working on this page. Some features may not work fully. Visit %1$sthis page%2$s for help resolving this issue."
+msgstr "Похоже, на этой странице не работает JavaScript. Некоторые функции могут работать не полностью. Посетите %1$sэту страницу%2$s, чтобы получить помощь в решении этой проблемы."
+
+#: inc/admin/main.php:1222
+msgid "To display multiple feed types in a single feed, use %1$s in your shortcode and then add the user name or hashtag for each feed into the shortcode, like so: %2$s. This will combine a user feed and a hashtag feed into the same feed."
+msgstr "Чтобы отобразить несколько типов лент в одном ленте, используйте %1$s в шорткоде, а затем добавьте имя пользователя или хэштег для каждой ленты в шорткод, как показано ниже: %2$s. Это позволит объединить ленту пользователей и ленту хэштегов в одну ленту."
+
+#: inc/class-sb-instagram-settings.php:613
+msgid "Load More"
+msgstr "Загрузить ещё"
+
+#: inc/admin/class-sbi-tracking.php:340
+msgid "Once Weekly"
+msgstr "Один раз в неделю"
+
+#: inc/admin/main.php:2922
+msgid "Instagram Feed will record information and statistics about your site in order for the team at Smash Balloon to learn more about how our plugins are used. The plugin will never collect any sensitive information like access tokens, email addresses, or user information."
+msgstr "Лента Instagram будет записывать информацию и статистику о вашем сайте, чтобы команда Smash Balloon могла узнать больше о том, как используются наши плагины. Плагин никогда не будет собирать конфиденциальную информацию, такую ​​как права доступа, адреса электронной почты или информацию о пользователях."
+
+#: inc/admin/main.php:2921
+msgid "What is usage tracking?"
+msgstr "Что такое отслеживание использования?"
+
+#: inc/admin/main.php:2912
+msgid "Enable Usage Tracking"
+msgstr "Включить отслеживание использования"
+
+#: inc/admin/actions.php:1093
+msgid "No, thanks"
+msgstr "Нет, спасибо"
+
+#: inc/admin/actions.php:1092
+msgid "Yes, I'd like to help"
+msgstr "Да, я бы хотел помочь"
+
+#: inc/admin/actions.php:1089
+msgid "More information"
+msgstr "Больше информации"
+
+#: inc/admin/actions.php:1088
+msgid "Understanding how you are using the plugin allows us to further improve it. Opt-in below to agree to send a weekly report of plugin usage data."
+msgstr "Понимание того, как вы используете плагин, позволяет нам улучшать его. Подпишитесь ниже, чтобы согласиться отправлять еженедельный отчет с данными об использовании плагина."
+
+#: inc/admin/actions.php:1087
+msgid "Help us improve the Instagram Feed plugin"
+msgstr "Помогите нам улучшить плагин Instagram Feed"
+
+#: inc/admin/actions.php:769
+msgid "Changing the password, updating privacy settings, or removing page admins for the related Facebook page may require %1$smanually reauthorizing our app%2$s to reconnect an account."
+msgstr "Изменение пароля, обновление настроек конфиденциальности или удаление администраторов соответствующей страницы Facebook может потребовать %1$sновой авторизации нашего приложения%2$s для повторного подключения аккаунта."
+
+#: inc/admin/main.php:3377
+msgid "<a href=\"https://smashballoon.com/display-multiple-instagram-feeds/?utm_campaign=instagram-free&utm_source=support&utm_medium=multiple\" target=\"_blank\">Displaying multiple feeds</a>"
+msgstr "<a href=\"https://smashballoon.com/display-multiple-instagram-feeds/?utm_campaign=instagram-free&utm_source=support&utm_medium=multiple\" target=\"_blank\">Отображение нескольких лент</a>"
+
+#: inc/admin/main.php:3378
+msgid "<a href=\"https://smashballoon.com/instagram-feed-faq/customization/?utm_campaign=instagram-free&utm_source=support&utm_medium=customizing\" target=\"_blank\">Customizing your Feed</a>"
+msgstr "<a href=\"https://smashballoon.com/instagram-feed-faq/customization/?utm_campaign=instagram-free&utm_source=support&utm_medium=customizing\" target=\"_blank\">Настройка вашей ленты</a>"
+
+#: inc/admin/main.php:3376
+msgid "<a href=\"https://smashballoon.com/instagram-feed/free?utm_campaign=instagram-free&utm_source=support&utm_medium=installation\" target=\"_blank\">Installation and Configuration</a>"
+msgstr "<a href=\"https://smashballoon.com/instagram-feed/free?utm_campaign=instagram-free&utm_source=support&utm_medium=installation\" target=\"_blank\">Установка и конфигурация</a>"
+
+#: inc/admin/main.php:3370
+msgid "<a href=\"https://smashballoon.com/my-instagram-access-token-keep-expiring/?utm_campaign=instagram-free&utm_source=support&utm_medium=faqsexpiring\" target=\"_blank\">My Access Token Keeps Expiring</a>"
+msgstr "<a href=\"https://smashballoon.com/my-instagram-access-token-keep-expiring/?utm_campaign=instagram-free&utm_source=support&utm_medium=faqsexpiring\" target=\"_blank\">Срок действия моего токена доступа истекает</a>"
+
+#: inc/admin/main.php:3369
+msgid "<a href=\"https://smashballoon.com/my-photos-wont-load/?utm_campaign=instagram-free&utm_source=support&utm_medium=faqsnophotos\" target=\"_blank\">My Instagram Feed Won't Load</a>"
+msgstr "<a href=\"https://smashballoon.com/my-photos-wont-load/?utm_campaign=instagram-free&utm_source=support&utm_medium=faqsnophotos\" target=\"_blank\">Моя лента Instagram не загружается</a>"
+
+#: inc/admin/main.php:3329
+msgid "Need help setting up the plugin? Check out our <a href=\"https://smashballoon.com/instagram-feed/free/?utm_campaign=instagram-free&utm_source=display&utm_medium=supportsetup\" target=\"_blank\">setup directions</a>"
+msgstr "Нужна помощь в настройке плагина? Посмотрите нашу <a href=\"https://smashballoon.com/instagram-feed/free/?utm_campaign=instagram-free&utm_source=display&utm_medium=supportsetup\" target=\"_blank\">инструкцию по настройке</a>"
+
+#: inc/admin/main.php:2945
+msgid "Need help setting up the plugin? Check out our <a href=\"https://smashballoon.com/instagram-feed/free/?utm_campaign=instagram-free&utm_source=settings&utm_medium=display\" target=\"_blank\">setup directions</a>"
+msgstr "Нужна помощь в настройке плагина? Посмотрите нашу <a href=\"https://smashballoon.com/instagram-feed/free/?utm_campaign=instagram-free&utm_source=settings&utm_medium=display\" target=\"_blank\">инструкцию по настройке</a>"
+
+#: inc/admin/main.php:1235
+msgid "Please note: this is only available in the <a href=\"https://smashballoon.com/instagram-feed/?utm_campaign=instagram-free&utm_source=settings&utm_medium=multipletypes\" target=\"_blank\">Pro version</a>"
+msgstr "Обратите внимание: это доступно только в <a href=\"https://smashballoon.com/instagram-feed/?utm_campaign=instagram-free&utm_source=settings&utm_medium=multipletypes\" target=\"_blank\">Pro версии</a>"
+
+#: inc/admin/main.php:1470
+msgid "Need help setting up the plugin? Check out our <a href=\"https://smashballoon.com/instagram-feed/free/?utm_campaign=instagram-free&utm_source=supportpage&utm_medium=setupdirections\" target=\"_blank\">setup directions</a>"
+msgstr "Нужна помощь в настройке плагина? Посмотрите нашу <a href=\"https://smashballoon.com/instagram-feed/free/?utm_campaign=instagram-free&utm_source=supportpage&utm_medium=setupdirections\" target=\"_blank\">инструкцию по настройке</a>"
+
+#: inc/email.php:93
+msgid "%sLog in and disable these emails%s"
+msgstr "%sВойдите и отключите эти письма%s"
+
+#: inc/email.php:63
+msgid "Learn More"
+msgstr "Подробнее"
+
+#: inc/email.php:89
+msgid "Sent from %s"
+msgstr "Отправлено из %s"
+
+#. translators: %s - link to a site.
+#: inc/email.php:82
+msgid "This is a courtesy email sent from the Smash Balloon Instagram Feed plugin on your website to alert you when there is an issue with one of your Instagram feeds."
+msgstr "Это письмо, отправленное плагином Smash Balloon Instagram Feed на вашем сайте, чтобы предупредить вас, когда возникает проблема с одной из ваших лент Instagram."
+
+#: inc/class-sb-instagram-education.php:82
+msgid "Twitter testimonials are one of the best ways to add verifiable social proof to your website. They add credibility to your brand, product, or service by displaying reviews from real people to your site, helping to convert more visitors into customers. Our free Custom Twitter Feeds plugin makes displaying Tweets on your website a breeze."
+msgstr "Отзывы в Twitter - это один из лучших способов добавить на ваш сайт поддающиеся проверке социальные доказательства. Они повышают доверие к вашему бренду, продукту или услуге, отображая отзывы реальных людей на вашем сайте, что помогает конвертировать больше посетителей в клиентов. Наш бесплатный плагин Custom Twitter Feeds позволяет легко отображать твиты на вашем сайте."
+
+#: inc/class-sb-instagram-education.php:75
+msgid "Display Facebook Pages and Groups"
+msgstr "Отображение страниц и групп Facebook"
+
+#: inc/class-sb-instagram-education.php:69
+msgid "Automated YouTube Live Streaming"
+msgstr "Автоматическая прямая трансляция на YouTube"
+
+#: inc/class-sb-instagram-education.php:81
+msgid "Adding Social Proof with Twitter Feeds"
+msgstr "Добавление социального доказательства с помощью Twitter Feeds"
+
+#: inc/class-sb-instagram-education.php:70
+msgid "You can automatically feed live YouTube videos to your website using our Feeds For YouTube Pro plugin. It takes all the hassle out of publishing live videos to your site by automating the process."
+msgstr "Вы можете автоматически загружать видео с YouTube в прямом эфире на свой сайт с помощью нашего плагина Feeds For YouTube Pro. Он устраняет все хлопоты, связанные с публикацией видео в прямом эфире на вашем сайте, автоматизируя этот процесс."
+
+#: inc/class-sb-instagram-education.php:61
+msgid "Control exactly which posts show up in your feed by using the Visual Moderation Mode feature to pick and choose what to display. Remove specific posts or create a whitelist of approved content using Instagram Feed Pro."
+msgstr "Контролируйте, какие именно записи появляются в вашей ленте, используя функцию Visual Moderation Mode, чтобы выбирать, что показывать. Удалите конкретные записи или создайте белый список разрешенного контента с помощью Instagram Feed Pro."
+
+#: inc/class-sb-instagram-education.php:76
+msgid "Have a Facebook Page or Group? Easily embed a feed of posts into your website, delivering fresh content automatically to your site from Facebook. Posts, Photos, Events, Videos, Albums, Reviews, and more!"
+msgstr "У вас есть страница или группа в Facebook? Легко встраивайте ленту записей на свой веб-сайт, автоматически доставляя свежий контент на ваш сайт из Facebook. Записи, фотографии, события, видео, альбомы, обзоры и многое другое!"
+
+#: inc/class-sb-instagram-education.php:60
+msgid "Moderate your Feed Content"
+msgstr "Модерируйте содержание ленты"
+
+#: inc/class-sb-instagram-education.php:55
+msgid "Feature specific Instagram posts in your feeds by using the Highlight layout to feature specific posts, either by using their ID or a hashtag in their caption. Also create rotating carousels of your photos and videos to best utilize the space on your site. These layouts and more are available in our Pro version."
+msgstr "Добавляйте определенные записи в Instagram в свои ленты, используя макет «Выделение», чтобы отображать определенные записи, используя их ID или хэштег в подписи. Также создайте вращающиеся карусели из ваших фотографий и видео, чтобы максимально использовать пространство на вашем сайте. Эти и другие макеты доступны в нашей версии Pro."
+
+#: inc/class-sb-instagram-education.php:49
+msgid "You've done the hard work of getting a visitor onto your site, now keep them there by displaying your Instagram content inside a pop-up lightbox, rather than sending your visitors away to Instagram.  Learn more about the Instagram Feed Pro lightbox feature."
+msgstr "Вы проделали тяжелую работу по привлечению посетителей на свой сайт, а теперь удерживайте их там, отображая свой контент Instagram во всплывающем окне, а не отправляя посетителей в Instagram. Узнайте больше о функции лайтбокса Instagram Feed Pro."
+
+#: inc/class-sb-instagram-education.php:54
+msgid "Highlight Your Posts and Create Carousels"
+msgstr "Выделите свои записи и создайте карусели"
+
+#: inc/class-sb-instagram-education.php:48
+msgid "Keep Visitors on Your Site"
+msgstr "Удерживайте посетителей на своем сайте"
+
+#: inc/class-sb-instagram-education.php:43
+msgid "You can use hashtags on Instagram for so many things; targeted promotions, engaging with your audience, running contests, or just for categorizing posts. Learn more about how you can display Instagram hashtag feeds on your website using the Instagram Feed Pro plugin."
+msgstr "Вы можете использовать хэштеги на Instagram для многих вещей: целевых рекламных акций, взаимодействия с аудиторией, проведения конкурсов или просто для категоризации записей. Узнайте больше о том, как вы можете отображать ленту хэштегов Instagram на своем сайте с помощью плагина Instagram Feed Pro."
+
+#: inc/admin/actions.php:54
+msgid "OK"
+msgstr "ОК"
+
+#: inc/admin/class-sbi-about.php:1230
+msgid "1 Site"
+msgstr "1 сайт"
+
+#: inc/admin/class-sbi-about.php:1236
+msgid "3 Sites"
+msgstr "3 сайта"
+
+#: inc/admin/actions.php:53
+msgid "Oops!"
+msgstr "Упс!"
+
+#: inc/class-sb-instagram-education.php:42
+msgid "Get the Most out of Hashtags"
+msgstr "Получите максимум от хэштегов"
+
+#: inc/admin/class-sbi-about.php:1242
+msgid "5 Sites"
+msgstr "5 сайтов"
+
+#: inc/admin/class-sbi-about.php:1065
+msgid "6 Email Marketing Integrations"
+msgstr "6 Интеграций email-маркетинга"
+
+#: inc/admin/class-sbi-sitehealth.php:75
+msgid "A critical issue has been detected with your Instagram Feed. Visit the %1$sInstagram Feed settings page%2$s to fix the issue."
+msgstr "В вашей ленте Instagram обнаружена критическая проблема. Посетите страницу %1$sНастройки ленты Instagram%2$s, чтобы устранить проблему."
+
+#: inc/admin/class-sbi-about.php:978 inc/admin/class-sbi-about.php:985
+msgid "Access to all Standard and Fancy Fields"
+msgstr "Доступ ко всем стандартным и модным полям"
+
+#: inc/admin/blocks/class-sbi-blocks.php:93
+msgid "Add Settings"
+msgstr "Добавить настройки"
+
+#: inc/admin/addon-functions.php:68
+msgid "Addon activated."
+msgstr "Дополнение активировано."
+
+#: inc/admin/addon-functions.php:32
+msgid "Addon deactivated."
+msgstr "Дополнение деактивировано."
+
+#: inc/admin/addon-functions.php:164
+msgid "Addon installed & activated."
+msgstr "Дополнение установлено и активировано."
+
+#: inc/admin/addon-functions.php:172
+msgid "Addon installed."
+msgstr "Дополнение установлено."
+
+#: inc/admin/actions.php:52
+msgid "Almost Done"
+msgstr "Почти закончили"
+
+#. Translators: %s is the link to the article where more details about critical
+#. are listed.
+#: inc/if-functions.php:1359
+msgid "An issue is preventing your Instagram Feeds from updating. %1$sResolve this issue%2$s."
+msgstr "Проблема заключается в том, что ваши ленты Instagram не обновляются. %1$sРешите эту проблему%2$s."
+
+#: inc/admin/blocks/class-sbi-blocks.php:96
+msgid "Apply Changes"
+msgstr "Применить изменения"
+
+#: inc/admin/class-sbi-about.php:1032 inc/admin/class-sbi-about.php:1038
+msgid "Basic Form Templates"
+msgstr "Шаблоны основных форм"
+
+#: inc/admin/actions.php:49
+msgid "Cancel"
+msgstr "Отмена"
+
+#: inc/admin/actions.php:42
+msgid "Deactivate"
+msgstr "Деактивировать"
+
+#: inc/admin/actions.php:50
+msgid "Close"
+msgstr "Закрыть"
+
+#: inc/admin/class-sbi-about.php:958
+msgid "Complete Entry Management inside WordPress"
+msgstr "Полный контроль ввода в WordPress"
+
+#: inc/admin/class-sbi-about.php:1059
+msgid "Constant Contact only"
+msgstr "Только Constant Contact"
+
+#: inc/admin/class-sbi-about.php:1066
+msgid "Constant Contact, Mailchimp, AWeber, GetResponse, Campaign Monitor, and Drip"
+msgstr "Constant Contact, Mailchimp, AWeber, GetResponse, Campaign Monitor и Drip"
+
+#: inc/admin/actions.php:234 inc/admin/actions.php:244
+#: inc/class-sb-instagram-posts-manager.php:338
+#: inc/class-sb-instagram-posts-manager.php:361
+#: inc/class-sb-instagram-posts-manager.php:365
+#: inc/class-sb-instagram-posts-manager.php:369
+#: inc/class-sb-instagram-posts-manager.php:373
+#: inc/class-sb-instagram-posts-manager.php:377
+#: inc/class-sb-instagram-posts-manager.php:982
+#: inc/class-sb-instagram-posts-manager.php:1013
+msgid "Directions on how to resolve this issue"
+msgstr "Указания по решению данного вопроса"
+
+#: inc/admin/class-sbi-about.php:1072
+msgid "Display your latest Instagram story in a pop-up lightbox"
+msgstr "Отображать последнюю историю Instagram во всплывающем окне"
+
+#: inc/admin/class-sbi-about.php:1052 inc/admin/class-sbi-about.php:1080
+#: inc/admin/class-sbi-about.php:1086 inc/admin/class-sbi-about.php:1092
+#: inc/admin/class-sbi-about.php:1112 inc/admin/class-sbi-about.php:1118
+#: inc/admin/class-sbi-about.php:1160
+msgid "Not available"
+msgstr "Не доступно"
+
+#: inc/admin/class-sbi-about.php:913
+msgid "RafflePress Pro"
+msgstr "RafflePress Pro"
+
+#: inc/admin/class-sbi-about.php:907
+msgid "RafflePress"
+msgstr "RafflePress"
+
+#: inc/admin/blocks/class-sbi-blocks.php:94
+msgid "Shortcode Settings"
+msgstr "Настройки шорткода"
+
+#: inc/admin/addon-functions.php:73
+msgid "Could not activate addon. Please activate from the Plugins page."
+msgstr "Не удалось активировать дополнение. Активируйте его на странице Плагины."
+
+#: inc/admin/addon-functions.php:36
+msgid "Could not deactivate the addon. Please deactivate from the Plugins page."
+msgstr "Не удалось деактивировать дополнение. Деактивируйте его на странице Плагины."
+
+#: inc/admin/actions.php:46
+msgid "Could not install a plugin. Please download from WordPress.org and install manually."
+msgstr "Не удалось установить плагин. Скачайте с WordPress.org и установите вручную."
+
+#: inc/admin/actions.php:45 inc/admin/addon-functions.php:92
+msgid "Could not install addon. Please download from wpforms.com and install manually."
+msgstr "Не удалось установить дополнение. Скачайте с сайта wpforms.com и установите вручную."
+
+#: inc/admin/class-sbi-about.php:1166
+msgid "Custom Captcha Addon included"
+msgstr "Включен пользовательский Captcha Addon"
+
+#: inc/admin/class-sbi-about.php:1018
+msgid "Display images, swipe through carousel posts, and play videos in a pop-up lightbox"
+msgstr "Отображение изображений, пролистывание записей в карусели и воспроизведение видео во всплывающем лайтбоксе"
+
+#: inc/admin/class-sbi-about.php:1172
+msgid "Email Marketing Addons included"
+msgstr "Включены дополнения по маркетингу по электронной почте"
+
+#: inc/admin/class-sbi-about.php:886
+msgid "Our high-converting optin forms like Exit-Intent® popups, Fullscreen Welcome Mats, and Scroll boxes help you dramatically boost conversions and get more email subscribers."
+msgstr "Наши высоко конвертируемые анкеты, такие как всплывающие окна Exit-Intent®, полноэкранные приветствия и поля прокрутки, помогут вам значительно повысить конверсию и получить больше подписчиков электронной почты."
+
+#: inc/admin/addon-functions.php:66
+msgid "Plugin activated."
+msgstr "Плагин активирован."
+
+#: inc/admin/addon-functions.php:30
+msgid "Plugin deactivated."
+msgstr "Плагин деактивирован."
+
+#: inc/admin/addon-functions.php:164
+msgid "Plugin installed & activated."
+msgstr "Плагин установлен и активирован."
+
+#: inc/admin/class-sbi-about.php:1210 inc/admin/class-sbi-about.php:1216
+#: inc/admin/class-sbi-about.php:1222
+msgid "Premium Support"
+msgstr "Премиум поддержка"
+
+#: inc/admin/class-sbi-about.php:1178
+msgid "Filter by word or hashtag"
+msgstr "Фильтр по слову или хэштегу"
+
+#: inc/admin/class-sbi-about.php:972
+msgid "Grid layout only"
+msgstr "Только компоновка сетки"
+
+#: inc/admin/class-sbi-about.php:992
+msgid "Grid, highlight, masonry, and carousel layouts"
+msgstr "Макеты сетки, выделения, кладки и карусели"
+
+#: inc/admin/actions.php:44
+msgid "Install Addon"
+msgstr "Установить дополнение"
+
+#: inc/admin/actions.php:55
+msgid "Install and Activate"
+msgstr "Установить и активировать"
+
+#: inc/admin/class-sbi-about.php:1138 inc/admin/class-sbi-about.php:1145
+msgid "Limited Advanced Features"
+msgstr "Ограниченные расширенные возможности"
+
+#: inc/admin/class-sbi-about.php:1058
+msgid "Limited Marketing Integration"
+msgstr "Ограниченная интеграция маркетинга"
+
+#: inc/admin/class-sbi-about.php:1186
+msgid "Limited support"
+msgstr "Ограниченная поддержка"
+
+#: inc/admin/class-sbi-about.php:1000
+msgid "Image, carousel, and video thumbnails"
+msgstr "Миниатюры изображения, карусели и видео"
+
+#: inc/admin/class-sbi-about.php:1026
+msgid "Images and link only"
+msgstr "Только изображения и ссылки"
+
+#: inc/admin/actions.php:973
+msgid "Instagram Feed is encountering an error and your feeds may not be updating due to the following reasons:"
+msgstr "В ленте Instagram возникает ошибка, и ваши ленты могут не обновляться по следующим причинам:"
+
+#: inc/admin/class-sbi-about.php:893 inc/admin/class-sbi-about.php:899
+msgid "Make sure your website's emails reach the inbox. Our goal is to make email deliverability easy and reliable. Trusted by over 1 million websites."
+msgstr "Убедитесь, что электронные письма с вашего сайта доходят до почтового ящика. Наша цель - сделать доставку электронной почты простой и надежной. Нам доверяют более 1 миллиона веб-сайтов."
+
+#: inc/admin/class-sbi-sitehealth.php:65
+msgid "No critical errors have been detected."
+msgstr "Критических ошибок не обнаружено."
+
+#: inc/admin/class-sbi-about.php:1248 inc/admin/class-sbi-about.php:1254
+#: inc/admin/class-sbi-about.php:1260
+msgid "Unlimited Sites"
+msgstr "Неограниченное кол-во сайтов"
+
+#: inc/admin/class-sbi-sitehealth.php:74
+msgid "Your Instagram Feed is experiencing an error."
+msgstr "В вашей ленте Instagram произошла ошибка."
+
+#: inc/admin/class-sbi-about.php:946
+msgid "User feeds only"
+msgstr "Только ленты пользователей"
+
+#: inc/admin/class-sbi-about.php:1044
+msgid "Thumbnails, dates, caption, comments, like counts, and comment counts."
+msgstr "Эскизы, даты, подпись, комментарии, кол-во лайков и кол-во комментариев."
+
+#: inc/admin/addon-functions.php:172
+msgid "Plugin installed."
+msgstr "Плагин установлен."
+
+#: inc/admin/class-sbi-about.php:1132
+msgid "Posts link to the same post on Instagram"
+msgstr "Записи со ссылкой на ту же запись в Instagram"
+
+#: inc/admin/class-sbi-about.php:1204
+msgid "Priority support"
+msgstr "Приоритетная поддержка"
+
+#: inc/admin/actions.php:47
+msgid "Searching Addons"
+msgstr "Поиск дополнений"
+
+#: inc/admin/class-sbi-about.php:1106
+msgid "Standard or centered header"
+msgstr "Стандартный или центрированный заголовок"
+
+#: inc/admin/class-sbi-about.php:1192 inc/admin/class-sbi-about.php:1198
+msgid "Standard Support"
+msgstr "Стандартная поддержка"
+
+#: inc/if-functions.php:1556
+msgid "There's an Issue with an Instagram Feed on Your Website"
+msgstr "Проблема с лентой Instagram на вашем сайте"
+
+#: inc/if-functions.php:1555
+msgid "Instagram Feed Report for %s"
+msgstr "Отчет ленты Instagram для %s"
+
+#: inc/admin/actions.php:56
+msgid "needs to be installed and activated to import its forms. Would you like us to install and activate it for you?"
+msgstr "необходимо установить и активировать для импорта его форм. Хотите, чтобы мы установили и активировали его для вас?"
+
+#: inc/admin/actions.php:980
+msgid "View Feed and Retry"
+msgstr "Просмотр ленты и повторить"
+
+#: inc/admin/class-sbi-about.php:892
+msgid "WP Mail SMTP"
+msgstr "WP Mail SMTP"
+
+#: inc/admin/class-sbi-about.php:898
+msgid "WP Mail SMTP Pro"
+msgstr "WP Mail SMTP Pro"
+
+#: inc/admin/class-sbi-about.php:952
+msgid "User, Hashtag, and Tagged Feeds"
+msgstr "Пользовательские, хэштеговые и тегированные ленты"
+
+#: inc/admin/class-sbi-about.php:1124
+msgid "Standard, centered, or boxed header that includes follower and post counts"
+msgstr "Стандартный, центрированный или заключенный в рамку заголовок, который включает кол-во подписчиков и кол-во записей"
+
+#: inc/if-functions.php:1558
+msgid "This is caused by an issue with your Instagram account connecting to the Instagram API. For information on the exact issue and directions on how to resolve it, please visit the %1$sInstagram Feed settings page%2$s on your website."
+msgstr "Это вызвано проблемой с подключением вашей учетной записи Instagram к Instagram API. Для получения информации о конкретной проблеме и инструкциях по ее решению, пожалуйста, посетите страницу настроек %1$sЛента Instagram%2$s на вашем веб-сайте."
+
+#: inc/admin/class-sbi-about.php:1006 inc/admin/class-sbi-about.php:1012
+msgid "Powerful Form Logic for Building Smart Forms"
+msgstr "Мощная логика форм для создания интеллектуальных форм"
+
+#: inc/admin/class-sbi-about.php:1098
+msgid "Visual moderation system for removing posts or creating a \"white list\" of selected posts"
+msgstr "Система визуальной модерации для удаления записей или создания \"белого списка\" избранных записей"
+
+#: inc/admin/class-sbi-about.php:922
+msgid "All In One SEO Pack"
+msgstr "All In One SEO Pack"
+
+#: inc/if-functions.php:1557
+msgid "An Instagram feed on your website is currently unable to connect to Instagram to retrieve new posts. Don't worry, your feed is still being displayed using a cached version, but is no longer able to display new posts."
+msgstr "Лента Instagram на вашем сайте в настоящее время не может подключиться к Instagram для получения новых записей. Не волнуйтесь, ваша лента по-прежнему отображается с помощью кэшированной версии, но больше не может отображать новые записи."
+
+#: inc/admin/class-sbi-about.php:1139 inc/admin/class-sbi-about.php:1146
+msgid "Multi-page Forms, File Upload Forms, Multiple Form Notifications, Conditional Form Confirmation"
+msgstr "Многостраничные формы, Формы загрузки файлов, Уведомления о нескольких формах, Условное подтверждение формы"
+
+#: inc/admin/class-sbi-about.php:923
+msgid "Out-of-the-box SEO for WordPress. Features like XML Sitemaps, SEO for custom post types, SEO for blogs or business sites, SEO for ecommerce sites, and much more. More than 50 million downloads since 2007."
+msgstr "Готовый SEO для WordPress. Такие функции, как XML Sitemaps, SEO для пользовательских типов записей, SEO для блогов или бизнес-сайтов, SEO для сайтов электронной коммерции и многое другое. Более 50 миллионов загрузок с 2007 года."
+
+#: inc/admin/class-sbi-about.php:964
+msgid "User, hashtag, and tagged feeds"
+msgstr "Пользовательские, хэштеговые и тегированные ленты"
+
+#: inc/admin/class-sbi-about.php:979 inc/admin/class-sbi-about.php:986
+msgid "Address, Phone, Website URL, Date/Time, Password, File Upload, HTML, Pagebreaks, Section Dividers, Ratings, and Hidden Field"
+msgstr "Адрес, телефон, URL веб-сайта, дата/время, пароль, загрузка файлов, HTML, разрывы страниц, разделители разделов, рейтинги и скрытые поля"
+
+#: inc/if-functions.php:1354
+msgid "Instagram Feed Critical Issue"
+msgstr "Критическая проблема Instagram Feed"
+
+#: inc/admin/class-sbi-sitehealth.php:47
+msgid "Instagram Feed Errors"
+msgstr "Ошибки ленты Instagram Feed"
+
+#: inc/admin/class-sbi-sitehealth.php:59
+msgid "Instagram Feed has no critical errors"
+msgstr "Instagram Feed не имеет критических ошибок"
+
+#: inc/admin/class-sbi-about.php:1152
+msgid "Allow your posts to link to a URL in the caption or view in a lightbox"
+msgstr "Разрешить вашим записям ссылаться на URL-адрес в подписи или просматривать в лайтбоксе"
+
+#: inc/admin/class-sbi-about.php:908 inc/admin/class-sbi-about.php:914
+msgid "Turn your visitors into brand ambassadors! Easily grow your email list, website traffic, and social media followers with powerful viral giveaways & contests."
+msgstr "Стимулируйте ваших посетителей продвигать вашу марку. Увеличивайте кол-во подписчиков Emal-рассылки и страниц в соцсетях, а также трафик сайта с помощью \"вирусных\" розыгрышей, конкурсов и прочих акций."
+
+#: inc/admin/class-sbi-about.php:647
+msgid "Are you having trouble displaying your feed due to an error connecting an account or an Instagram API error? We have several articles to help you troubleshoot issues and help you solve them."
+msgstr "У вас возникли проблемы с отображением вашей ленты из-за ошибки подключения аккаунта или ошибки API Instagram? У нас есть несколько статей, которые помогут вам устранить неполадки и помочь решить их."
+
+#: inc/admin/class-sbi-about.php:602 inc/admin/class-sbi-about.php:780
+msgid "Bonus: Instagram Feed Lite users get <span class=\"price-20-off\">50% off regular price</span>, automatically applied at checkout."
+msgstr "Бонус: пользователи Instagram Feed Lite получают <span class=\"price-20-off\">50% скидки от обычной цены</span>, которая автоматически применяется при оформлении заказа."
+
+#: inc/admin/class-sbi-about.php:565
+msgid "Display Instagram stories."
+msgstr "Отображать истории Instagram."
+
+#: inc/admin/class-sbi-about.php:477
+msgid "Connect a Different Account"
+msgstr "Подключить другую учётную запись"
+
+#: inc/admin/class-sbi-about.php:706
+msgid "Feature"
+msgstr "Особенность"
+
+#: inc/admin/class-sbi-about.php:816 inc/admin/main.php:3796
+msgid "Custom Facebook Feed Pro"
+msgstr "Custom Facebook Feed Pro"
+
+#: inc/admin/class-sbi-about.php:825 inc/admin/main.php:3805
+msgid "Custom Twitter Feeds"
+msgstr "Custom Twitter Feeds"
+
+#: inc/admin/class-sbi-about.php:826 inc/admin/class-sbi-about.php:832
+#: inc/admin/main.php:3806 inc/admin/main.php:3812
+msgid "Custom Twitter Feeds is a highly customizable way to display tweets from your Twitter account. Promote your latest content and update your site content automatically."
+msgstr "Custom Twitter Feeds - это легко настраиваемый способ отображения твитов с вашего аккаунта в Twitter. Продвигайте свои последние материалы и автоматически обновляйте содержимое сайта."
+
+#: inc/admin/class-sbi-about.php:831 inc/admin/main.php:3811
+msgid "Custom Twitter Feeds Pro"
+msgstr "Custom Twitter Feeds Pro"
+
+#: inc/admin/class-sbi-about.php:624
+msgid "Detailed Step-By-Step Guide"
+msgstr "Подробное пошаговое руководство"
+
+#: inc/admin/class-sbi-about.php:577
+msgid "Even more customization options for your feed."
+msgstr "Еще больше возможностей настройки для вашей ленты."
+
+#: inc/admin/class-sbi-about.php:846 inc/admin/main.php:3826
+msgid "Feeds for YouTube Pro"
+msgstr "Feeds for YouTube Pro"
+
+#: inc/admin/class-sbi-about.php:840 inc/admin/main.php:3820
+msgid "Feeds for YouTube"
+msgstr "Feeds for YouTube"
+
+#: inc/admin/class-sbi-about.php:841 inc/admin/class-sbi-about.php:847
+#: inc/admin/main.php:3821 inc/admin/main.php:3827
+msgid "Feeds for YouTube is a simple yet powerful way to display videos from YouTube on your website. Increase engagement with your channel while keeping visitors on your website."
+msgstr "Feeds for YouTube - это простой, но эффективный способ отображения видео с YouTube на вашем сайте. Повысьте вовлеченность вашего канала, удерживая посетителей на вашем сайте."
+
+#: inc/admin/class-sbi-about.php:870
+msgid "MonsterInsights"
+msgstr "MonsterInsights"
+
+#: inc/admin/class-sbi-about.php:632 inc/admin/class-sbi-about.php:651
+msgid "Read Documentation"
+msgstr "Читать документацию"
+
+#: inc/admin/class-sbi-about.php:855 inc/admin/class-sbi-about.php:861
+msgid "WPForms"
+msgstr "WPForms"
+
+#: inc/admin/class-sbi-about.php:557
+msgid "Filter feeds by word or hashtag."
+msgstr "Фильтруйте ленты по слову или хэштегу."
+
+#: inc/admin/class-sbi-about.php:500
+msgid "Get Instagram Feed Pro and Unlock all the Powerful Features"
+msgstr "Получите Instagram Feed Pro и откройте все возможности"
+
+#. translators: %s - next license level.
+#: inc/admin/class-sbi-about.php:594 inc/admin/class-sbi-about.php:769
+msgid "Get Instagram Feed Pro Today and Unlock all the Powerful Features"
+msgstr "Получите Instagram Feed Pro сегодня и откройте все возможности"
+
+#: inc/admin/class-sbi-about.php:697
+msgid "Get the most out of your Instagram Feeds by upgrading to Pro and unlocking all of the powerful features."
+msgstr "Получите максимальную отдачу от своих Instagram Feeds, перейдя на версию Pro и открыв все возможности."
+
+#: inc/admin/class-sbi-about.php:472
+msgid "How to Display Multiple Feeds"
+msgstr "Как отобразить несколько лент"
+
+#: inc/admin/class-sbi-about.php:876
+msgid "MonsterInsights Pro"
+msgstr "MonsterInsights Pro"
+
+#: inc/admin/class-sbi-about.php:573
+msgid "More customization for feed headers."
+msgstr "Больше настроек для заголовков лент."
+
+#: inc/admin/class-sbi-about.php:545
+msgid "More layouts - masonry, highlight, and carousel."
+msgstr "Больше макетов - кладка, выделение и карусель."
+
+#: inc/admin/class-sbi-about.php:885
+msgid "OptinMonster"
+msgstr "OptinMonster"
+
+#: inc/admin/class-sbi-about.php:553
+msgid "Pop-up lightbox to view images and watch videos."
+msgstr "Всплывающий лайтбокс для просмотра изображений и видео."
+
+#: inc/admin/class-sbi-about.php:569
+msgid "Powerful visual moderation system."
+msgstr "Мощная система визуальной модерации."
+
+#: inc/admin/class-sbi-about.php:541
+msgid "Recent hashtag, top Hashtag, and tagged feeds."
+msgstr "Последние хэштеги, лучшие хэштеги и отмеченные ленты."
+
+#: inc/admin/class-sbi-about.php:871 inc/admin/class-sbi-about.php:877
+msgid "MonsterInsights makes it “effortless” to properly connect your WordPress site with Google Analytics, so you can start making data-driven decisions to grow your business."
+msgstr "MonsterInsights позволяет \"без особых усилий\" правильно связать ваш сайт WordPress с Google Analytics, чтобы вы могли начать принимать решения, основанные на данных, для развития вашего бизнеса."
+
+#: inc/admin/class-sbi-about.php:466
+msgid "Once you connect an Instagram account, you can display your feed on any post, page or widget using the shortcode [instagram-feed]. You can also use the Instagram Feed Gutenberg block if your site has the WordPress block editor enabled."
+msgstr "После подключения аккаунта Instagram вы можете отображать свою ленту в любой записи, странице или виджете с помощью шорткода [instagram-feed]. Вы также можете использовать блок Instagram Feed Gutenberg, если на вашем сайте включен редактор блоков WordPress."
+
+#: inc/admin/class-sbi-about.php:506
+msgid "Thanks for being a loyal Instagram Feed Lite user. <strong>Upgrade to Instagram Feed Pro</strong> to unlock all the awesome features and experience<br>why Instagram Feed is the most popular Instagram plugin."
+msgstr "Спасибо, что являетесь лояльным пользователем Instagram Feed Lite. <strong>Перейдите на Instagram Feed Pro</strong>, чтобы открыть все потрясающие функции и ощутить<br>почему Instagram Feed является самым популярным плагином Instagram."
+
+#: inc/admin/class-sbi-about.php:856 inc/admin/class-sbi-about.php:862
+msgid "The most beginner friendly drag & drop WordPress forms plugin allowing you to create beautiful contact forms, subscription forms, payment forms, and more in minutes, not hours!"
+msgstr "Самый удобный для новичков плагин форм WordPress, позволяющий создавать красивые контактные формы, формы подписки, формы оплаты и многое другое за считанные минуты, а не часы!"
+
+#: inc/admin/class-sbi-about.php:628
+msgid "View detailed steps with related images on our website. We have a comprehensive guide to getting up and running with Instagram Feed."
+msgstr "Ознакомьтесь с подробными шагами и соответствующими изображениями на нашем сайте. У нас есть исчерпывающее руководство по началу работы с Instagram Feed."
+
+#. translators: %s - stars.
+#: inc/admin/class-sbi-about.php:520
+msgid "We know that you will truly love Instagram Feed. It has over <strong>2500+ five star ratings</strong> (%s) and is active on over 1 million websites."
+msgstr "Мы знаем, что вам действительно понравится Instagram Feed. Он имеет более <strong>2500 пятизвездочных рейтингов</strong> (%s) и активен на более чем 1 миллионе веб-сайтов."
+
+#: inc/admin/class-sbi-about.php:581
+msgid "\"Shoppable\" feeds."
+msgstr "Лента \"Шоппинг\"."
+
+#: inc/admin/class-sbi-about.php:643
+msgid "Troubleshoot Connection and API Errors"
+msgstr "Устранение ошибок подключения и ошибок API"
+
+#: inc/admin/class-sbi-about.php:482
+msgid "Personal Vs Business Accounts"
+msgstr "Личные и бизнес аккаунты"
+
+#: inc/admin/class-sbi-about.php:549
+msgid "Captions, comments, dates, likes, and comment counts."
+msgstr "Количество подписей, комментариев, дат, лайков и комментариев."
+
+#: inc/admin/class-sbi-about.php:810 inc/admin/main.php:3790
+msgid "Custom Facebook Feed"
+msgstr "Custom Facebook Feed"
+
+#: inc/admin/class-sbi-about.php:811 inc/admin/class-sbi-about.php:817
+#: inc/admin/main.php:3791 inc/admin/main.php:3797
+msgid "Custom Facebook Feed makes displaying your Facebook posts easy. Keep your site visitors informed and increase engagement with your Facebook page by displaying a feed on your website."
+msgstr "Custom Facebook Feed упрощает отображение ваших записей в Facebook. Держите посетителей вашего сайта в курсе и увеличивайте взаимодействие со своей страницей Facebook, отображая ленту на вашем сайте."
+
+#: inc/admin/actions.php:39 inc/admin/actions.php:57
+#: inc/admin/class-sbi-about.php:413 inc/admin/main.php:3997
+msgid "Activate"
+msgstr "Активировать"
+
+#: inc/admin/actions.php:40 inc/admin/class-sbi-about.php:405
+#: inc/admin/main.php:3989
+msgid "Activated"
+msgstr "Активировано"
+
+#: inc/admin/actions.php:41 inc/admin/class-sbi-about.php:402
+#: inc/admin/main.php:3986
+msgid "Active"
+msgstr "Активна"
+
+#: inc/admin/class-sbi-about.php:423 inc/admin/main.php:4007
+msgid "Not Installed"
+msgstr "Не установлен"
+
+#. translators: %s - addon status label.
+#: inc/admin/class-sbi-about.php:345
+msgid "Status: %s"
+msgstr "Статус: %s"
+
+#: inc/admin/class-sbi-about.php:450
+msgid "Creating Your First Feed"
+msgstr "Создание вашей первой ленты"
+
+#: inc/admin/class-sbi-about.php:426 inc/admin/main.php:4010
+msgid "Install Plugin"
+msgstr "Установить плагин"
+
+#: inc/admin/class-sbi-about.php:281
+msgid "Yup, we know a thing or two about building awesome products that customers love."
+msgstr "Да, мы кое-что знаем о создании потрясающих продуктов, которые нравятся покупателям."
+
+#: inc/admin/actions.php:43 inc/admin/class-sbi-about.php:410
+#: inc/admin/main.php:3994
+msgid "Inactive"
+msgstr "Неактивна"
+
+#: inc/admin/class-sbi-about.php:317
+msgid "Our Other Plugins"
+msgstr "Другие наши плагины"
+
+#: inc/admin/class-sbi-about.php:324
+msgid "Plugins We Recommend"
+msgstr "Рекомендуемые плагины"
+
+#: inc/admin/class-sbi-about.php:287
+msgid "The Sbi Team photo"
+msgstr "Фотография команды Sbi"
+
+#: inc/admin/class-sbi-about.php:289
+msgid "The Smash Balloon Team"
+msgstr "Команда Smash Balloon"
+
+#: inc/admin/class-sbi-about.php:454
+msgid "Want to get started creating your first feed with Instagram Feed? By following the step by step instructions in this walkthrough, you can easily publish your first feed on your site."
+msgstr "Хотите начать создавать свою первую ленту с помощью Instagram Feed? Следуя пошаговым инструкциям в этом руководстве, вы сможете легко опубликовать свою первую ленту на своем сайте."
+
+#: inc/admin/class-sbi-about.php:458
+msgid "Navigate to Instagram Feed in the admin sidebar to go the Configure page."
+msgstr "Перейдите к Лента Instagram в боковой панели администратора, чтобы перейти на страницу Конфигурация."
+
+#: inc/admin/class-sbi-about.php:462
+msgid "Click on the large blue button to connect your Instagram account. Select \"Personal\" if your Instagram account is a personal account, \"Business\" if it is a business or creator account."
+msgstr "Нажмите на большую синюю кнопку, чтобы подключить свой аккаунт Instagram. Выберите \"Личный\", если ваш аккаунт Instagram является личным, \"Бизнес\", если это бизнес или аккаунт создателя."
+
+#. translators: %1$s - WPBeginner URL, %2$s - OptinMonster URL, %3$s -
+#. MonsterInsights URL, %4$s - RafflePress URL.
+#: inc/admin/class-sbi-about.php:264
+msgid "Instagram Feed is brought to you by the same team that’s behind the largest WordPress resource site, <a href=\"%1$s\" target=\"_blank\" rel=\"noopener noreferrer\">WPBeginner</a>, the most popular lead-generation software, <a href=\"%2$s\" target=\"_blank\" rel=\"noopener noreferrer\">OptinMonster</a>, the best WordPress analytics plugin, <a href=\"%3$s\" target=\"_blank\" rel=\"noopener noreferrer\">MonsterInsights</a>, and the most powerful WordPress contest plugin, <a href=\"%4$s\" target=\"_blank\" rel=\"noopener noreferrer\">RafflePress</a>."
+msgstr "Instagram Feed создан той же командой, что и крупнейший сайт ресурсов WordPress, <a href=\"%1$s\" target=\"_blank\" rel=\"noopener noreferrer\">WPBeginner</a>, самое популярное программное обеспечение для генерации лидов, <a href=\"%2$s\" target=\"_blank\" rel=\"noopener noreferrer\">OptinMonster</a>, лучший плагин для аналитики WordPress, <a href=\"%3$s\" target=\"_blank\" rel=\"noopener noreferrer\">MonsterInsights</a>, и самый мощный плагин для конкурсов WordPress, <a href=\"%4$s\" target=\"_blank\" rel=\"noopener noreferrer\">RafflePress</a>."
+
+#: inc/admin/class-sbi-about.php:254
+msgid "Smash Balloon is a fun-loving WordPress plugin development company birthed into existence in early 2013. We specialize in creating plugins that are not only intuitive and simple to use, but also designed to integrate seamlessly into your website and allow you to display your social media content in powerful and unique ways. Over 1 million awesome people have decided to actively use our plugins, which is an incredible honor that we don’t take lightly. This compels us to try to provide the quickest and most effective customer support that we can, blowing users away with the best customer service they’ve ever experienced."
+msgstr "Smash Balloon - это компания по разработке плагинов для WordPress, появившаяся на свет в начале 2013 года. Мы специализируемся на создании плагинов, которые не только интуитивно понятны и просты в использовании, но и разработаны таким образом, чтобы органично интегрироваться в ваш сайт и позволить вам отображать ваш контент в социальных сетях мощными и уникальными способами. Более 1 миллиона замечательных людей решили активно использовать наши плагины, что является невероятной честью, к которой мы не относимся легкомысленно. Это заставляет нас стараться обеспечить самую быструю и эффективную поддержку клиентов, которая только возможна, поражая пользователей лучшим обслуживанием, с которым они когда-либо сталкивались."
+
+#: inc/admin/class-sbi-about.php:257
+msgid "We’re a small, but dedicated, team based in Minnesota in the USA."
+msgstr "Мы - небольшая, но преданная своему делу команда, базирующаяся в штате Миннесота в США."
+
+#: inc/admin/main.php:2860
+msgid "Friday"
+msgstr "Пятница"
+
+#: inc/admin/main.php:2844
+msgid "Monday"
+msgstr "Понедельник"
+
+#: inc/admin/main.php:2864
+msgid "Saturday"
+msgstr "Суббота"
+
+#: inc/admin/main.php:2868
+msgid "Sunday"
+msgstr "Воскресенье"
+
+#: inc/admin/main.php:2856
+msgid "Thursday"
+msgstr "Четверг"
+
+#: inc/admin/main.php:2848
+msgid "Tuesday"
+msgstr "Вторник"
+
+#: inc/admin/main.php:2852
+msgid "Wednesday"
+msgstr "Среда"
+
+#. translators: %1$s - current license type, %2$s - suggested license type.
+#: inc/admin/class-sbi-about.php:122
+msgid "%1$s vs %2$s"
+msgstr "%1$s против %2$s"
+
+#: inc/admin/main.php:2888
+msgid "Email Recipients"
+msgstr "Получатели электронной почты"
+
+#: inc/admin/main.php:2889
+msgid "Emails not working?"
+msgstr "Электронная почта не работает?"
+
+#: inc/admin/class-sbi-about.php:73
+msgid "Feed Types"
+msgstr "Типы лент"
+
+#: inc/admin/class-sbi-about.php:80
+msgid "Header Display"
+msgstr "Отображать заголовок"
+
+#: inc/admin/class-sbi-about.php:74
+msgid "Layouts"
+msgstr "Макеты"
+
+#: inc/admin/class-sbi-about.php:82
+msgid "Customer Support"
+msgstr "Поддержка клиентов"
+
+#: inc/admin/class-sbi-about.php:79
+msgid "Feed Moderation"
+msgstr "Модерация ленты"
+
+#: inc/admin/class-sbi-about.php:114
+msgid "Getting Started"
+msgstr "Начало работы"
+
+#: inc/admin/class-sbi-about.php:77
+msgid "Filtering"
+msgstr "Фильтрация"
+
+#: inc/admin/class-sbi-about.php:250
+msgid "Hello and welcome to the Instagram Feed plugin, the most beautiful, clean, and reliable Instagram feed plugin in the world. At Smash Balloon, we build software that helps you create beautiful responsive social media feeds for your website in minutes."
+msgstr "Здравствуйте и добро пожаловать в плагин Instagram Feed, самый красивый, опрятный и надежный плагин ленты Instagram в мире. В Smash Balloon мы создаем программное обеспечение, которое помогает вам создавать красивые отзывчивые ленты социальных сетей для вашего сайта за считанные минуты."
+
+#: inc/admin/class-sbi-about.php:76
+msgid "Image and Video Display"
+msgstr "Отображение изображений и видео"
+
+#: inc/admin/class-sbi-about.php:78
+msgid "Instagram Stories"
+msgstr "Истории (stories) Instagram"
+
+#: inc/admin/class-sbi-about.php:75
+msgid "Post Information"
+msgstr "Информация о записи"
+
+#: inc/admin/main.php:2839
+msgid "Schedule Weekly on"
+msgstr "Запланировать еженедельно на"
+
+#: inc/admin/main.php:2889
+msgid "See our related FAQ"
+msgstr "См. соответствующий FAQ"
+
+#: inc/admin/main.php:2888
+msgid "separate multiple emails with commas"
+msgstr "разделяйте несколько emails запятыми"
+
+#: inc/admin/main.php:2835
+msgid "Instagram Feed will send a weekly notification email using your site's wp_mail() function if one or more of your feeds is not updating or is not displaying. If you're not receiving the emails in your inbox, you may need to configure an SMTP service using another plugin like WP Mail SMTP."
+msgstr "Instagram Feed будет еженедельно отправлять письмо с уведомлением с помощью функции wp_mail() вашего сайта, если один или несколько ваших фидов не обновляются или не отображаются. Если вы не получаете письма в свой почтовый ящик, вам может понадобиться настроить SMTP-сервис с помощью другого плагина, например WP Mail SMTP."
+
+#: inc/admin/class-sbi-about.php:113 inc/admin/main.php:47
+#: inc/admin/main.php:48
+msgid "About Us"
+msgstr "О нас"
+
+#: widget.php:18
+msgid "Display your Instagram feed"
+msgstr "Отображать вашу ленту Instagram"
+
+#: inc/admin/main.php:2811
+msgid "Disable Admin Error Notice"
+msgstr "Отключить уведомление об ошибке администратора"
+
+#: widget.php:46
+msgid "Title:"
+msgstr "Название:"
+
+#: inc/admin/main.php:2825
+msgid "Feed Issue Email Report"
+msgstr "Email отчет о проблеме с лентой"
+
+#: instagram-feed.php:184
+msgid "Weekly"
+msgstr "Еженедельно"
+
+#: inc/admin/main.php:2821
+msgid "This will permanently disable the feed error notice that displays in the bottom right corner for admins on the front end of your site."
+msgstr "Это навсегда отключит уведомление об ошибке ленты, которое отображается в правом нижнем углу для администраторов на передней панели вашего сайта."
+
+#: inc/admin/main.php:134 inc/admin/main.php:885
+msgid "Dismiss this message."
+msgstr "Отклонить это сообщение."
+
+#: inc/admin/main.php:133 inc/admin/main.php:884
+msgid "You're using Instagram Feed Lite. To unlock more features consider <a href=\"https://smashballoon.com/instagram-feed/?utm_campaign=instagram-free&utm_source=notices&utm_medium=litenotice\" target=\"_blank\" rel=\"noopener noreferrer\">upgrading to Pro</a>."
+msgstr "Вы используете Instagram Feed Lite. Чтобы открыть больше возможностей, подумайте о <a href=\"https://smashballoon.com/instagram-feed/?utm_campaign=instagram-free&utm_source=notices&utm_medium=litenotice\" target=\"_blank\" rel=\"noopener noreferrer\">обновлении до Pro</a>."
+
+#: inc/admin/main.php:3205
+msgid "Display a custom avatar in the header. Enter the full URL of an image file."
+msgstr "Отображать пользовательский аватар в заголовке. Введите полный URL-адрес файла изображения."
+
+#: inc/admin/main.php:2980
+msgid "Display photos that the account was tagged in (tagged)"
+msgstr "Отображение фотографий, помеченных учетной записью (tagged)"
+
+#: inc/admin/main.php:2118
+msgid "Instagram is deprecating their old API for Personal accounts on June 1, 2020. The plugin supports their new API, however, their new API does not yet include the avatar image for Personal accounts. If you require this feature then it is available if you convert your Instagram account from a Personal to a Business account by following %s. Note: If you previously had a Personal account connected then the plugin has saved the bio text for that feed and will continue to use it automatically."
+msgstr "Instagram прекращает использование старого API для личных аккаунтов 1 июня 2020 года. Плагин поддерживает новый API, однако новый API пока не включает изображение аватара для личных аккаунтов. Если вам нужна эта функция, то она будет доступна, если вы переведете свой аккаунт Instagram из личного в бизнес-аккаунт, выполнив следующие действия %s. Примечание: Если у вас ранее был подключен Личный аккаунт, то плагин сохранил текст био для этой ленты и будет продолжать использовать его автоматически."
+
+#: inc/admin/main.php:2995
+msgid "Your Instagram User Name. Separate multiple users by commas."
+msgstr "Ваше имя пользователя в Instagram. Разделите нескольких пользователей запятыми."
+
+#: inc/admin/main.php:3200
+msgid "Display a custom bio in the header"
+msgstr "Отображение индивидуальной bio по в заголовке"
+
+#: inc/admin/main.php:2114
+msgid "Avatar is automatically retrieved from Instagram for Business accounts"
+msgstr "Аватар автоматически загружается из аккаунтов Instagram for Business"
+
+#: inc/admin/main.php:2102
+msgid "Instagram is deprecating their old API for Personal accounts on June 1, 2020. The plugin supports their new API, however, their new API does not yet include the bio text for Personal accounts. If you require this feature then it is available if you convert your Instagram account from a Personal to a Business account by following %s. Note: If you previously had a Personal account connected then the plugin has saved the avatar for that feed and will continue to use it automatically."
+msgstr "Instagram прекращает использование старого API для личных аккаунтов 1 июня 2020 года. Плагин поддерживает новый API, однако новый API пока не включает текст био для личных аккаунтов. Если вам нужна эта функция, то она будет доступна, если вы переведете свой аккаунт Instagram из личного в бизнес-аккаунт, выполнив следующие действия %s. Примечание: Если у вас ранее был подключен Личный аккаунт, то плагин сохранил аватар для этой ленты и будет продолжать использовать его автоматически."
+
+#: inc/admin/main.php:2110
+msgid "Use Custom Avatar"
+msgstr "Использовать собственный аватар"
+
+#: inc/admin/main.php:2116
+msgid "Why is my avatar not displaying automatically?"
+msgstr "Почему мой аватар не отображается автоматически?"
+
+#: inc/admin/main.php:1099
+msgid "Business or Basic Display"
+msgstr "Бизнес или базовое отображение"
+
+#: inc/admin/main.php:2095
+msgid "Add Custom Bio Text"
+msgstr "Добавить пользовательский текст Bio"
+
+#: inc/class-sb-instagram-settings.php:471
+msgid "Error: Cannot add access token directly to the shortcode."
+msgstr "Ошибка: невозможно добавить токен доступа непосредственно в шорткод."
+
+#: inc/class-sb-instagram-settings.php:472
+msgid "Due to recent Instagram platform changes, it's no longer possible to create a feed by adding the access token to the shortcode. Remove the access token from the shortcode and connect an account on the %s instead."
+msgstr "Из-за недавних изменений платформы Instagram больше невозможно создать ленту, добавив токен доступа в шорткод. Удалите токен доступа из шорткода и вместо этого подключите учетную запись на %s."
+
+#: inc/admin/actions.php:825
+msgid "Switch Accounts"
+msgstr "Сменить учетную запись"
+
+#: inc/admin/actions.php:804
+msgid "Update This Account"
+msgstr "Обновить этот аккаунт"
+
+#: inc/class-sb-instagram-settings.php:436
+#: inc/class-sb-instagram-settings.php:468
+msgid "plugin Settings page"
+msgstr "страница настроек плагина"
+
+#: inc/admin/main.php:1053
+msgid "Show access token and account info"
+msgstr "Показать токен доступа и сведения об учетной записи"
+
+#: inc/admin/actions.php:818
+msgid "The Instagram account you are logged into is already connected as a \"business\" account. Remove the business account if you'd like to connect as a basic account instead (not recommended)."
+msgstr "Аккаунт Instagram, в который вы вошли, уже подключен как \"бизнес-аккаунт\". Удалите бизнес-аккаунт, если вы хотите подключиться как базовый аккаунт (не рекомендуется)."
+
+#: inc/admin/main.php:2098
+msgid "Use your own custom bio text in the feed header. Bio text is automatically retrieved from Instagram for Business accounts."
+msgstr "Используйте свой собственный био-текст в заголовке ленты. Био-текст автоматически извлекается из аккаунтов Instagram для бизнеса."
+
+#: inc/admin/main.php:2101
+msgid "Why is my bio not displaying automatically?"
+msgstr "Почему моя bio не отображается автоматически?"
+
+#: inc/class-sb-instagram-posts-manager.php:371
+msgid "Error: Cannot retrieve posts for this hashtag."
+msgstr "Ошибка: невозможно получить записи для этого хэштега."
+
+#: inc/admin/main.php:1873
+msgid "Medium (320x320)"
+msgstr "Средний (320x320)"
+
+#: inc/admin/actions.php:233 inc/class-sb-instagram-posts-manager.php:360
+#: inc/class-sb-instagram-posts-manager.php:376
+#: inc/class-sb-instagram-single.php:157
+msgid "API error %s:"
+msgstr "API-ошибка %s:"
+
+#: inc/admin/main.php:2699
+msgid "Check this box if you'd like to enqueue the JavaScript file for the plugin in the head instead of the footer."
+msgstr "Установите этот флажок, если вы хотите, чтобы JavaScript-файл для плагина загружался в head, а не в footer."
+
+#: inc/admin/main.php:2713
+msgid "Check this box if you'd like to only include the CSS file for the plugin when the feed is on the page."
+msgstr "Установите этот флажок, если вы хотите включать CSS-файл для плагина только тогда, когда лента находится на странице."
+
+#: inc/admin/main.php:2727
+msgid "Check this box to have images loaded server side instead of with JS."
+msgstr "Установите этот флажок, чтобы изображения загружались на стороне сервера, а не с помощью JS."
+
+#: inc/admin/main.php:2718
+msgid "Disable JS Image Loading"
+msgstr "Отключить загрузку изображений JS"
+
+#: inc/admin/main.php:2797
+msgid "Enable Custom Templates"
+msgstr "Включить настраиваемые шаблоны"
+
+#: inc/class-sb-instagram-post.php:525
+msgid "No database ID."
+msgstr "Нет ID базы данных."
+
+#: inc/admin/main.php:2704
+msgid "Enqueue CSS file with shortcode"
+msgstr "Передача файла CSS с помощью шорткода"
+
+#: inc/admin/actions.php:238 inc/class-sb-instagram-posts-manager.php:336
+msgid "Error connecting to %s."
+msgstr "Ошибка подключения к %s."
+
+#: inc/class-sb-instagram-post.php:192 inc/class-sb-instagram-post.php:525
+#: inc/class-sb-instagram-post.php:535
+msgid "Error inserting post."
+msgstr "Ошибка при вставке записи."
+
+#: inc/class-sb-instagram-post.php:450
+msgid "Error updating post."
+msgstr "Ошибка при обновлении записи."
+
+#: inc/class-sb-instagram-posts-manager.php:367
+msgid "Error: Connected account for the user %s does not have permission to use this feed type."
+msgstr "Ошибка: подключенная учетная запись для пользователя %s не имеет разрешения на использование этого типа ленты."
+
+#: inc/class-sb-instagram-posts-manager.php:363
+msgid "Error: Hashtag limit of 30 unique hashtags per week has been reached."
+msgstr "Ошибка: достигнут лимит хэштегов в 30 уникальных хэштегов в неделю."
+
+#: inc/class-sb-instagram-settings.php:439
+msgid "Error: There is no connected account for the user %s."
+msgstr "Ошибка: для пользователя %s нет подключенной учетной записи."
+
+#: inc/admin/main.php:2685
+msgid "If your feed contains a lot of IG TV posts or your feed is not displaying any posts despite there being posts available on Instagram.com, try increasing this number to 25 or more."
+msgstr "Если ваша лента содержит много записей IG TV или в вашей ленте не отображается ни одной записи, несмотря на то, что записи доступны на Instagram.com, попробуйте увеличить это число до 25 или более."
+
+#: inc/admin/main.php:2748
+msgid "Load initial posts with AJAX"
+msgstr "Загрузка исходной записи с помощью AJAX"
+
+#: inc/admin/main.php:2690
+msgid "Enqueue JS file in head"
+msgstr "Поставить в очередь файл JS в head"
+
+#: inc/admin/main.php:3751
+msgid "Reset Error Log"
+msgstr "Сброс журнала ошибок"
+
+#: inc/admin/main.php:2807
+msgid "The default HTML for the feed can be replaced with custom templates added to your theme's folder. Enable this setting to use these templates. See <a href=\"https://smashballoon.com/guide-to-creating-custom-templates/\" target=\"_blank\">this guide</a>"
+msgstr "HTML по умолчанию для ленты может быть заменен пользовательскими шаблонами, добавленными в папку вашей темы. Включите эту настройку, чтобы использовать эти шаблоны. Смотрите <a href=\"https://smashballoon.com/guide-to-creating-custom-templates/\" target=\"_blank\">это руководство</a>"
+
+#: inc/class-sb-instagram-posts-manager.php:368
+msgid "Try using the big blue button on the \"Configure\" tab to reconnect the account and update its permissions."
+msgstr "Попробуйте использовать большую синюю кнопку на вкладке \"Конфигурация\", чтобы переподключить учетную запись и обновить ее разрешения."
+
+#: inc/admin/main.php:2985
+msgid "Your Instagram User Name. This must be from a connected account on the \"Configure\" tab."
+msgstr "Ваше имя пользователя Instagram. Оно должно быть из подключенного аккаунта на вкладке \"Конфигурация\"."
+
+#: inc/admin/main.php:2758
+msgid "Initial posts will be loaded using AJAX instead of added to the page directly. If you use page caching, this will allow the feed to update according to the \"Check for new posts every\" setting on the \"Configure\" tab."
+msgstr "Первые записи будут загружаться с помощью AJAX, а не добавляться на страницу напрямую. Если вы используете кэширование страниц, это позволит ленте обновляться в соответствии с настройкой \"Проверять наличие новых записей каждый раз\" на вкладке \"Конфигурация\"."
+
+#: inc/admin/main.php:2679
+msgid "API request size"
+msgstr "Размер API-запроса"
+
+#: inc/admin/main.php:1307
+msgid "at"
+msgstr "в"
+
+#: inc/admin/main.php:2663
+msgid "Disable Local Image Storing and Resizing"
+msgstr "Отключить хранение и изменение размеров локальных изображений"
+
+#: inc/admin/main.php:1297
+msgid "Every 12 hours"
+msgstr "Каждые 12 часов"
+
+#: inc/admin/main.php:1412
+msgid "every 12 hours"
+msgstr "каждые 12 часов"
+
+#: inc/admin/main.php:1303
+msgid "Every 24 hours"
+msgstr "Каждые 24 часа"
+
+#: inc/admin/main.php:1409
+msgid "every 30 minutes"
+msgstr "каждые 30 минут"
+
+#: inc/admin/main.php:2670
+msgid "Favor Local Images"
+msgstr "Отдавать предпочтение локальным изображениям"
+
+#: inc/admin/main.php:2655
+msgid "Image Resizing"
+msgstr "Изменение размера изображения"
+
+#: inc/admin/main.php:2030
+msgid "milliseconds"
+msgstr "миллисекунд"
+
+#: inc/admin/main.php:1432
+msgid "Every"
+msgstr "Каждый"
+
+#: inc/admin/main.php:1291
+msgid "Every hour"
+msgstr "Каждый час"
+
+#: inc/admin/main.php:2683
+msgid "Leave at \"0\" for default"
+msgstr "Оставьте \"0\" по умолчанию"
+
+#: inc/admin/main.php:1269
+msgid "In the background"
+msgstr "В фоновом режиме"
+
+#: inc/admin/main.php:2672
+msgid "Reset Resized Images"
+msgstr "Сбросить изображения с измененным размером"
+
+#: inc/admin/main.php:1415
+msgid "Note: Saving the settings on this page will clear the cache and reset this schedule"
+msgstr "Примечание. Сохранение настроек на этой странице приведет к очистке кеша и сбросу этого расписания"
+
+#: inc/admin/main.php:1417
+msgid "Nothing currently scheduled"
+msgstr "В настоящее время ничего не запланировано"
+
+#: inc/admin/main.php:1716
+msgid "Number of photos to show initially."
+msgstr "Кол-во фотографий для первоначального показа."
+
+#: inc/admin/main.php:2674
+msgid "The plugin creates and stores resized versions of images in order to serve a more optimized resolution size in the feed. Click this button to clear all data related to resized images. Enable the setting to favor local images to always use a local, resized image if one is available."
+msgstr "Плагин создает и сохраняет уменьшенные версии изображений для того, чтобы в ленте отображался более оптимизированный размер разрешения. Нажмите эту кнопку, чтобы очистить все данные, связанные с уменьшенными изображениями. Включите параметр предпочтения локальных изображений, чтобы всегда использовать локальное изображение с уменьшенным размером, если оно доступно."
+
+#: inc/admin/main.php:1272
+msgid "<strong>1. In the background</strong><br>Selecting this option means that the plugin will check for new data in the background so that the feed is updated behind the scenes. You can select at what time and how often the plugin should check for new data using the settings below. <strong>Please note</strong> that the plugin will initially check for data from Instagram when the page first loads, but then after that will check in the background on the schedule selected - unless the cache is cleared."
+msgstr "<strong>1. В фоновом режиме</strong><br> Выбор этой опции означает, что плагин будет проверять новые данные в фоновом режиме, так что лента будет обновляться за кадром. Вы можете выбрать, в какое время и как часто плагин должен проверять новые данные, используя приведенные ниже настройки. <strong>Обратите внимание</strong>, что плагин будет первоначально проверять данные из Instagram при первой загрузке страницы, но затем будет проверять их в фоновом режиме по выбранному расписанию - до тех пор, пока не будет очищен кэш."
+
+#: inc/admin/main.php:1415
+msgid "Next check"
+msgstr "Следующая проверка"
+
+#: inc/admin/main.php:1274
+msgid "<strong>2. When the page loads</strong><br>Selecting this option means that when the cache expires then the plugin will check Instagram for new posts the next time that the feed is loaded. You can choose how long this data should be cached for. If you set the time to 60 minutes then the plugin will clear the cached data after that length of time, and the next time the page is viewed it will check for new data. <strong>Tip:</strong> If you're experiencing an issue with the plugin not updating automatically then try enabling the setting labeled <strong>'Force cache to clear on interval'</strong> which is located on the 'Customize' tab."
+msgstr "<strong>2. При загрузке страницы</strong><br> Выбор этой опции означает, что когда срок действия кэша истечет, плагин будет проверять Instagram на наличие новых записей при следующей загрузке ленты. Вы можете выбрать, как долго эти данные будут кэшироваться. Если вы установите время 60 минут, то плагин очистит кэшированные данные через этот промежуток времени, и при следующем просмотре страницы он проверит наличие новых данных. <strong>Совет:</strong> Если у вас возникла проблема с тем, что плагин не обновляется автоматически, попробуйте включить настройку <strong>'Force cache to clear on interval'</strong>, которая находится на вкладке 'Настроить'."
+
+#: inc/admin/main.php:1260
+msgid "Check for new posts"
+msgstr "Проверить наличие новых записей"
+
+#: inc/admin/main.php:1084
+msgid "Display Your Feed"
+msgstr "Отображать вашу ленту"
+
+#: inc/admin/main.php:1084
+msgid "Click on the %s tab to learn more about shortcodes"
+msgstr "Перейдите на вкладку %s, чтобы узнать больше о шорткодах"
+
+#: inc/admin/main.php:1271
+msgid "Your Instagram post data is temporarily cached by the plugin in your WordPress database. There are two ways that you can set the plugin to check for new data"
+msgstr "Данные ваших записей в Instagram временно кэшируются плагином в вашей базе данных WordPress. Есть два способа настроить плагин на проверку наличия новых данных"
+
+#: inc/admin/main.php:1429
+msgid "When the page loads"
+msgstr "При загрузке страницы"
+
+#: inc/admin/main.php:1101
+msgid "Please enter the User ID for this Profile:"
+msgstr "Введите ID пользователя для этого профиля:"
+
+#: inc/admin/main.php:1183
+msgid "Upgrade to the Pro version to display Hashtag and Tagged feeds"
+msgstr "Перейдите на версию Pro,, чтобы отображать ленты с хештегами и тегами"
+
+#: inc/admin/main.php:1201
+msgid "Tagged:"
+msgstr "Tagged:"
+
+#: inc/admin/main.php:1207
+msgid "Display posts that your account has been tagged in."
+msgstr "Отображать записи, в которых отмечен ваш аккаунт."
+
+#: inc/admin/main.php:1285 instagram-feed.php:180
+msgid "Every 30 minutes"
+msgstr "Каждые 30 минут"
+
+#: inc/class-sb-instagram-feed.php:1430 inc/class-sb-instagram-feed.php:1431
+#: inc/class-sb-instagram-posts-manager.php:995
+#: inc/class-sb-instagram-settings.php:515
+msgid "Click here to troubleshoot"
+msgstr "Нажмите здесь для устранения неполадок"
+
+#: inc/class-sb-instagram-post.php:294 inc/if-functions.php:712
+msgid "Error editing image."
+msgstr "Ошибка редактирования изображения."
+
+#: inc/class-sb-instagram-post.php:286 inc/if-functions.php:705
+msgid "Error saving edited image."
+msgstr "Error saving edited image."
+
+#: inc/if-functions.php:47
+msgid "Error: No connected account."
+msgstr "Ошибка: нет подключенного аккаунта."
+
+#: inc/class-sb-instagram-feed.php:1428
+msgid "Error: No posts found."
+msgstr "Ошибка: записи не найдено."
+
+#: templates/item.php:34 templates/item.php:45
+msgid "Instagram post %s"
+msgstr "Запись %s в Instagram"
+
+#: inc/class-sb-instagram-feed.php:1429
+msgid "Make sure this account has posts available on instagram.com."
+msgstr "Убедитесь, что в этом аккаунте есть записи, доступные на instagram.com."
+
+#: inc/if-functions.php:48
+msgid "Please go to the Instagram Feed settings page to connect an account."
+msgstr "Для подключения аккаунта перейдите на страницу настроек Instagram Feed."
+
+#. Plugin Name of the plugin
+msgid "Smash Balloon Instagram Feed"
+msgstr "Smash Balloon Instagram Feed"
+
+#: inc/class-sb-instagram-posts-manager.php:608 instagram-feed.php:241
+#: instagram-feed.php:263
+msgid "There was an error creating the folder for storing resized images."
+msgstr "При создании папки для хранения изображений с измененным размером произошла ошибка."
+
+#: instagram-feed.php:393 instagram-feed.php:420
+msgid "There was an error when trying to create the database tables used for resizing images."
+msgstr "При попытке создать таблицы базы данных, используемые для изменения размеров изображений, возникла ошибка."
+
+#: inc/class-sb-instagram-feed.php:1295
+msgid "No posts found."
+msgstr "Записи не найдены."
+
+#: inc/admin/main.php:4030
+msgid "Display your feed"
+msgstr "Отображать вашу ленту"
+
+#: inc/admin/main.php:1587
+msgid "Click for shortcode option"
+msgstr "Нажмите для выбора шорткода"
+
+#: inc/admin/main.php:3149
+msgid "Disable the mobile layout. Options:"
+msgstr "Отключить мобильный макет. Параметры:"
+
+#: inc/admin/main.php:3368
+msgid "FAQs"
+msgstr "FAQs"
+
+#: inc/admin/main.php:1587
+msgid "Layout Type"
+msgstr "Тип макета"
+
+#: inc/admin/main.php:4032
+msgid "Find out how to display <a href=\"?page=sb-instagram-feed&amp;tab=display\">multiple feeds</a>."
+msgstr "Узнайте, как отобразить <a href=\"?page=sb-instagram-feed&amp;tab=display\">несколько лент</a>."
+
+#: inc/admin/main.php:4031
+msgid "Copy and paste this shortcode directly into the page, post or widget where you'd like to display the feed:"
+msgstr "Скопируйте и вставьте этот шорткод непосредственно в страницу, запись или виджет, где вы хотите отобразить ленту:"
+
+#: inc/admin/main.php:3210
+msgid "Size of the header including small, medium and large. Options:"
+msgstr "Размер заголовка, включая маленький, средний и большой. Параметры:"
+
+#: inc/admin/main.php:3134
+msgid "The resolution/size of the photos including full, medium, thumbnail, and auto (based on size of image on page). Options:"
+msgstr "Разрешение/размер фотографий, включая полное, среднее, миниатюра и автоматическое (в зависимости от размера изображения на странице). Параметры:"
+
+#: inc/admin/main.php:3222
+msgid "Whether to show the 'Load More' button. Options:"
+msgstr "Показывать кнопку \"Загрузить еще\". Параметры:"
+
+#: inc/admin/main.php:3190
+msgid "Whether to show the feed Header. Options:"
+msgstr "Показывать заголовок ленты. Параметры:"
+
+#: inc/admin/main.php:3244
+msgid "Whether to show the 'Follow on Instagram' button. Options:"
+msgstr "Показывать ли кнопку 'Подписаться в Instagram'. Параметры:"
+
+#: inc/admin/main.php:3288
+msgid "Whether to show the Likes &amp; Comments. Options:"
+msgstr "Показывать лайки и комментарии. Параметры:"
+
+#: inc/admin/main.php:3266
+msgid "Whether to show the photo caption. Options:"
+msgstr "Показывать подпись к фотографии. Параметры:"
+
+#: inc/admin/main.php:3195
+msgid "Display the bio in the header. Options:"
+msgstr "Отображение bio в заголовке. Параметры:"
+
+#: inc/admin/main.php:3034
+msgid "How posts are arranged visually in the feed. There are four layouts: Grid, Carousel Slider, Masonry Grid, or Highlight Grid.  Options:"
+msgstr "Визуальное расположение записей в ленте. Существует четыре варианта расположения: Сетка, Карусель слайдера, Сетка кладки или Сетка выделения.  Параметры:"
+
+#: inc/admin/main.php:3103
+msgid "Choose from 3 different ways of highlighting posts including by pattern, hashtag, post id or. Options:"
+msgstr "Выберите один из 3 различных способов выделения записей, в том числе по шаблону, хэштегу, ID записи или. Параметры:"
+
+#: inc/admin/main.php:3183
+msgid "The info to display when hovering over the photo such as the user name, post date, Instagram icon, location, caption, and like counts. Options:"
+msgstr "Информация, которая будет отображаться при наведении курсора на фотографию, например имя пользователя, дата публикации, значок Instagram, местоположение, подпись и кол-во лайков. Параметры:"
+
+#: inc/admin/main.php:3375
+msgid "Documentation"
+msgstr "Документация"
+
+#: inc/admin/main.php:3371
+msgid "See All"
+msgstr "Посмотреть все"
+
+#: inc/admin/main.php:3338
+msgid "Need help?"
+msgstr "Нужна помощь?"
+
+#: inc/admin/main.php:2406 inc/admin/main.php:2423
+msgid "All feeds"
+msgstr "Все ленты"
+
+#: inc/admin/main.php:2405 inc/admin/main.php:2422
+msgid "Apply to:"
+msgstr "Применить к:"
+
+#: inc/admin/main.php:2454
+msgid "Manual"
+msgstr "Ручной"
+
+#: inc/admin/main.php:2453
+msgid "Visual"
+msgstr "Визуально"
+
+#: inc/admin/main.php:2407 inc/admin/main.php:2424
+msgid "One feed"
+msgstr "Одна лента"
+
+#: inc/admin/main.php:1994
+msgid "Upgrade to Pro to enable Carousels"
+msgstr "Перейдите на версию Pro, чтобы включить карусели"
+
+#: inc/admin/main.php:2274
+msgid "Upgrade to Pro to enable Comments"
+msgstr "Перейдите на версию Pro, чтобы включить комментарии"
+
+#: inc/admin/main.php:2225
+msgid "Upgrade to Pro to enable Likes &amp; Comments"
+msgstr "Перейдите на версию Pro, чтобы включить отметки лайки и комментарии"
+
+#: inc/admin/main.php:2443
+msgid "Upgrade to Pro to enable Moderation options"
+msgstr "Перейдите на версию Pro, чтобы включить опции модерации"
+
+#: inc/admin/main.php:2169
+msgid "Upgrade to Pro to enable Photo Captions"
+msgstr "Перейдите на версию Pro, чтобы включить подписи к фотографии"
+
+#: inc/admin/main.php:1933
+msgid "Upgrade to Pro to enable Photo Hover styles"
+msgstr "Перейдите на версию Pro, чтобы включить стили при наведении на фотографию"
+
+#: inc/admin/main.php:2393
+msgid "Upgrade to Pro to enable Post Filtering options"
+msgstr "Перейдите на версию Pro, чтобы включить опции фильтрации записей"
+
+#: inc/admin/main.php:1672
+msgid "Post ID"
+msgstr "ID записи"
+
+#: inc/admin/main.php:1184 inc/admin/main.php:1602
+msgid "Pro"
+msgstr "Pro"
+
+#: inc/admin/main.php:1608
+msgid "A uniform grid of square-cropped images."
+msgstr "Равномерная сетка из квадратных обрезанных изображений."
+
+#: inc/admin/main.php:1162
+msgid "Connect a user account above"
+msgstr "Подключить учётную запись пользователя выше"
+
+#: inc/admin/actions.php:804 inc/admin/main.php:1105
+msgid "Connect This Account"
+msgstr "Подключить эту учётную запись"
+
+#: inc/admin/main.php:1673
+msgid "Hashtag"
+msgstr "Хэштег"
+
+#: inc/admin/main.php:1686
+msgid "posts"
+msgstr "записи"
+
+#: inc/admin/main.php:1073
+msgid "Copy and paste this shortcode into your page or widget area"
+msgstr "Скопируйте и вставьте этот шорткод в область вашей страницы или виджета"
+
+#: inc/admin/main.php:1099
+msgid "Enter a valid Instagram Access Token"
+msgstr "Введите действующий токен доступа к Instagram"
+
+#: inc/admin/main.php:1619
+msgid "Number of Rows"
+msgstr "Кол-во строк"
+
+#: inc/admin/main.php:1686
+msgid "Highlight every"
+msgstr "Выделите каждую"
+
+#: inc/admin/main.php:1698
+msgid "Highlight Posts by ID"
+msgstr "Выделить записи по ID"
+
+#: inc/admin/main.php:1689
+msgid "Highlight Posts with these Hashtags"
+msgstr "Выделить записи с помощью этих хэштегов"
+
+#: inc/admin/main.php:1667
+msgid "Highlighting Type"
+msgstr "Тип выделения"
+
+#: inc/admin/main.php:1630
+msgid "Loop Type"
+msgstr "Тип цикла"
+
+#: inc/admin/main.php:1611
+msgid "Images in their original aspect ratios with no vertical space between posts."
+msgstr "Изображения в исходном формате без отступа по вертикали между записями."
+
+#: inc/admin/main.php:1636
+msgid "Infinity"
+msgstr "Бесконечность"
+
+#: inc/admin/main.php:1664
+msgid "Masonry style, square-cropped, image only (no captions or likes/comments below image). \"Highlighted\" posts are twice as large."
+msgstr "Стиль кладка, квадратная обрезка, только изображение (без подписей или лайков / комментариев под изображением). «Выделенные» записи в два раза больше."
+
+#: inc/admin/main.php:1890 inc/admin/main.php:1934 inc/admin/main.php:1995
+#: inc/admin/main.php:2132 inc/admin/main.php:2170 inc/admin/main.php:2226
+#: inc/admin/main.php:2275 inc/admin/main.php:2394 inc/admin/main.php:2444
+msgid "Show Pro Options"
+msgstr "Показать параметры Pro"
+
+#: inc/admin/main.php:1615
+msgid "Posts are displayed in a slideshow carousel."
+msgstr "Записи отображаются в карусели слайд-шоу."
+
+#: inc/admin/main.php:1635
+msgid "Rewind"
+msgstr "Перемотать назад"
+
+#: inc/admin/main.php:1701
+msgid "Separate IDs using commas"
+msgstr "Разделите ID запятыми"
+
+#: inc/admin/main.php:1079
+msgid "To add multiple users in the same feed, simply separate them using commas"
+msgstr "Чтобы добавить несколько пользователей в одну ленту, просто разделите их запятыми"
+
+#: inc/admin/main.php:1601
+msgid "Upgrade to the Pro version to unlock these layouts"
+msgstr "Перейдите на версию Pro, чтобы разблокировать эти макеты"
+
+#: inc/admin/main.php:968
+msgid "Use the button above to connect an Instagram account"
+msgstr "Используйте кнопку выше, чтобы подключить аккаунт Instagram"
+
+#: inc/admin/main.php:1671 inc/admin/main.php:1683
+msgid "Pattern"
+msgstr "Шаблон"
+
+#: inc/admin/main.php:1704
+msgid "You can use this setting to highlight posts by their ID. Enable and use \"moderation mode\", check the box to show post IDs underneath posts, then copy and paste IDs into this text box."
+msgstr "Вы можете использовать эту настройку для выделения записи по их ID. Включите и используйте \"режим модерации\", установите флажок, чтобы показывать ID записей под записями, затем скопируйте и вставьте ID в это текстовое поле."
+
+#: inc/admin/main.php:1695
+msgid "You can use this setting to highlight posts by a hashtag. Use a specified hashtag in your posts and they will be automatically highlighted in your feed."
+msgstr "Вы можете использовать эту настройку для выделения записи по хэштегу. Используйте указанный хэштег в своих записях, и они будут автоматически выделены в вашей ленте."
+
+#: inc/admin/main.php:1622
+msgid "Use the \"Number of Columns\" setting below this section to set how many posts are visible in the carousel at a given time."
+msgstr "Используйте параметр \"Кол-во столбцов\" под этим разделом, чтобы указать, сколько записей отображается в карусели в данный момент времени."
+
+#: inc/admin/main.php:3314
+msgid "Auto Load More on Scroll"
+msgstr "Автоматически загружать больше при прокрутке"
+
+#: inc/admin/main.php:3071
+msgid "Choose 1 or 2 rows of posts in the carousel"
+msgstr "Выберите 1 или 2 строки записей в карусели"
+
+#: inc/admin/main.php:3139
+msgid "Display all media, only photos, or only videos"
+msgstr "Отображать все медиафайлы, только фотографии или только видео"
+
+#: inc/admin/main.php:3322
+msgid "Distance before the end of feed or page that triggers the loading of more posts."
+msgstr "Расстояние до конца ленты или страницы, вызывающей загрузку большего количества записей."
+
+#: inc/admin/main.php:3031
+msgid "Layout Options"
+msgstr "Параметры макета"
+
+#: inc/admin/main.php:3100
+msgid "Highlight Options"
+msgstr "Параметры выделения"
+
+#: inc/admin/main.php:3118
+msgid "Highlight posts with these hashtags."
+msgstr "Выделить записи с помощью этих хэштегов."
+
+#: inc/admin/main.php:3108
+msgid "How often a post is highlighted."
+msgstr "Как часто выделяется запись."
+
+#: inc/admin/main.php:3158
+msgid "Lightbox Comments Options"
+msgstr "Параметры комментариев лайтбокса"
+
+#: inc/admin/main.php:3317
+msgid "Load more posts automatically as the user scrolls down the page."
+msgstr "Загружайте больше записей автоматически по мере того, как пользователь прокручивает страницу вниз."
+
+#: inc/admin/main.php:3113
+msgid "When to start the highlight pattern."
+msgstr "Когда начинать выделение узора."
+
+#: inc/admin/main.php:3170
+msgid "Photos Hover Style Options"
+msgstr "Параметры стиля при наведении на фотографии"
+
+#: inc/admin/main.php:3166
+msgid "Number of comments to show starting from the most recent."
+msgstr "Кол-во комментариев для отображения, начиная с самого последнего."
+
+#: inc/admin/main.php:3054
+msgid "The number of columns in your feed for mobile screens (smaller than 480 pixels)."
+msgstr "Кол-во столбцов в вашей ленте для экранов мобильных устройств (менее 480 пикселей)."
+
+#: inc/admin/main.php:3044
+msgid "The number of photos to display initially for mobile screens (smaller than 480 pixels)."
+msgstr "Кол-во фотографий для первоначального отображения на экранах мобильных устройств (размером менее 480 пикселей)."
+
+#: inc/admin/main.php:3161
+msgid "Whether to show comments in the lightbox for this feed."
+msgstr "Показывать комментарии в лайтбоксе для этой ленты."
+
+#: inc/admin/main.php:3154
+msgid "Whether to use urls in captions for the photo's link instead of linking to instagram.com."
+msgstr "Использовать URLы в подписях для ссылки на фото вместо ссылки на instagram.com."
+
+#: inc/admin/main.php:3076
+msgid "Infinitely loop through posts or rewind"
+msgstr "Бесконечно просматривайте записи или перематывайте их назад"
+
+#: inc/admin/main.php:2980
+msgid "Display photos from a User ID (user)<br />Display posts from a Hashtag (hashtag)"
+msgstr "Отображение фотографий от ID пользователя (user ID)<br />Отображение записей от хэштега (hashtag)"
+
+#: inc/admin/main.php:2148
+msgid "Centered"
+msgstr "По центру"
+
+#: inc/admin/main.php:1233
+msgid "Combine multiple feed types into a single feed"
+msgstr "Объединение нескольких типов лент в одну ленту"
+
+#: inc/admin/main.php:1574
+msgid "Grid"
+msgstr "Сетка"
+
+#: inc/admin/main.php:2056
+msgid "Header Size"
+msgstr "Размер заголовка"
+
+#: inc/admin/main.php:1577
+msgid "Highlight"
+msgstr "Выделение"
+
+#: inc/admin/main.php:2077
+msgid "Large"
+msgstr "Большой"
+
+#: inc/admin/main.php:1576
+msgid "Masonry"
+msgstr "Кладка"
+
+#: inc/admin/main.php:2071
+msgid "Medium"
+msgstr "Средний"
+
+#: inc/admin/main.php:2065
+msgid "Small"
+msgstr "Маленький"
+
+#: inc/admin/main.php:2146
+msgid "Standard"
+msgstr "Стандартный"
+
+#: inc/admin/main.php:2092
+msgid "Only applies for Instagram accounts with bios"
+msgstr "Применяется только для аккаунтов Instagram с bios"
+
+#: inc/admin/main.php:1587
+msgid "Select a layout to see associated<br />options"
+msgstr "Выберите макет, чтобы увидеть связанные с ним<br />опции"
+
+#: inc/admin/main.php:1236
+msgid "To display multiple feed types in a single feed, use %1$s in your shortcode and then add each user name or hashtag of each feed into the shortcode, like so: %2$s. This will combine a user feed and a hashtag feed into the same feed."
+msgstr "Чтобы отобразить несколько типов лент в одном ленте, используйте %1$s в шорткоде, а затем добавьте имя пользователя или хэштег каждой ленты в шорткод, как показано ниже: %2$s. Это позволит объединить ленту пользователей и ленту хэштегов в одну ленту."
+
+#: inc/admin/main.php:1166
+msgid "<p><strong>Displaying Posts from Your User Account</strong><br />Simply connect an account using the button above.</p><p style='padding-top:8px;'><strong>Displaying Posts from Other Instagram Accounts</strong><br />Due to recent changes in the Instagram API it is no longer possible to display photos from other Instagram accounts which you do not have access to. You can only display the user feed of an account which you connect above. You can connect as many account as you like by logging in using the button above, or manually copy/pasting an Access Token by selecting the 'Manually Connect an Account' option.</p><p style='padding-top:10px;'><strong>Multiple Acounts</strong><br />It is only possible to display feeds from Instagram accounts which you own. In order to display feeds from multiple accounts, first connect them above and then use the buttons to add the account either to your primary feed or to another feed on your site.</p>"
+msgstr "<p><strong>Отображение записей из вашего пользовательского аккаунта</strong><br />Просто подключите аккаунт с помощью кнопки выше.</p><p style='padding-top:8px;'><strong>Отображение записей из других аккаунтов Instagram</strong><br />В связи с недавними изменениями в API Instagram больше невозможно отображать фотографии из других аккаунтов Instagram, к которым у вас нет доступа. Вы можете отображать только ленту пользователя того аккаунта, который вы подключили выше. Вы можете подключить сколько угодно аккаунтов, войдя в систему с помощью кнопки выше или вручную скопировав/вставив токен доступа, выбрав опцию \"Подключить аккаунт вручную\".</p><p style='padding-top:10px;'><strong>Множество аккаунтов</strong><br />Вы можете отображать ленты только тех аккаунтов Instagram, которые принадлежат вам. Чтобы отображать фиды с нескольких аккаунтов, сначала подключите их выше, а затем используйте кнопки, чтобы добавить аккаунт либо в ваш основной фид, либо в другой фид на вашем сайте.</p>"
+
+#: inc/admin/main.php:1052
+msgid "Add to another Feed"
+msgstr "Добавить в другую ленту"
+
+#: inc/admin/main.php:1048
+msgid "Add to Primary Feed"
+msgstr "Добавить в основную ленту"
+
+#: inc/admin/main.php:963
+msgid "Connect an Instagram Account"
+msgstr "Подключить учётную запись Instagram"
+
+#: inc/admin/main.php:1038
+msgid "Remove"
+msgstr "Удалить"
+
+#: inc/admin/main.php:1165
+msgid "How to display User feeds"
+msgstr "Как отображать ленты пользователей"
+
+#: inc/admin/main.php:968
+msgid "Instagram Accounts"
+msgstr "Учётные записи в Instagram"
+
+#: inc/admin/main.php:1097
+msgid "Manually Connect an Account"
+msgstr "Подключение аккаунта вручную"
+
+#: inc/admin/main.php:1130
+msgid "User Account:"
+msgstr "Учетная запись пользователя:"
+
+#: inc/admin/main.php:1050
+msgid "Remove from Primary Feed"
+msgstr "Удалить из основной ленты"
+
+#: inc/admin/main.php:971
+msgid "No Instagram accounts connected. Click the button above to connect an account."
+msgstr "Нет подключенных аккаунтов Instagram. Нажмите кнопку выше, чтобы подключить аккаунт."
+
+#: inc/admin/main.php:1033
+msgid "The Access Token for this account is expired or invalid. Click the button above to attempt to renew it."
+msgstr "Токен доступа для этой учетной записи истек или недействителен. Нажмите кнопку выше, чтобы попытаться продлить его."
+
+#: inc/admin/main.php:1088
+msgid "User ID"
+msgstr "ID пользователя"
+
+#: inc/admin/main.php:2509 inc/admin/main.php:2537 inc/admin/main.php:2785
+msgid "No"
+msgstr "Нет"
+
+#: inc/admin/main.php:2740
+msgid "Clear Backup Cache"
+msgstr "Очистить кэш резервного копирования"
+
+#: inc/admin/main.php:2732
+msgid "Enable Backup Caching"
+msgstr "Включить кэширование резервных копий"
+
+#: inc/admin/main.php:1447
+msgid "Minutes"
+msgstr "Минуты"
+
+#: inc/class-sb-instagram-posts-manager.php:359
+msgid "Error: Access Token is not valid or has expired."
+msgstr "Ошибка: токен доступа не действителен или срок его действия истек."
+
+#: inc/admin/main.php:2742
+msgid "Every feed will save a duplicate version of itself in the database to be used if the normal cache is not available."
+msgstr "Каждая лента сохранит дублирующуюся версию в базе данных, которая будет использоваться, если обычный кэш недоступен."
+
+#: inc/class-sb-instagram-posts-manager.php:335
+#: inc/class-sb-instagram-posts-manager.php:359
+msgid "Feed will not update."
+msgstr "Лента не обновляется."
+
+#: inc/admin/main.php:1453
+msgid "Hours"
+msgstr "Часы"
+
+#: inc/admin/main.php:2764
+msgid "Force cache to clear on interval"
+msgstr "Принудительная очистка кэша по интервалу"
+
+#: inc/admin/main.php:2789
+msgid "If you're experiencing an issue with the plugin not auto-updating then you can set this to 'Yes' to run a scheduled event behind the scenes which forces the plugin cache to clear on a regular basis and retrieve new data from Instagram."
+msgstr "Если вы столкнулись с проблемой, когда плагин не обновляется автоматически, вы можете установить значение \"Да\", чтобы запустить запланированное событие, которое заставит кэш плагина регулярно очищаться и получать новые данные из Instagram."
+
+#: inc/if-functions.php:46 inc/if-functions.php:525
+msgid "This error message is only visible to WordPress admins"
+msgstr "Это сообщение об ошибке видно только администраторам WordPress"
+
+#: inc/admin/main.php:1456
+msgid "Your Instagram posts are temporarily cached by the plugin in your WordPress database. You can choose how long the posts should be cached for. If you set the time to 1 hour then the plugin will clear the cache after that length of time and check Instagram for posts again. The maximum caching time is 24 hours."
+msgstr "Ваши записи Instagram временно кэшируются плагином в вашей базе данных WordPress. Вы можете выбрать, как долго записи должны храниться в кеше. Если вы установите время на 1 час, плагин очистит кеш по истечении этого времени и снова проверит Instagram на наличие записей. Максимальное время кеширования - 24 часа."
+
+#: inc/admin/main.php:3782 inc/admin/main.php:4036
+msgid "Instagram Feed Pro"
+msgstr "Instagram Feed Pro"
+
+#. Author URI of the plugin
+msgid "https://smashballoon.com/"
+msgstr "https://smashballoon.com/"
+
+#. Author of the plugin
+msgid "Smash Balloon"
+msgstr "Smash Balloon"
+
+#. Plugin URI of the plugin
+msgid "https://smashballoon.com/instagram-feed"
+msgstr "https://smashballoon.com/instagram-feed"
+
+#: inc/admin/blocks/class-sbi-blocks.php:95 inc/admin/main.php:2974
+msgid "Example"
+msgstr "Пример"
+
+#: inc/admin/main.php:2973
+msgid "Description"
+msgstr "Описание"
+
+#: inc/admin/main.php:2967
+msgid "Pro version only"
+msgstr "Только в Pro-версии"
+
+#: inc/admin/actions.php:82 inc/admin/main.php:39 inc/admin/main.php:40
+msgid "Settings"
+msgstr "Настройки"
+
+#: inc/admin/main.php:432 inc/admin/main.php:692 inc/if-functions.php:756
+msgid "Load More..."
+msgstr "Загрузи больше..."
+
+#: inc/admin/main.php:871
+msgid "Settings saved."
+msgstr "Настройки сохранены."
+
+#: inc/admin/main.php:937
+msgid "1. Configure"
+msgstr "1. Конфигурация"
+
+#: inc/admin/main.php:940
+msgid "Support"
+msgstr "Поддержка"
+
+#: inc/admin/main.php:956
+msgid "Configure"
+msgstr "Конфигурация"
+
+#: inc/admin/main.php:964
+msgid "Button not working?"
+msgstr "Кнопка не работает?"
+
+#: inc/admin/main.php:1187 inc/admin/main.php:1205 inc/admin/main.php:1218
+#: inc/admin/main.php:1690 inc/admin/main.php:1703 inc/admin/main.php:2005
+#: inc/admin/main.php:2186 inc/admin/main.php:2287 inc/admin/main.php:2296
+#: inc/admin/main.php:2413 inc/admin/main.php:2430 inc/admin/main.php:2467
+#: inc/admin/main.php:2479
+msgid "What is this?"
+msgstr "Что это?"
+
+#: inc/admin/main.php:1179
+msgid "Hashtag:"
+msgstr "Хештег:"
+
+#: inc/admin/main.php:1252 inc/admin/main.php:2505 inc/admin/main.php:2532
+#: inc/admin/main.php:2648 inc/admin/main.php:2779 inc/admin/main.php:2805
+#: inc/admin/main.php:2819 inc/admin/main.php:2833 inc/admin/main.php:2920
+msgid "Yes"
+msgstr "Да"
+
+#: inc/admin/main.php:1253 inc/admin/main.php:1455 inc/admin/main.php:1530
+#: inc/admin/main.php:1817 inc/admin/main.php:2529 inc/admin/main.php:2649
+#: inc/admin/main.php:2673 inc/admin/main.php:2684 inc/admin/main.php:2698
+#: inc/admin/main.php:2712 inc/admin/main.php:2726 inc/admin/main.php:2741
+#: inc/admin/main.php:2757 inc/admin/main.php:2788 inc/admin/main.php:2806
+#: inc/admin/main.php:2820 inc/admin/main.php:2834 inc/admin/main.php:2931
+msgid "What does this mean?"
+msgstr "Что это значит?"
+
+#: inc/admin/main.php:1254
+msgid "When removing the plugin your settings are automatically erased. Checking this box will prevent any settings from being deleted. This means that you can uninstall and reinstall the plugin without losing your settings."
+msgstr "При удалении плагина ваши настройки автоматически стираются. Проверка этого флажка предотвратит удаление всех параметров. Это означает, что вы можете удалить и переустановить плагин без потери настроек."
+
+#: inc/admin/main.php:2650
+msgid "When navigating your site, if your theme uses Ajax to load content into your pages (meaning your page doesn't refresh) then check this setting. If you're not sure then please check with the theme author."
+msgstr "При навигации по сайту, если ваша тема использует AJAX для загрузки контента на ваши страницы (то есть ваша страница не обновляется), то проверьте эту настройку. Если вы не уверены, то пожалуйста проверите с автором темы."
+
+#: inc/admin/main.php:1468
+msgid "Next Step: <a href=\"?page=sb-instagram-feed&tab=customize\">Customize your Feed</a>"
+msgstr "Следующий шаг: <a href=\"?page=sb-instagram-feed&tab=customize\"> Настройте свою ленту </a>"
+
+#: inc/admin/main.php:1486
+msgid "Quick links:"
+msgstr "Быстрые ссылки:"
+
+#: inc/admin/main.php:1488 inc/admin/main.php:1567
+msgid "Layout"
+msgstr "Макет"
+
+#: inc/admin/main.php:1490 inc/admin/main.php:2040
+#: inc/class-sb-instagram-feed-locator.php:467
+msgid "Header"
+msgstr "Заголовок"
+
+#: inc/admin/main.php:1494
+msgid "Custom CSS"
+msgstr "Пользовательский CSS"
+
+#: inc/admin/main.php:1495
+msgid "Custom JavaScript"
+msgstr "Пользовательский JavaScript"
+
+#: inc/admin/main.php:1505
+msgid "Width of Feed"
+msgstr "Ширина области ленты"
+
+#: inc/admin/main.php:1515 inc/admin/main.php:1546 inc/admin/main.php:1797
+msgid "px"
+msgstr "px"
+
+#: inc/admin/main.php:1521 inc/admin/main.php:1552 inc/admin/main.php:1803
+msgid "%"
+msgstr "%"
+
+#: inc/admin/main.php:1536
+msgid "Height of Feed"
+msgstr "Высота области ленты"
+
+#: inc/admin/main.php:1557
+msgid "Background Color"
+msgstr "Цвет фона"
+
+#: inc/admin/main.php:1729
+msgid "1"
+msgstr "1"
+
+#: inc/admin/main.php:1735
+msgid "2"
+msgstr "2"
+
+#: inc/admin/main.php:1741
+msgid "3"
+msgstr "3"
+
+#: inc/admin/main.php:1747
+msgid "4"
+msgstr "4"
+
+#: inc/admin/main.php:1753
+msgid "5"
+msgstr "5"
+
+#: inc/admin/main.php:1759
+msgid "6"
+msgstr "6"
+
+#: inc/admin/main.php:1765
+msgid "7"
+msgstr "7"
+
+#: inc/admin/main.php:1771
+msgid "8"
+msgstr "8"
+
+#: inc/admin/main.php:1777
+msgid "9"
+msgstr "9"
+
+#: inc/admin/main.php:1783
+msgid "10"
+msgstr "10"
+
+#: inc/admin/main.php:1818
+msgid "By default on mobile devices the layout automatically changes to use fewer columns. Checking this setting disables the mobile layout."
+msgstr "По умолчанию на мобильных устройствах макет автоматически изменяется, чтобы использовать меньшее количество столбцов. Проверка этого параметра отключает макет мобильного устройства."
+
+#: inc/admin/main.php:1831
+msgid "Sort Photos By"
+msgstr "Сортировать фотографии по"
+
+#: inc/admin/main.php:1840
+msgid "Newest to oldest"
+msgstr "От новых к старым"
+
+#: inc/admin/main.php:1851
+msgid "Image Resolution"
+msgstr "Разрешение изображения"
+
+#: inc/admin/main.php:1867
+msgid "Thumbnail (150x150)"
+msgstr "Миниатюра (150x150)"
+
+#: inc/admin/main.php:1902
+msgid "All"
+msgstr "Все"
+
+#: inc/admin/main.php:1903
+msgid "Photos only"
+msgstr "Только фотографии"
+
+#: inc/admin/main.php:1904
+msgid "Videos only"
+msgstr "Только видео"
+
+#: inc/admin/main.php:1920
+msgid "What will this do?"
+msgstr "Что это будет делать?"
+
+#: inc/admin/main.php:1930
+msgid "Photo Hover Style"
+msgstr "Стиль фотографии при наведении"
+
+#: inc/admin/main.php:1941
+msgid "Hover Background Color"
+msgstr "Цвет фона при наведении"
+
+#: inc/admin/main.php:1947
+msgid "Hover Text Color"
+msgstr "Цвет текста при наведении"
+
+#: inc/admin/main.php:1953
+msgid "Information to display"
+msgstr "Информация для отображения"
+
+#: inc/admin/main.php:1957
+msgid "Username"
+msgstr "Имя пользователя"
+
+#: inc/admin/main.php:1965
+msgid "Date"
+msgstr "Дата"
+
+#: inc/admin/main.php:1575 inc/admin/main.php:1992
+msgid "Carousel"
+msgstr "Карусель"
+
+#: inc/admin/main.php:2002
+msgid "Enable Carousel"
+msgstr "Включить карусель"
+
+#: inc/admin/main.php:2006
+msgid "Enable this setting to create a carousel slider out of your photos."
+msgstr "Включите эту настройку, чтобы создать слайдер карусели из ваших фотографий."
+
+#: inc/admin/main.php:1646 inc/admin/main.php:2016
+msgid "Show Pagination"
+msgstr "Показать разбивку на страницы"
+
+#: inc/admin/main.php:1651 inc/admin/main.php:2022
+msgid "Enable Autoplay"
+msgstr "Включить автозапуск"
+
+#: inc/admin/main.php:1655 inc/admin/main.php:2028
+msgid "Interval Time"
+msgstr "Время интервала"
+
+#: inc/admin/main.php:1658
+msgid "miliseconds"
+msgstr "милисекунд"
+
+#: inc/admin/main.php:2123
+msgid "Header Text Color"
+msgstr "Цвет текста заголовка"
+
+#: inc/admin/main.php:2183
+msgid "Maximum Text Length"
+msgstr "Максимальная длина текста"
+
+#: inc/admin/main.php:2191
+msgid "Text Color"
+msgstr "Цвет текста"
+
+#: inc/admin/main.php:2197
+msgid "Text Size"
+msgstr "Размер текста"
+
+#: inc/admin/main.php:2233
+msgid "Show Icons"
+msgstr "Показать значки"
+
+#: inc/admin/main.php:2286
+msgid "Clear Comment Cache"
+msgstr "Очистить кэш комментариев"
+
+#: inc/admin/main.php:2288
+msgid "This will remove the cached comments saved in the database"
+msgstr "Это приведет к удалению кэшированных комментариев, сохраненных в базе данных"
+
+#: inc/admin/main.php:2323 inc/admin/main.php:2366
+msgid "Button Background Color"
+msgstr "Цвет фона кнопки"
+
+#: inc/admin/main.php:2330 inc/admin/main.php:2373
+msgid "Button Text Color"
+msgstr "Цвет текста кнопки"
+
+#: inc/admin/main.php:2402
+msgid "Remove photos containing these words or hashtags"
+msgstr "Удалить фотографии, содержащие эти слова или хэштеги"
+
+#: inc/admin/main.php:2440
+msgid "Moderation"
+msgstr "Модерация"
+
+#: inc/admin/main.php:2451
+msgid "Moderation Type"
+msgstr "Тип модерации"
+
+#: inc/admin/main.php:2468
+msgid "You can use this setting to show photos only from certain users in your feed. Just enter the usernames here which you want to show. Separate multiple usernames using commas."
+msgstr "Вы можете использовать этот параметр, чтобы показывать фотографии только определенным пользователям в ленте. Просто введите имена пользователей, которые вы хотите показать. Разделите несколько имен пользователей, используя запятые."
+
+#: inc/admin/main.php:2472
+msgid "White lists"
+msgstr "Белые списки"
+
+#: inc/admin/main.php:2475
+msgid "No white lists currently created"
+msgstr "В настоящее время не созданы белые списки"
+
+#: inc/admin/main.php:2478
+msgid "Clear White Lists"
+msgstr "Очистить белые списки"
+
+#: inc/admin/main.php:2480
+msgid "This will remove all of the white lists from the database"
+msgstr "Это приведет к удалению всех белых списков из базы данных"
+
+#: inc/admin/main.php:2610
+msgid "Misc"
+msgstr "Разное"
+
+#: inc/admin/main.php:2943
+msgid "Next Step: <a href=\"?page=sb-instagram-feed&tab=display\">Display your Feed</a>"
+msgstr "Следующий шаг: <a href=\"?page=sb-instagram-feed&tab=display\"> Отобразить ленту </a>"
+
+#: inc/admin/main.php:1088 inc/admin/main.php:2956
+msgid "To copy, click the field then press Ctrl + C (PC) or Cmd + C (Mac)."
+msgstr "Чтобы скопировать, щелкните поле, затем нажмите Ctrl + C (ПК) или Cmd + C (Mac)."
+
+#: inc/admin/main.php:2959
+msgid "If you'd like to display multiple feeds then you can set different settings directly in the shortcode like so:"
+msgstr "Если вы хотите отобразить несколько лент, вы можете установить различные настройки непосредственно в коротком коде, например:"
+
+#: inc/admin/main.php:3012
+msgid "The height of your feed. Any number."
+msgstr "Высота вашей ленты. Любое число."
+
+#: inc/admin/main.php:3022
+msgid "The background color of the feed. Any hex color code."
+msgstr "Цвет фона ленты. Любой шестнадцатеричный код цвета."
+
+#: inc/admin/main.php:3173
+msgid "The background color when hovering over a photo. Any hex color code."
+msgstr "Цвет фона при наведении на фотографию. Любой шестнадцатеричный код цвета."
+
+#: inc/admin/main.php:3178
+msgid "The text/icon color when hovering over a photo. Any hex color code."
+msgstr "Цвет текста/значка при наведении курсора на фотографию. Любой шестнадцатеричный код цвета."
+
+#: inc/admin/main.php:3081
+msgid "Display directional arrows on the carousel"
+msgstr "Отображать направленные стрелки на карусели"
+
+#: inc/admin/main.php:3096
+msgid "The interval time between slides for autoplay. Time in miliseconds."
+msgstr "Интервал времени между слайдами для автовоспроизведения. Время в миллисекундах."
+
+#: inc/admin/main.php:3215
+msgid "The color of the Header text. Any hex color code."
+msgstr "Цвет текста заголовка. Любой шестнадцатеричный код цвета."
+
+#: inc/admin/main.php:3227 inc/admin/main.php:3249
+msgid "The background color of the button. Any hex color code."
+msgstr "Цвет фона кнопки. Любой шестнадцатеричный код цвета."
+
+#: inc/admin/main.php:3232 inc/admin/main.php:3254
+msgid "The text color of the button. Any hex color code."
+msgstr "Цвет текста кнопки. Любой шестнадцатеричный код цвета."
+
+#: inc/admin/main.php:3237 inc/admin/main.php:3259
+msgid "The text used for the button."
+msgstr "Текст, используемый для кнопки."
+
+#: inc/admin/main.php:3263
+msgid "Caption Options"
+msgstr "Параметры подписи"
+
+#: inc/admin/main.php:3344
+msgid "A step-by-step guide on how to setup and use the plugin."
+msgstr "Пошаговое руководство по настройке и использованию плагина."
+
+#: inc/admin/main.php:3351
+msgid "Watch a short video demonstrating how to set up, customize and use the plugin.<br /><strong>Please note</strong> that the video shows the set up and use of the <strong><a href='https://smashballoon.com/instagram-feed/?utm_campaign=instagram-free&utm_source=settings&utm_medium=general' target='_blank'>Pro version</a></strong> of the plugin, but the process is the same for this free version. The only difference is some of the features available."
+msgstr "Посмотрите короткое видео, демонстрирующее, как настраивать, кастомизировать и использовать плагин. <br /> <b> Обратите внимание </b>, что видео показывает настройку и использование <b><a href='https://smashballoon.com/instagram-feed/' target='_blank'>PRO version </a> </b>, но процесс для этой бесплатной версии одинаков. Единственное отличие - некоторые из доступных функций."
+
+#: inc/admin/main.php:3362
+msgid "View our expansive library of FAQs and documentation to help solve your problem as quickly as possible."
+msgstr "Ознакомьтесь с нашей обширной библиотекой часто задаваемых вопросов и документации, чтобы как можно быстрее решить вашу проблему."
+
+#: inc/admin/main.php:3392
+msgid "System Info &nbsp; <i style=\"color: #666; font-size: 11px; font-weight: normal;\">Click the text below to select all</i>"
+msgstr "Системная информация &nbsp; <i style=\"color: #666; font-size: 11px; font-weight: normal;\"> Нажмите текст ниже, чтобы выбрать все </i>"
+
+#: inc/admin/main.php:4042
+msgid "Like the plugin? Help spread the word!"
+msgstr "Как плагин? Помогите распространить это слово!"
+
+#: inc/admin/main.php:2337 inc/admin/main.php:2380
+msgid "Button Text"
+msgstr "Текст кнопки"
+
+#: inc/admin/main.php:444 inc/admin/main.php:713
+#: inc/class-sb-instagram-settings.php:658 inc/if-functions.php:766
+msgid "Follow on Instagram"
+msgstr "Подписаться в Instagram"
+
+#: inc/admin/main.php:1487 inc/admin/main.php:1500
+msgid "General"
+msgstr "Основные"
+
+#: inc/admin/main.php:939
+msgid "3. Display Your Feed"
+msgstr "3. Отображать вашу ленту"
+
+#: inc/admin/main.php:2616
+msgid "<strong style=\"font-size: 15px;\">Custom CSS</strong><br />Enter your own custom CSS in the box below"
+msgstr "<strong style=\"font-size: 15px;\">Пользовательский CSS</strong><br />Введите свой собственный CSS в поле ниже"
+
+#: inc/admin/main.php:2626
+msgid "<strong style=\"font-size: 15px;\">Custom JavaScript</strong><br />Enter your own custom JavaScript/jQuery in the box below"
+msgstr "<strong style=\"font-size: 15px;\">Пользовательский JavaScript </strong><br />Введите свой собственный JavaScript/jQuery в поле ниже"
+
+#: inc/admin/main.php:3027
+msgid "Add a CSS class to the feed container"
+msgstr "Добавить CSS-класс в контейнер ленты"
+
+#: inc/admin/main.php:2990
+msgid "Any hashtag. Separate multiple hashtags by commas."
+msgstr "Любой хэштег. Разделите несколько хэштегов запятыми."
+
+#: inc/admin/main.php:2640
+msgid "Are you using an Ajax powered theme?"
+msgstr "Используете ли вы тему с поддержкой Ajax?"
+
+#: inc/admin/main.php:1883
+msgid "Auto-detect means that the plugin automatically sets the image resolution based on the size of your feed."
+msgstr "Автоопределение означает, что плагин автоматически устанавливает разрешение изображения в зависимости от размера вашей ленты."
+
+#: inc/admin/main.php:1861
+msgid "Auto-detect (recommended)"
+msgstr "Автоопределение (рекомендуется)"
+
+#: inc/admin/main.php:1977 inc/admin/main.php:2167
+msgid "Caption"
+msgstr "Подпись"
+
+#: inc/admin/main.php:3068
+msgid "Carousel Options"
+msgstr "Параметры карусели"
+
+#: inc/admin/main.php:2954
+msgid "Display your Feed"
+msgstr "Отображать вашу ленту"
+
+#: inc/admin/main.php:3187
+msgid "Header Options"
+msgstr "Параметры заголовка"
+
+#: inc/admin/main.php:2142
+msgid "Header Style"
+msgstr "Стиль заголовка"
+
+#: inc/admin/class-sbi-sitehealth.php:62 inc/admin/main.php:31
+#: inc/admin/main.php:32 inc/admin/main.php:894 inc/admin/main.php:3776
+#: widget.php:17
+msgid "Instagram Feed"
+msgstr "Лента Instagram"
+
+#: inc/admin/main.php:1489 inc/admin/main.php:1827
+msgid "Photos"
+msgstr "Фотографии"
+
+#: inc/admin/main.php:3126
+msgid "Photos Options"
+msgstr "Параметры фотографий"
+
+#: inc/admin/main.php:1969
+msgid "Instagram Icon/Link"
+msgstr "Значок Instagram/ссылка"
+
+#: inc/admin/main.php:2972
+msgid "Shortcode option"
+msgstr "Параметры шорткода"
+
+#: inc/admin/main.php:2955
+msgid "Copy and paste the following shortcode directly into the page, post or widget where you'd like the feed to show up:"
+msgstr "Скопируйте и вставьте следующий шорткод непосредственно в страницу, запись или виджет, где вы хотите, чтобы отображалась лента:"
+
+#: inc/admin/main.php:3086
+msgid "Display pagination links below the carousel"
+msgstr "Отображение ссылок пагинации под каруселью"
+
+#. Description of the plugin
+msgid "Display beautifully clean, customizable, and responsive Instagram feeds."
+msgstr "Отображайте красивые, настраиваемые и отзывчивые ленты Instagram."
+
+#: inc/admin/main.php:1808
+msgid "Disable mobile layout"
+msgstr "Отключить макет для мобильных"
+
+#: inc/admin/main.php:1910
+msgid "Enable Pop-up Lightbox"
+msgstr "Включить всплывающий лайтбокс"
+
+#: inc/admin/main.php:1961
+msgid "Expand Icon"
+msgstr "Значок Развернуть"
+
+#: inc/admin/main.php:3361
+msgid "FAQs and Docs"
+msgstr "FAQs и документы"
+
+#: inc/admin/main.php:2245
+msgid "Icon Size"
+msgstr "Размер значка"
+
+#: inc/admin/main.php:2239
+msgid "Icon Color"
+msgstr "Цвет значка"
+
+#: inc/admin/main.php:1879
+msgid "Full size (640x640)"
+msgstr "Полный размер (640x640)"
+
+#: inc/admin/main.php:2271
+msgid "Lightbox Comments"
+msgstr "Комментарии лайтбокса"
+
+#: inc/admin/main.php:1981
+msgid "Like/Comment Icons"
+msgstr "Значки лайков/комментариев"
+
+#: inc/admin/main.php:2223
+msgid "Likes &amp; Comments"
+msgstr "Лайки и комментарии"
+
+#: inc/admin/main.php:3285
+msgid "Likes &amp; Comments Options"
+msgstr "Параметры лайков и комментариев"
+
+#: inc/admin/main.php:1973 inc/admin/templates/locator-summary.php:34
+msgid "Location"
+msgstr "Местонахождение"
+
+#: inc/admin/main.php:3091
+msgid "Make the carousel autoplay"
+msgstr "Сделать карусель автоиграющей"
+
+#: inc/admin/main.php:1531
+msgid "If you set a width on the feed then this will be used on mobile as well as desktop. Check this setting to set the feed width to be 100% on mobile so that it is responsive."
+msgstr "Если вы задали ширину ленты, то она будет использоваться как на мобильных, так и на настольных компьютерах. Отметьте этот параметр, чтобы установить ширину ленты на 100% для мобильных устройств, чтобы она была отзывчивой."
+
+#: inc/admin/main.php:2200 inc/admin/main.php:2248
+msgid "Inherit from theme"
+msgstr "Наследовать из темы"
+
+#: inc/admin/main.php:2295
+msgid "Max number of latest comments."
+msgstr "Макс. кол-во последних комментариев."
+
+#: inc/admin/main.php:1899
+msgid "Media Type to Display"
+msgstr "Тип медиа для отображения"
+
+#: inc/admin/main.php:2958
+msgid "Multiple Feeds"
+msgstr "Несколько лент"
+
+#: inc/admin/main.php:3310
+msgid "Only display posts which contain certain words or hashtags in the caption."
+msgstr "Отображать только те записи, которые содержат определенные слова или хэштеги в подписи."
+
+#: inc/admin/main.php:3350 inc/admin/main.php:3355
+msgid "Watch a Video"
+msgstr "Смотреть видео"
+
+#: inc/admin/main.php:1846
+msgid "Random"
+msgstr "Случайно"
+
+#: inc/admin/main.php:2390
+msgid "Post Filtering"
+msgstr "Фильтрация записи"
+
+#: inc/admin/main.php:3302
+msgid "Post Filtering Options"
+msgstr "Параметры фильтрации записи"
+
+#: inc/admin/main.php:3343
+msgid "Setup Directions"
+msgstr "Указания по установке"
+
+#: inc/admin/main.php:2082
+msgid "Show Bio Text"
+msgstr "Показать Bio Text"
+
+#: inc/admin/main.php:2177
+msgid "Show Caption"
+msgstr "Показать подпись"
+
+#: inc/admin/main.php:3002
+msgid "The width of your feed. Any number."
+msgstr "Ширина вашей ленты. Любое число."
+
+#: inc/admin/main.php:3281
+msgid "The size of the caption text. Any number."
+msgstr "Размер текста подписи. Любое число."
+
+#: inc/admin/main.php:3276
+msgid "The text color of the caption. Any hex color code."
+msgstr "Цвет текста подписи. Любой шестнадцатеричный код цвета."
+
+#: inc/admin/main.php:2414
+msgid "You can use this setting to remove photos which contain certain words or hashtags in the caption. Separate multiple words or hashtags using commas."
+msgstr "С помощью этой настройки можно удалить фотографии, содержащие определенные слова или хэштеги в подписи. Разделите несколько слов или хэштегов запятыми."
+
+#: inc/admin/main.php:2431
+msgid "You can use this setting to only show photos which contain certain words or hashtags in the caption. For example, adding \"sheep, cow, dog\" will show any photos which contain either the word sheep, cow, or dog. Separate multiple words or hashtags using commas."
+msgstr "С помощью этой настройки можно показывать только те фотографии, которые содержат определенные слова или хэштеги в подписи. Например, если добавить \"овца, корова, собака\", будут показаны все фотографии, содержащие слово \"овца\", \"корова\" или \"собака\". Разделите несколько слов или хэштегов запятыми."
+
+#: inc/admin/main.php:3305
+msgid "Remove posts which contain certain words or hashtags in the caption."
+msgstr "Удаляйте записи, которые содержат определенные слова или хэштеги в подписи."
+
+#: inc/admin/main.php:3271
+msgid "The number of characters of the caption to display"
+msgstr "Кол-во символов подписи для отображения"
+
+#: inc/admin/main.php:2977
+msgid "Configure Options"
+msgstr "Параметров конфигурации"
+
+#: inc/admin/main.php:938
+msgid "2. Customize"
+msgstr "2. Настроить"
+
+#: inc/admin/main.php:2999
+msgid "Customize Options"
+msgstr "Параметры настройки"
+
+#: inc/admin/main.php:1788
+msgid "Padding around Images"
+msgstr "Отступы вокруг изображений"
+
+#: inc/if-functions.php:390
+msgid "Please connect an account on the Instagram Feed plugin Settings page."
+msgstr "Подключите учетную запись на странице настроек плагина Instagram Feed."
+
+#: inc/admin/main.php:1244
+msgid "Preserve settings when plugin is removed"
+msgstr "Сохранить настройки при удалении плагина"
+
+#: inc/admin/main.php:3385
+msgid "Request Support"
+msgstr "Запросить поддержку"
+
+#: inc/admin/main.php:2965
+msgid "See the table below for a full list of available shortcode options:"
+msgstr "Полный список доступных вариантов шорткодов приведен в таблице ниже:"
+
+#: inc/admin/main.php:1529
+msgid "Set to be 100% width on mobile?"
+msgstr "Установить ширину 100% на мобильных устройствах?"
+
+#: inc/admin/main.php:1692
+msgid "Separate multiple hashtags using commas"
+msgstr "Разделяйте несколько хэштегов запятыми"
+
+#: inc/admin/main.php:2465
+msgid "Separate usernames using commas"
+msgstr "Разделяйте имена пользователей запятыми"
+
+#: inc/admin/main.php:2412 inc/admin/main.php:2429
+msgid "Separate words/hashtags using commas"
+msgstr "Разделяйте слова/хэштеги запятыми"
+
+#: inc/admin/main.php:2283
+msgid "Show Comments in Lightbox"
+msgstr "Показать комментарии в лайтбоксе"
+
+#: inc/admin/main.php:2044
+msgid "Show Feed Header"
+msgstr "Показать заголовок ленты"
+
+#: inc/admin/main.php:1641 inc/admin/main.php:2010
+msgid "Show Navigation Arrows"
+msgstr "Показать стрелки навигации"
+
+#: inc/admin/main.php:2153
+msgid "Show Number of Followers"
+msgstr "Показать число подписчиков"
+
+#: inc/admin/main.php:2419
+msgid "Show photos containing these words or hashtags"
+msgstr "Показать фотографии, содержащие эти слова или хэштеги"
+
+#: inc/admin/main.php:2311
+msgid "Show the 'Load More' button"
+msgstr "Показать кнопку 'Загрузить еще'"
+
+#: inc/admin/main.php:2353
+msgid "Show the Follow button"
+msgstr "Показать кнопку Подписаться"
+
+#: inc/admin/main.php:3293
+msgid "The color of the Likes &amp; Comments. Any hex color code."
+msgstr "Цвет лайков и комментариев. Любой шестнадцатеричный код цвета."
+
+#: inc/admin/main.php:3298
+msgid "The size of the Likes &amp; Comments. Any number."
+msgstr "Размер лайков и комментариев. Любое число."
+
+#: inc/admin/main.php:3059
+msgid "The spacing around your photos"
+msgstr "Расстояние между фотографиями"
+
+#: inc/admin/main.php:3007
+msgid "The unit of the width. 'px' or '%'"
+msgstr "Единица измерения ширины. 'px' или '%'"
+
+#: inc/admin/main.php:3017
+msgid "The unit of the height. 'px' or '%'"
+msgstr "Единица измерения высоты. 'px' или '%'"
+
+#: inc/admin/main.php:3064
+msgid "The unit of the padding. 'px' or '%'"
+msgstr "Единица измерения отступа. 'px' или '%'"
+
+#: inc/admin/main.php:2156
+msgid "This only applies when displaying photos from a User ID"
+msgstr "Это применимо только при отображении фотографий из ID пользователя"
+
+#: inc/admin/main.php:1917
+msgid "Link Posts to URL in Caption (Shoppable feed)"
+msgstr "Связать записи с URL-адресом в подписи (Shoppable feed)"
+
+#: inc/admin/main.php:1720
+msgid "Number of Columns"
+msgstr "Кол-во столбцов"
+
+#: inc/admin/main.php:2292
+msgid "Number of Comments"
+msgstr "Кол-во комментариев"
+
+#: inc/admin/main.php:1712
+msgid "Number of Photos"
+msgstr "Кол-во фотографий"
+
+#: inc/admin/main.php:3386
+msgid "Still need help? Submit a ticket and one of our support experts will get back to you as soon as possible.<br /><strong>Important:</strong> Please include your <strong>System Info</strong> below with all support requests."
+msgstr "Вам все еще нужна помощь? Отправьте заявку, и один из наших специалистов ответит вам в кратчайшие сроки.<br /><strong>Важно:</strong> Пожалуйста, указывайте <strong>Информацию о системе</strong> ниже при всех запросах в службу поддержки."
+
+#: inc/admin/main.php:3039
+msgid "The number of photos to display initially. Maximum is 33."
+msgstr "Кол-во фотографий для первоначального отображения. Максимальное значение - 33."
+
+#: inc/admin/main.php:3049
+msgid "The number of columns in your feed. 1 - 10."
+msgstr "Кол-во столбцов в ленте. 1 - 10."
+
+#: inc/admin/main.php:2297
+msgid "This is the maximum number of comments that will be shown in the lightbox. If there are more comments available than the number set, only the latest comments will be shown"
+msgstr "Это макс. кол-во комментариев, которые будут показаны в лайтбоксе. Если имеется больше комментариев, чем задано, будут показаны только последние комментарии"
+
+#: inc/admin/main.php:1894 inc/admin/main.php:2136
+msgid "Upgrade to Pro to enable these settings"
+msgstr "Перейдите на версию Pro, чтобы включить эти настройки"
+
+#: inc/admin/main.php:1882
+msgid "What does Auto-detect mean?"
+msgstr "Что означает автоопределение?"
+
+#: inc/admin/main.php:3144
+msgid "Whether to disable the photo Lightbox. It is enabled by default."
+msgstr "Отключать фото Lightbox. По умолчанию он включен."
+
+#: inc/admin/main.php:3241
+msgid "'Follow on Instagram' Button Options"
+msgstr "'Подписаться в Instagram' параметры кнопки"
+
+#: inc/admin/main.php:2961
+msgid "You can display as many different feeds as you like, on either the same page or on different pages, by just using the shortcode options below. For example:"
+msgstr "Вы можете отображать столько различных лент, сколько пожелаете, на одной и той же странице или на разных страницах, просто используя приведенные ниже параметры шорткода. Например:"
+
+#: inc/admin/main.php:1492 inc/admin/main.php:2349
+msgid "'Follow' Button"
+msgstr "Кнопка 'Подписаться'"
+
+#: inc/admin/main.php:1491 inc/admin/main.php:2307
+msgid "'Load More' Button"
+msgstr "Кнопка 'Загрузить ещё'"
+
+#: inc/admin/main.php:3219
+msgid "'Load More' Button Options"
+msgstr "Параметры кнопки 'Загрузить еще'"
+
+#: inc/admin/main.php:1921
+msgid "Checking this box will change the link for each post to any url included in the caption for that Instagram post. The lightbox will be disabled. Visit <a href='https://smashballoon.com/make-a-shoppable-feed?utm_campaign=instagram-free&utm_source=settings&utm_medium=shoppable'>this link</a> to learn how this works."
+msgstr "Установка этого флажка изменит ссылку для каждой записи на любой url, включенный в подпись к этой записи Instagram. Лайтбокс будет отключен. Посетите <a href='https://smashballoon.com/make-a-shoppable-feed?utm_campaign=instagram-free&utm_source=settings&utm_medium=shoppable'>эту ссылку</a>, чтобы узнать, как это работает."
+
+#: inc/admin/main.php:1189
+msgid "Display posts from a specific hashtag instead of from a user"
+msgstr "Отображать записи с определенного хэштега, а не от пользователя"
+
+#: inc/admin/main.php:2462
+msgid "Only show posts by these users"
+msgstr "Показать только записи от определенных пользователей"
+
+#: inc/admin/main.php:3129
+msgid "Sort the posts by Newest to Oldest (none) or Random (random)"
+msgstr "Сортировать записи по возрастанию от самого нового к самому старому (none) или случайному (random)"
+
+#: inc/admin/main.php:2187
+msgid "The number of characters of text to display in the caption. An elipsis link will be added to allow the user to reveal more text if desired."
+msgstr "Кол-во символов текста, отображаемых в подписи. Будет добавлена ссылка с многоточием (elipsis), позволяющая пользователю при желании отображать больше текста."

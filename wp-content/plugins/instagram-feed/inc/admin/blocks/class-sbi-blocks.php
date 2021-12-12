@@ -54,9 +54,9 @@ class SB_Instagram_Blocks {
 			'shortcodeSettings' => array(
 				'type' => 'string',
 			),
-			'noNewChanges' => array(
+			'noNewChanges'      => array(
 				'type' => 'boolean',
-			)
+			),
 		);
 
 		register_block_type(
@@ -90,10 +90,10 @@ class SB_Instagram_Blocks {
 		$shortcodeSettings = '';
 
 		$i18n = array(
-			'addSettings'         => esc_html__( 'Add Settings', 'instagram-feed' ),
-			'shortcodeSettings'   => esc_html__( 'Shortcode Settings', 'instagram-feed' ),
-			'example'             => esc_html__( 'Example', 'instagram-feed' ),
-			'preview'             => esc_html__( 'Apply Changes', 'instagram-feed' ),
+			'addSettings'       => esc_html__( 'Add Settings', 'instagram-feed' ),
+			'shortcodeSettings' => esc_html__( 'Shortcode Settings', 'instagram-feed' ),
+			'example'           => esc_html__( 'Example', 'instagram-feed' ),
+			'preview'           => esc_html__( 'Apply Changes', 'instagram-feed' ),
 
 		);
 
@@ -101,11 +101,11 @@ class SB_Instagram_Blocks {
 			'sbi-feed-block',
 			'sbi_block_editor',
 			array(
-				'wpnonce'  => wp_create_nonce( 'sb-instagram-blocks' ),
-				'canShowFeed' => ! empty( $db['connected_accounts'] ),
-				'configureLink' => get_admin_url() . '?page=sb-instagram-feed',
-				'shortcodeSettings'    => $shortcodeSettings,
-				'i18n'     => $i18n,
+				'wpnonce'           => wp_create_nonce( 'sb-instagram-blocks' ),
+				'canShowFeed'       => ! empty( $db['connected_accounts'] ),
+				'configureLink'     => get_admin_url() . '?page=sb-instagram-feed',
+				'shortcodeSettings' => $shortcodeSettings,
+				'i18n'              => $i18n,
 			)
 		);
 	}
@@ -125,9 +125,9 @@ class SB_Instagram_Blocks {
 
 		$shortcode_settings = isset( $attr['shortcodeSettings'] ) ? $attr['shortcodeSettings'] : '';
 
-		$shortcode_settings = str_replace(array( '[instagram-feed', ']' ), '', $shortcode_settings );
+		$shortcode_settings = str_replace( array( '[instagram-feed', ']' ), '', $shortcode_settings );
 
-		$return .= do_shortcode( '[instagram-feed '.$shortcode_settings.']' );
+		$return .= do_shortcode( '[instagram-feed ' . $shortcode_settings . ']' );
 
 		return $return;
 
@@ -141,8 +141,6 @@ class SB_Instagram_Blocks {
 	 * @return bool True if is Gutenberg REST API call.
 	 */
 	public static function is_gb_editor() {
-
-		// TODO: Find a better way to check if is GB editor API call.
 		return defined( 'REST_REQUEST' ) && REST_REQUEST && ! empty( $_REQUEST['context'] ) && 'edit' === $_REQUEST['context']; // phpcs:ignore
 	}
 

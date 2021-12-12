@@ -2,8 +2,8 @@
 Contributors: smashballoon, craig-at-smash-balloon
 Tags: Instagram, Instagram feed, Instagram photos, Instagram widget, Instagram gallery
 Requires at least: 3.4
-Tested up to: 5.7
-Stable tag: 2.9.1
+Tested up to: 5.8
+Stable tag: 2.9.7
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -40,7 +40,6 @@ Display Instagram posts from your Instagram accounts, either in the same single 
 
 = Pro Version =
 In order to maintain the free version of the plugin on an ongoing basis, and to provide quick and effective support for free, we offer a Pro version of the plugin. The Pro version allows you to:
-
 * Display Hashtag feeds
 * View photos and videos in a popup lightbox directly on your site
 * View post comments for user feeds
@@ -273,13 +272,12 @@ For more FAQs related to the Instagram Feed plugin please visit the [FAQ section
 
 == Screenshots ==
 
-1. Default plugin styling
-2. Your Instagram Feed is completely customizable
-3. Display multiple Instagram feeds from any non-private Instagram account
-4. Your Instagram feeds are completely responsive and look great on any device
-5. Display your Instagram photos in multiple columns, with or without a scrollbar
+1. Easily display feeds from any of your Instagram accounts
+2. Your Instagram Feed is completely customizable and responsive
+3. Combine multiple accounts into a single feed
+5. Super quick and easy to get started. Just click the button to connect an Instagram account.
+5. Customize layouts, styles, colors, and more
 6. Just copy and paste the shortcode into any page, post or widget on your site
-7. The Instagram Feed plugin Settings pages
 
 == Other Notes ==
 
@@ -333,8 +331,46 @@ We understand that sometimes you need help, have issues or just have questions. 
 * Plus more customization options added all the time!
 
 == Changelog ==
+= 2.9.7 =
+* Tweak: A prompt will now be displayed if the ability to save settings requires a page refresh.
+* Fix: Fixed several accessibility issues in the admin area.
+* Fix: Made a significant number of code quality improvements.
+
+= 2.9.6 =
+* Fix: Periods and underscores in usernames when used as part of the shortcode would cause the load more button not to work.
+* Tweak: The WooCommerce orders post type will no longer be scanned for oembeds.
+* Tweak: An alert bubble will be added to the Instagram Feed menu item when there are new notifications available.
+
+= 2.9.5 =
+* Fix: Fixed an issue when reconnecting a personal account.
+* Fix: Using showheader="true" in the shortcode would not work if the related setting was disabled on the settings page.
+* Fix: Added additional plugin hardening.
+
+= 2.9.4 =
+* Tweak: All Instagram data is now encrypted in your WordPress database.
+* Tweak: Access Tokens are no longer able to be viewed on the settings page.
+* Tweak: Added a maximum caching time of 24 hours.
+* Tweak: Added an expiration time to backup caches.
+* Tweak: Deauthorizing our app inside your Instagram or Facebook account will now delete all data for that feed on your site.
+
+= 2.9.3.1 =
+* Fix: Fixed a problem with the image resizing table check that would cause blank images or non-optimized images to show in the feed.
+
+= 2.9.3 =
+* Fix: Fixed duplicate MySQL queries issue when checking for the resized images table.
+* Fix: Fixed an issue with the integration with the GDPR Cookie Consent plugin by WebToffee.
+* Fix: Removed max-height rule for the sbi_item elements to improve performance.
+* Tweak: Improved the reliability of the Instagram account connection process.
+
+= 2.9.2 =
+* Tested with WordPress 5.8 update.
+* Fix: PHP error "Uncaught Error: array_merge() does not accept unknown named parameters" when visiting the "About" page using PHP 8+.
+* Fix: About page was not recognizing that YouTube Feeds Pro was installed and active when prompting the user to activate a YouTube Feed plugin.
+* Fix: Fixed an issue with GDPR Cookie Consent by Web Toffee integration.
+
 = 2.9.1 =
-* Fix: Updated the Instagram authorization URL to work around an Instagram API issue and prevent problems with connecting personal accounts
+* Fix: Fixed several issues with GDPR Cookie Consent by Web Toffee integration.
+* Tweak: Changed how connected accounts errors display to prevent temporary, non-actionable errors from triggering a notice.
 
 = 2.9 =
 * New: Added support for IGTV posts. When creating an IGTV post, keep the "Post a Preview" setting enabled and the IGTV post will appear in your feed. IGTV posts are only available for connected Instagram business profiles and aren't available if you're using a personal Instagram profile in the plugin.

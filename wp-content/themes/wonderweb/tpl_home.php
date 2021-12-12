@@ -12,7 +12,7 @@
 -->
 
 <!-- ПОРТФОЛИО -->
-<!-- <?php
+<?php
     $posts = get_posts( array(
         'numberposts' => 4,
         'category'    => 0,
@@ -37,10 +37,10 @@
     }
  
     wp_reset_postdata();
-?> -->
+?>
 
 <!-- БЛОГ -->
-<!-- <?php
+<?php
     global $wp_query;
     $wp_query = new WP_Query([
         'category_name' => 'blog',
@@ -57,7 +57,7 @@
 
     <?php endwhile;
     wp_reset_query();
-?> -->
+?>
 
 <?php
 	get_footer();

@@ -13,12 +13,7 @@
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
 
-
-<code>WordPress успешно установлен!</code><br>
-<code>Это сообщение выведено из header.php</code>
-
-
-<!-- <?php 
+<?php 
 	wp_nav_menu([
 		'theme_location'  => '',
 		'menu'            => 'Меню в шапке', 
@@ -37,7 +32,7 @@
 		'depth'           => 0,
 		'walker'          => '',
 	]); 
-?> -->
+?>
 
 <!-- 
 	<?=get_bloginfo('template_url');?>
@@ -55,7 +50,7 @@
 -->
 
 
-<!-- <?php if (get_bloginfo('language')=='ru-ua'): ?>
+<?php if (get_bloginfo('language')=='ru-ua'): ?>
 	<a class="active">RU</a>
 	<a href="/<?=str_replace('/ru/', '', $_SERVER['REQUEST_URI']);?>">UA</a>
 	<a href="/en/<?=str_replace('/ru/', '', $_SERVER['REQUEST_URI']);?>">EN</a>
@@ -67,4 +62,4 @@
 	<a class="active">EN</a>
 	<a href="/<?=str_replace('/en/', '', $_SERVER['REQUEST_URI']);?>">UA</a>
 	<a href="/ru/<?=str_replace('/en/', '', $_SERVER['REQUEST_URI']);?>">RU</a>
-<?php endif; ?> -->
+<?php endif; ?>

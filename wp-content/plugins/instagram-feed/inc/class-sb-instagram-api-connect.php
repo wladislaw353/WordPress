@@ -65,7 +65,7 @@ class SB_Instagram_API_Connect
 		if ( $this->is_wp_error() ) {
 			return array();
 		}
-		if (!empty($this->response['data'])) {
+		if ( ! empty( $this->response['data'] ) ) {
 			return $this->response['data'];
 		} else {
 			return $this->response;
@@ -82,7 +82,10 @@ class SB_Instagram_API_Connect
 	 */
 	public function get_wp_error() {
 		if ( $this->is_wp_error() ) {
-			return array( 'response' => $this->response, 'url' => $this->url );
+			return array(
+				'response' => $this->response,
+				'url'      => $this->url,
+			);
 		} else {
 			return false;
 		}
@@ -98,7 +101,7 @@ class SB_Instagram_API_Connect
 	 *
 	 * @since 2.2.2/5.3.3
 	 */
-	public function type_allows_after_paging( $type ) {
+	public function type_allows_after_paging( ) {
 		return false;
 	}
 
@@ -111,13 +114,13 @@ class SB_Instagram_API_Connect
 	 *
 	 * @since 2.0/5.0
 	 */
-	public function get_next_page( $type = '' ) {
+	public function get_next_page( ) {
 		if ( ! empty( $this->response['pagination']['next_url'] ) ) {
 			return $this->response['pagination']['next_url'];
 		} elseif ( ! empty( $this->response['paging']['next'] ) ) {
 			return $this->response['paging']['next'];
 		} else {
-			if ( $this->type_allows_after_paging( $type ) ) {
+			if ( $this->type_allows_after_paging( ) ) {
 				if ( isset( $this->response['paging']['cursors']['after'] ) ) {
 					return $this->response['paging']['cursors']['after'];
 				}
@@ -169,7 +172,7 @@ class SB_Instagram_API_Connect
 			$response = $this->response;
 		}
 
-		return (isset( $response['error'] ));
+		return ( isset( $response['error'] ) );
 	}
 
 	/**
@@ -179,9 +182,11 @@ class SB_Instagram_API_Connect
 	 */
 	public function connect() {
 		$args = array(
-			'timeout' => 60,
-			'sslverify' => false
+			'timeout' => 20,
 		);
+		if ( version_compare( get_bloginfo( 'version' ), '3.7', '<' ) ) {
+			$args['sslverify'] = false;
+		}
 		$response = wp_remote_get( $this->url, $args );
 
 		if ( ! is_wp_error( $response ) ) {
@@ -190,7 +195,6 @@ class SB_Instagram_API_Connect
 		}
 
 		$this->response = $response;
-
 	}
 
 	/**
@@ -203,7 +207,7 @@ class SB_Instagram_API_Connect
 	 *
 	 * @since 2.0/5.0
 	 */
-	public static function handle_instagram_error( $response, $error_connected_account, $request_type ) {
+	public static function handle_instagram_error( $response, $error_connected_account ) {
 		global $sb_instagram_posts_manager;
 		delete_option( 'sbi_dismiss_critical_notice' );
 
@@ -244,8 +248,8 @@ class SB_Instagram_API_Connect
 	 * @since 2.2/5.3 added endpoints for the basic display API
 	 */
 	protected function set_url( $connected_account, $endpoint_slug, $params ) {
-		$account_type = isset( $connected_account['type'] ) ? $connected_account['type'] : 'personal';
-		$num = ! empty( $params['num'] ) ? (int)$params['num'] : 33;
+		$account_type = ! empty( $connected_account['type'] ) ? $connected_account['type'] : 'personal';
+		$num          = ! empty( $params['num'] ) ? (int) $params['num'] : 33;
 
 		if ( $account_type === 'basic' ) {
 			if ( $endpoint_slug === 'access_token' ) {
@@ -254,21 +258,21 @@ class SB_Instagram_API_Connect
 				$url = 'https://graph.instagram.com/me?fields=id,username,media_count&access_token=' . sbi_maybe_clean( $connected_account['access_token'] );
 			} else {
 				$num = min( $num, 200 );
-				$url = 'https://graph.instagram.com/' . sbi_maybe_clean( $connected_account['user_id'] ) . '/media?fields=media_url,thumbnail_url,caption,id,media_type,timestamp,username,comments_count,like_count,permalink,children%7Bmedia_url,id,media_type,timestamp,permalink,thumbnail_url%7D&limit='.$num.'&access_token=' . sbi_maybe_clean( $connected_account['access_token'] );
+				$url = 'https://graph.instagram.com/' . sbi_maybe_clean( $connected_account['user_id'] ) . '/media?fields=media_url,thumbnail_url,caption,id,media_type,timestamp,username,comments_count,like_count,permalink,children%7Bmedia_url,id,media_type,timestamp,permalink,thumbnail_url%7D&limit=' . $num . '&access_token=' . sbi_maybe_clean( $connected_account['access_token'] );
 			}
 		} elseif ( $account_type === 'personal' ) {
 			if ( $endpoint_slug === 'header' ) {
 				$url = 'https://api.instagram.com/v1/users/' . $connected_account['user_id'] . '?access_token=' . sbi_maybe_clean( $connected_account['access_token'] );
 			} else {
 				$num = $num > 20 ? min( $num, 33 ) : 20; // minimum set at 20 due to IG TV bug
-				$url = 'https://api.instagram.com/v1/users/' . $connected_account['user_id'] . '/media/recent?count='.$num.'&access_token=' . sbi_maybe_clean( $connected_account['access_token'] );
+				$url = 'https://api.instagram.com/v1/users/' . $connected_account['user_id'] . '/media/recent?count=' . $num . '&access_token=' . sbi_maybe_clean( $connected_account['access_token'] );
 			}
 		} else {
-			if ( $endpoint_slug === 'header' ) {
+			if ( 'header' === $endpoint_slug ) {
 				$url = 'https://graph.facebook.com/' . $connected_account['user_id'] . '?fields=biography,id,username,website,followers_count,media_count,profile_picture_url,name&access_token=' . sbi_maybe_clean( $connected_account['access_token'] );
 			} else {
 				$num = min( $num, 200 );
-				$url = 'https://graph.facebook.com/v10.0/' . $connected_account['user_id'] . '/media?fields=media_url,media_product_type,video_title,thumbnail_url,caption,id,media_type,timestamp,username,comments_count,like_count,permalink,children%7Bmedia_url,id,media_type,timestamp,permalink,thumbnail_url%7D&limit='.$num.'&access_token=' . sbi_maybe_clean( $connected_account['access_token'] );
+				$url = 'https://graph.facebook.com/v10.0/' . $connected_account['user_id'] . '/media?fields=media_url,media_product_type,video_title,thumbnail_url,caption,id,media_type,timestamp,username,comments_count,like_count,permalink,children%7Bmedia_url,id,media_type,timestamp,permalink,thumbnail_url%7D&limit=' . $num . '&access_token=' . sbi_maybe_clean( $connected_account['access_token'] );
 			}
 		}
 

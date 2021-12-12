@@ -3,9 +3,9 @@ Contributors: Benbodhi
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=Z9R7JERS82EQQ
 Tags: svg, vector, safesvg, css, style, mime, mime type, embed, img, inline, animation, animate, js
 Requires at least: 4.8
-Tested up to: 5.7-alpha-49774
+Tested up to: 5.8.1-alpha-51489
 Requires PHP: 5.2
-Stable tag: 2.3.18
+Stable tag: 2.3.19
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -139,6 +139,10 @@ You need to add the mime type for svg and svgz to: "MLA Settings > Media Library
 
 
 == Changelog ==
+
+= 2.3.19 =
+* Fixed PHP Warning from localize_script in functions/enqueue.php.
+* Added a check for SRC attribute in js/svgs-inline.js.
 
 = 2.3.18 =
 * Updated author URL in main plugin file.
@@ -313,6 +317,9 @@ You need to add the mime type for svg and svgz to: "MLA Settings > Media Library
 
 
 == Upgrade Notice ==
+
+= 2.3.19 =
+Quick update to address PHP warnings from localize_script and to add a SRC check.
 
 = 2.3.18 =
 General clean up of plugin, testing on latest nightly build plus fixed issue with metadata being removed from non SVG attachments.

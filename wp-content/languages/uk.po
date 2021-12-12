@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 5.8.x - Development package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-09-25 07:37:49+0000\n"
+"PO-Revision-Date: 2021-10-10 16:46:39+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -392,19 +392,171 @@ msgctxt "block keyword"
 msgid "login"
 msgstr "вхід"
 
+#: wp-includes/blocks/heading/block.json
+msgctxt "block keyword"
+msgid "subtitle"
+msgstr "підзаголовок"
+
+#: wp-includes/blocks/heading/block.json
+msgctxt "block keyword"
+msgid "title"
+msgstr "заголовок"
+
+#: wp-includes/blocks/group/block.json
+msgctxt "block keyword"
+msgid "section"
+msgstr "розділ"
+
+#: wp-includes/blocks/group/block.json
+msgctxt "block keyword"
+msgid "row"
+msgstr "рядок"
+
+#: wp-includes/blocks/group/block.json
+msgctxt "block keyword"
+msgid "container"
+msgstr "контейнер"
+
+#: wp-includes/blocks/gallery/block.json
+msgctxt "block keyword"
+msgid "photos"
+msgstr "фотографії"
+
+#: wp-includes/blocks/gallery/block.json
+msgctxt "block keyword"
+msgid "images"
+msgstr "зображення"
+
+#: wp-includes/blocks/file/block.json
+msgctxt "block keyword"
+msgid "download"
+msgstr "завантаження"
+
 #: wp-includes/blocks/file/block.json
 msgctxt "block keyword"
 msgid "pdf"
 msgstr "pdf"
+
+#: wp-includes/blocks/file/block.json
+msgctxt "block keyword"
+msgid "document"
+msgstr "документ"
+
+#: wp-includes/blocks/calendar/block.json
+msgctxt "block keyword"
+msgid "archive"
+msgstr "архів"
+
+#: wp-includes/blocks/calendar/block.json
+msgctxt "block keyword"
+msgid "posts"
+msgstr "записи"
+
+#: wp-includes/blocks/audio/block.json
+msgctxt "block keyword"
+msgid "recording"
+msgstr "запис"
+
+#: wp-includes/blocks/audio/block.json
+msgctxt "block keyword"
+msgid "podcast"
+msgstr "подкаст"
+
+#: wp-includes/blocks/audio/block.json
+msgctxt "block keyword"
+msgid "sound"
+msgstr "звук"
+
+#: wp-includes/blocks/audio/block.json
+msgctxt "block keyword"
+msgid "music"
+msgstr "музика"
 
 #. translators: 1 & 2: Deprecation replacement options.
 #: wp-includes/user.php:3733 wp-includes/user.php:3975
 msgid "%1$s or %2$s"
 msgstr "%1$s або %2$s"
 
+#: wp-includes/taxonomy.php:646
+msgctxt "navigation link block description"
+msgid "A link to a category."
+msgstr "Посилання на категорію."
+
+#: wp-includes/taxonomy.php:645
+msgctxt "navigation link block description"
+msgid "A link to a tag."
+msgstr "Посилання на позначку."
+
+#: wp-includes/taxonomy.php:642
+msgctxt "navigation link block description"
+msgid "Category Link"
+msgstr "Посилання категорії"
+
+#: wp-includes/taxonomy.php:641
+msgctxt "navigation link block title"
+msgid "Tag Link"
+msgstr "Посилання позначки"
+
+#: wp-includes/rest-api/endpoints/class-wp-rest-widget-types-controller.php:386
+msgid "Class name"
+msgstr "Назва класу"
+
+#: wp-includes/rest-api/endpoints/class-wp-rest-widget-types-controller.php:374
+msgid "Description of the widget."
+msgstr "Опис віджета."
+
+#: wp-includes/rest-api/endpoints/class-wp-rest-widget-types-controller.php:192
+msgid "Invalid widget type."
+msgstr "Невірний тип віджета."
+
+#: wp-includes/rest-api/endpoints/class-wp-rest-widget-types-controller.php:57
+#: wp-includes/rest-api/endpoints/class-wp-rest-widget-types-controller.php:77
+msgid "The widget type id."
+msgstr "ID типу віджета."
+
+#: wp-includes/rest-api/endpoints/class-wp-rest-templates-controller.php:588
+msgid "Theme file exists."
+msgstr "Файл теми існує."
+
 #: wp-includes/rest-api/endpoints/class-wp-rest-templates-controller.php:582
 msgid "Post ID."
 msgstr "ID запису."
+
+#: wp-includes/rest-api/endpoints/class-wp-rest-templates-controller.php:576
+msgid "Status of template."
+msgstr "Статус шаблону."
+
+#: wp-includes/rest-api/endpoints/class-wp-rest-templates-controller.php:570
+msgid "Description of template."
+msgstr "Опис шаблону."
+
+#: wp-includes/rest-api/endpoints/class-wp-rest-templates-controller.php:564
+msgid "Title of template."
+msgstr "Заголовок шаблону."
+
+#: wp-includes/rest-api/endpoints/class-wp-rest-templates-controller.php:558
+msgid "Content of template."
+msgstr "Вміст шаблону."
+
+#: wp-includes/rest-api/endpoints/class-wp-rest-templates-controller.php:552
+msgid "Source of template"
+msgstr "Джерело шаблону"
+
+#: wp-includes/rest-api/endpoints/class-wp-rest-templates-controller.php:547
+msgid "Theme identifier for the template."
+msgstr "Ідентифікатор теми для шаблону."
+
+#: wp-includes/rest-api/endpoints/class-wp-rest-templates-controller.php:539
+msgid "Unique slug identifying the template."
+msgstr "Унікальна частина посилання, ідентифікуюча шаблон."
+
+#: wp-includes/rest-api/endpoints/class-wp-rest-templates-controller.php:533
+msgid "ID of template."
+msgstr "ID шаблону."
+
+#: wp-includes/rest-api/endpoints/class-wp-rest-templates-controller.php:79
+msgid "The id of a template"
+msgstr "ID шаблону."
 
 #: wp-includes/post.php:1826
 msgctxt "navigation link block description"
@@ -3688,6 +3840,10 @@ msgstr "Пошукові функції REST повинні розширюват
 msgid "The current user can post unfiltered HTML markup and JavaScript."
 msgstr "Поточний користувач може публікувати нефільтрований HTML та JavaScript."
 
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2248
+msgid "Permalink template for the post."
+msgstr "Шаблон постійного посилання для запису."
+
 #: wp-includes/rest-api/endpoints/class-wp-rest-autosaves-controller.php:379
 msgid "There is nothing to save. The autosave and the post content are the same."
 msgstr "Нічого зберегти. Вміст запису не відрізняється від автоматично збереженої версії."
@@ -6632,13 +6788,29 @@ msgstr "Обмежити вибірку записами що призначен
 msgid "A password to protect access to the content and excerpt."
 msgstr "Пароль для захисту змісту і уривка."
 
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2460
+msgid "The format for the post."
+msgstr "Формат для запису."
+
 #: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2415
 msgid "Whether the excerpt is protected with a password."
 msgstr "Чи захищати паролем уривок."
 
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2409
+msgid "HTML excerpt for the post, transformed for display."
+msgstr "HTML уривок для запису, перетворений для показу."
+
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2404
+msgid "Excerpt for the post, as it exists in the database."
+msgstr "Уривок для запису, як він існує в базі даних."
+
 #: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2395
 msgid "The excerpt for the post."
 msgstr "Уривок запису."
+
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2387
+msgid "The ID for the author of the post."
+msgstr "ID для автора запису."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2376
 msgid "Whether the content is protected with a password."
@@ -6651,6 +6823,18 @@ msgstr "Назва для об'єкта."
 #: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2223
 msgid "A named status for the post."
 msgstr "Іменований статус запису."
+
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2180
+msgid "GUID for the post, transformed for display."
+msgstr "GUID для запису, перетворений для показу."
+
+#: wp-includes/rest-api/endpoints/class-wp-rest-revisions-controller.php:695
+msgid "GUID for the revision, as it exists in the database."
+msgstr "GUID для редакції, як він існує в базі даних."
+
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2168
+msgid "The globally unique identifier for the post."
+msgstr "Глобально унікальний ідентифікатор для запису."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-revisions-controller.php:689
 msgid "The date the revision was published, as GMT."

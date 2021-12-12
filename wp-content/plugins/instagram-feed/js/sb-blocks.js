@@ -58,7 +58,6 @@
                 })
             }
             function afterRender() {
-                var executed = false;
                 // no way to run a script after AJAX call to get feed so we just try to execute it on a few intervals
                 setTimeout(function() { if (typeof sbi_init !== 'undefined') {sbi_init();}},1000);
                 setTimeout(function() { if (typeof sbi_init !== 'undefined') {sbi_init();}},2000);

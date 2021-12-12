@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 5.8.x - Development package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-09-01 21:02:01+0000\n"
+"PO-Revision-Date: 2021-11-26 06:54:40+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -2390,7 +2390,7 @@ msgstr "Для создания пароля приложения требует
 #: wp-includes/media-template.php:513 wp-includes/media-template.php:742
 #: wp-admin/async-upload.php:72 wp-admin/includes/media.php:3350
 msgid "Copy URL to clipboard"
-msgstr "Скопировать URL в буфер обмена"
+msgstr "Скопировать URL в буфер"
 
 #: wp-includes/media-template.php:463 wp-includes/media-template.php:681
 msgid "Used as:"
