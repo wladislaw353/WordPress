@@ -5,7 +5,6 @@
 <!-- 
 	<?php the_post_thumbnail(); ?>
 	<?php the_post_thumbnail_url() ?>
-
 	<?=get_bloginfo('template_url');?>
 	<?=home_url();?>
 	<?=mlt('', '')?>

@@ -1,8 +1,7 @@
 <!-- 
-	<?=get_bloginfo('template_url');?>
+<?=get_bloginfo('template_url');?>
 	<?=home_url();?>
 	<?=mlt('', '')?> 
-
     <?=get_field('phone', 'option') ?>
     <?=get_field('phone2', 'option') ?>
     <?=get_field('phone3', 'option') ?>

@@ -12,7 +12,7 @@
 -->
 
 <!-- ПОРТФОЛИО -->
-<?php
+<!-- <?php
     $posts = get_posts( array(
         'numberposts' => 4,
         'category'    => 0,
@@ -37,27 +37,24 @@
     }
  
     wp_reset_postdata();
-?>
+?> -->
 
 <!-- БЛОГ -->
-<?php
+<!-- <?php
     global $wp_query;
     $wp_query = new WP_Query([
         'category_name' => 'blog',
         'posts_per_page' => '4',
         'paged' => get_query_var('paged') ?: 1
     ]);
-
     while(have_posts()) : the_post();?>
-
         <?php the_post_thumbnail(); ?>
         <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
         <p><?php the_excerpt(); ?></p>
         <p><?php the_date(); ?></p>
-
     <?php endwhile;
     wp_reset_query();
-?>
+?> -->
 
 <?php
 	get_footer();

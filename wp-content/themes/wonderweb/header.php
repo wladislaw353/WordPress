@@ -1,4 +1,3 @@
-
 <?php if(stripos($_SERVER['REQUEST_URI'], '/author/') === false) {} else header('Location: /'); ?>
 <!doctype html>
 <html <?php language_attributes(); ?>>
@@ -13,7 +12,12 @@
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
 
-<?php 
+
+<code>WordPress успешно установлен!</code><br>
+<code>Это сообщение выведено из header.php</code>
+
+
+<!-- <?php 
 	wp_nav_menu([
 		'theme_location'  => '',
 		'menu'            => 'Меню в шапке', 
@@ -32,13 +36,12 @@
 		'depth'           => 0,
 		'walker'          => '',
 	]); 
-?>
+?> -->
 
 <!-- 
 	<?=get_bloginfo('template_url');?>
 	<?=home_url();?>
 	<?=mlt('', '')?> 
-
     <?=get_field('phone', 'option') ?>
     <?=get_field('phone2', 'option') ?>
     <?=get_field('phone3', 'option') ?>
@@ -50,7 +53,7 @@
 -->
 
 
-<?php if (get_bloginfo('language')=='ru-ua'): ?>
+<!-- <?php if (get_bloginfo('language')=='ru-ua'): ?>
 	<a class="active">RU</a>
 	<a href="/<?=str_replace('/ru/', '', $_SERVER['REQUEST_URI']);?>">UA</a>
 	<a href="/en/<?=str_replace('/ru/', '', $_SERVER['REQUEST_URI']);?>">EN</a>
@@ -62,4 +65,4 @@
 	<a class="active">EN</a>
 	<a href="/<?=str_replace('/en/', '', $_SERVER['REQUEST_URI']);?>">UA</a>
 	<a href="/ru/<?=str_replace('/en/', '', $_SERVER['REQUEST_URI']);?>">RU</a>
-<?php endif; ?>
+<?php endif; ?> -->
