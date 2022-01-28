@@ -1,4 +1,4 @@
-<?php if(stripos($_SERVER['REQUEST_URI'], '/author/') === false) {} else header('Location: /'); ?>
+<?php if (stripos($_SERVER['REQUEST_URI'], '/author/') !== false) header('HTTP/1.1 404 Not Found') ?>
 <!doctype html>
 <html <?php language_attributes(); ?>>
 <head>
