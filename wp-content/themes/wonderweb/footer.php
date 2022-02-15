@@ -10,6 +10,9 @@
     <?=get_field('instagram', 'option') ?>
     <?=get_field('linkedin', 'option') ?>
     <?=get_field('youtube', 'option') ?>
+    https://t.me/<?=get_field('telegram', 'option') ?>
+	viber://add?number=38<?=get_field('viber', 'option') ?>
+	https://wa.me/38<?=get_field('whatsapp', 'option') ?>
 -->
 
 
