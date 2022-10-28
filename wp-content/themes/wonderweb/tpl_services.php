@@ -1,6 +1,6 @@
 <?php
 /*
-	Template Name: О компании
+	Template Name: Услуги
 */
 	get_header();
 ?>

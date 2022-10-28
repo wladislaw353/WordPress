@@ -1,12 +1,12 @@
 <?php
 /*
-	Template Name: О компании
+	Template Name: Отзывы
 */
 	get_header();
 ?>
 
 <!-- 
-<?php the_post_thumbnail(); ?>
+	<?php the_post_thumbnail(); ?>
 	<?php the_post_thumbnail_url() ?>
 	<?php the_title(); ?>
 	<?php the_content(); ?>
@@ -15,8 +15,6 @@
 	<?=home_url();?>
 	<?=mlt('', '')?> 
 -->
-
-
 
 <?php
 	get_footer();

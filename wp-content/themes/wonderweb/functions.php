@@ -45,6 +45,10 @@ add_filter('excerpt_more', function($more) {
 	return '..';
 });
 
+add_filter('wp_nav_menu', function ($content) {
+    return str_replace('<a', '<a itemprop="discussionUrl"', $content);
+});
+
 function wonderweb_breadcrumbs() {
 	$text['home']     = get_bloginfo(); // текст для главной
 	$text['category'] = '%s'; // текст для страницы рубрики
